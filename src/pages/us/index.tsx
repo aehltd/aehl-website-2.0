@@ -2,7 +2,7 @@ import React from "react";
 
 const USOverview = () => {
   return (
-    <div  id="container" className="container">
+    <div id="container" className="container">
       <div className="relative">
         <img
           src="https://www.aehlus.com/png/img1.c6bbf8d2.png"

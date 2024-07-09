@@ -64,18 +64,14 @@ const items: MenuItem[] = [
         ],
       },
       {
-        type: "group",
+        type: "item",
         label: "Corporate Governance",
-        key: "governance",
-        items: [
-          { type: "item", label: "Overview", key: "ir/governance#overview" },
-          {
-            type: "item",
-            label: "Board of Directors",
-            key: "ir/governance#board",
-          },
-          { type: "item", label: "Documents", key: "ir/governance#documents" },
-        ],
+        key: "ir/governance",
+      },
+      {
+        type: "item",
+        label: "Board of Directors",
+        key: "ir/board",
       },
       { type: "item", label: "Investor FAQs", key: "ir/faq" },
     ],

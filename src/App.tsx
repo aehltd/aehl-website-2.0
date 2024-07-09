@@ -15,6 +15,7 @@ import IRNewsPage from "./pages/ir/NewsPage";
 import IRGovernancePage from "./pages/ir/GovernancePage";
 import IRFAQPage from "./pages/ir/FAQPage";
 import NotFoundPage from "./pages/404NotFoundPage";
+import IRBoardPage from "./pages/ir/BoardPage";
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="/ir/finances" element={<IRFinancialsPage />} />
             <Route path="/ir/news" element={<IRNewsPage />} />
             <Route path="/ir/governance" element={<IRGovernancePage />} />
+            <Route path="/ir/board" element={<IRBoardPage />} />
             <Route path="/ir/faq" element={<IRFAQPage />} />
 
             <Route path="/contact-us" element={<ContactPage />} />
