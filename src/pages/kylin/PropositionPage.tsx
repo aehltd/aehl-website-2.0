@@ -2,14 +2,13 @@ import React from "react";
 
 const KylinValuePropositionPage = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h1>AEHL Kylin Cloud Value Proposition</h1>
+    <div id="container" className="container">
       <img
         src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/585c5fdd-4198-4d3c-b0b4-d7a9d6aac4e9/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145549.jpg?content-type=image%2Fjpeg"
         alt="bg"
       />
 
-      <div className="flex w-3/4 m-8">
+      <div className="flex row">
         <div className="flex flex-col space-y-8 w-1/2 items-center">
           <div>
             <h1>600 Cities</h1>
@@ -35,7 +34,7 @@ const KylinValuePropositionPage = () => {
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
         }}
       >
-        <div className="w-3/4 m-8">
+        <div className="row">
           <h2>We Are The Live Stream Commerce Frontier</h2>
           <p>
             Live stream e-commerce has become a mainstream trend,
@@ -60,7 +59,8 @@ const KylinValuePropositionPage = () => {
           </p>
         </div>
       </div>
-      <div className="w-3/4 m-8">
+
+      <div className="row text-center">
         <h2>Collaborating Live Streaming Platforms</h2>
         <p>RED Kuaishou JingDong TouTiao</p>
         <p>Douyin TikTok Bilibili Xigua</p>

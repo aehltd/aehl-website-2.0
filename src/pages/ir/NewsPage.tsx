@@ -1,14 +1,14 @@
 import React from "react";
 
-const USMetricsPage = () => {
+const IRNewsPage = () => {
   return (
     <div id="container" className="container">
       <div className="row">
-        <h1>AEHL US Real-Time Metrics</h1>
-        <p>Page in construction.</p>
+        <h1>IR News Page</h1>
+        <p>Page under construction.</p>
       </div>
     </div>
   );
 };
 
-export default USMetricsPage;
+export default IRNewsPage;

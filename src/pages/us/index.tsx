@@ -2,9 +2,7 @@ import React from "react";
 
 const USOverview = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h1>US Overview</h1>
-
+    <div  id="container" className="container">
       <div className="relative">
         <img
           src="https://www.aehlus.com/png/img1.c6bbf8d2.png"
@@ -20,7 +18,7 @@ const USOverview = () => {
         </div>
       </div>
 
-      <div className="m-8 w-3/4 flex">
+      <div className="flex row">
         <div className="w-1/2 flex flex-col space-y-2">
           <h1 className="">Vision & Mission</h1>
           <div>
@@ -64,7 +62,7 @@ const USOverview = () => {
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
         }}
       >
-        <div className="m-8 w-3/4">
+        <div className="row">
           <h1 className="mb-4">Our Strengths</h1>
           <div className="flex space-x-4">
             <div className="relative ">
@@ -134,7 +132,7 @@ const USOverview = () => {
         </div>
       </div>
 
-      <div className="inline-flex m-8 justify-between w-3/4">
+      <div className="inline-flex row justify-between">
         <img
           className="w-[45%]"
           src="https://www.aehlus.com/png/img6.c41aed10.png"
