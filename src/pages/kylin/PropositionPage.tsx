@@ -1,4 +1,12 @@
 import React from "react";
+import red from "../../assets/logos/小红书.png";
+import kuaishou from "../../assets/logos/快手.png";
+import jingdong from "../../assets/logos/京东.png";
+import toutiao from "../../assets/logos/今日头条.png";
+import douyin from "../../assets/logos/抖音.png";
+import tiktok from "../../assets/logos/TikTok.png";
+import bilibili from "../../assets/logos/哔哩哔哩.png";
+import xigua from "../../assets/logos/西瓜视频.png";
 
 const KylinValuePropositionPage = () => {
   return (
@@ -60,10 +68,20 @@ const KylinValuePropositionPage = () => {
         </div>
       </div>
 
-      <div className="row text-center">
-        <h2>Collaborating Live Streaming Platforms</h2>
-        <p>RED Kuaishou JingDong TouTiao</p>
-        <p>Douyin TikTok Bilibili Xigua</p>
+      <div className="row text-center bg-stone-400">
+        <h1 className="text-white font-semibold mb-8">Collaborating Live Streaming Platforms</h1>
+        <div className="flex w-full justify-center items-center space-x-8">
+          <img src={red} alt="小红书" />
+          <img src={kuaishou} alt="快手" />
+          <img src={jingdong} alt="京东" />
+          <img src={toutiao} alt="头条" />
+        </div>
+        <div className="flex w-full justify-center items-center space-x-8">
+          <img src={douyin} alt="抖音" />
+          <img src={tiktok} alt="TikTok" />
+          <img src={bilibili} alt="哔哩哔哩" />
+          <img src={xigua} alt="西瓜视频" />
+        </div>
       </div>
     </div>
   );

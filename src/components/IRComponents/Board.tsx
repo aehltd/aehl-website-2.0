@@ -76,10 +76,11 @@ const BoardRow = () => {
     return (
       <div className="w-full">
         {board.map((entry, index) => {
-          const isAlternateRow = Math.floor(index / 3) % 2 !== 0;
+          // Determine if the row is odd or even
+          const isOddRow = index % 2 === 0; 
   
           // Apply background style to the entire row if it's an alternate row
-          const rowStyle = isAlternateRow
+          const rowStyle = isOddRow
             ? {
                 backgroundImage: "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
                 backgroundSize: "cover",

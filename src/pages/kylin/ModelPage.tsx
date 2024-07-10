@@ -11,7 +11,7 @@ const KylinModelPage = () => {
       />
       <div className="flex row space-x-8">
         <div>
-          <h1>About Us</h1>
+          <h2>About Us</h2>
           <p>
             Antelope Enterprise Holdings Limited (AEHL) is a NASDAQ-listed
             company that specializes in the vertical integration of social
@@ -22,7 +22,7 @@ const KylinModelPage = () => {
           </p>
         </div>
         <div>
-          <h1>Our Business</h1>
+          <h2>Our Business</h2>
           <p>
             At AEHL, we focus on enabling B-end manufacturers and C-end talents
             to realize their economic value through live streaming platforms,
@@ -35,7 +35,7 @@ const KylinModelPage = () => {
           </p>
         </div>
         <div>
-          <h1>Our Vision</h1>
+          <h2>Our Vision</h2>
           <p>
             We envision a future where businesses and live streaming talents can
             seamlessly connect and thrive in the new era of e-commerce. By
