@@ -5,10 +5,15 @@ const { Panel } = Collapse;
 const KylinModelPage = () => {
   return (
     <div id="container" className="container">
-      <img
-        src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/24942941-dc52-4b21-afd5-1143691ddbdd/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145557.jpg?content-type=image%2Fjpeg"
-        alt="bg"
-      />
+      <div
+        className="bg-local flex w-full h-[80vh] justify-center"
+        style={{
+          backgroundImage:
+            "url('https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/24942941-dc52-4b21-afd5-1143691ddbdd/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145557.jpg?content-type=image%2Fjpeg')",
+          backgroundSize: "cover",
+        }}
+      >
+      </div>
       <div className="flex row space-x-8">
         <div>
           <h2>About Us</h2>

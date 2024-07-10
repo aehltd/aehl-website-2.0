@@ -11,10 +11,14 @@ import xigua from "../../assets/logos/西瓜视频.png";
 const KylinValuePropositionPage = () => {
   return (
     <div id="container" className="container">
-      <img
-        src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/585c5fdd-4198-4d3c-b0b4-d7a9d6aac4e9/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145549.jpg?content-type=image%2Fjpeg"
-        alt="bg"
-      />
+      <div
+        className="bg-local flex w-full h-[80vh] justify-center"
+        style={{
+          backgroundImage:
+            "url('https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/585c5fdd-4198-4d3c-b0b4-d7a9d6aac4e9/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145549.jpg?content-type=image%2Fjpeg')",
+          backgroundSize: "cover",
+        }}
+      ></div>
 
       <div className="flex row">
         <div className="flex flex-col space-y-8 w-1/2 items-center">
@@ -67,20 +71,23 @@ const KylinValuePropositionPage = () => {
           </p>
         </div>
       </div>
-
-      <div className="row text-center bg-stone-400">
-        <h1 className="text-white font-semibold mb-8">Collaborating Live Streaming Platforms</h1>
-        <div className="flex w-full justify-center items-center space-x-8">
-          <img src={red} alt="小红书" />
-          <img src={kuaishou} alt="快手" />
-          <img src={jingdong} alt="京东" />
-          <img src={toutiao} alt="头条" />
-        </div>
-        <div className="flex w-full justify-center items-center space-x-8">
-          <img src={douyin} alt="抖音" />
-          <img src={tiktok} alt="TikTok" />
-          <img src={bilibili} alt="哔哩哔哩" />
-          <img src={xigua} alt="西瓜视频" />
+      <div className="bg-stone-400 flex w-full justify-center">
+        <div className="row text-center">
+          <h1 className="text-white font-semibold mb-8">
+            Collaborating Live Streaming Platforms
+          </h1>
+          <div className="flex w-full justify-center items-center space-x-8">
+            <img src={red} alt="小红书" />
+            <img src={kuaishou} alt="快手" />
+            <img src={jingdong} alt="京东" />
+            <img src={toutiao} alt="头条" />
+          </div>
+          <div className="flex w-full justify-center items-center space-x-8">
+            <img src={douyin} alt="抖音" />
+            <img src={tiktok} alt="TikTok" />
+            <img src={bilibili} alt="哔哩哔哩" />
+            <img src={xigua} alt="西瓜视频" />
+          </div>
         </div>
       </div>
     </div>

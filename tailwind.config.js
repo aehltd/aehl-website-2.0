@@ -17,6 +17,14 @@ module.exports = {
       "7xl": "5rem",
     },
     extend: {
+      screens: {
+        '3xl': '1920px',
+        '4xl': '2560px'
+      },
+      maxWidth: {
+        '2xl': '1536px',
+        '3xl': '1920px',
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },

@@ -8,15 +8,19 @@ import {
 const USProductsPage = () => {
   return (
     <div id="container" className="container">
-      <img
-        className="block"
-        src="https://www.aehlus.com/png/img4.50ec3eb4.png"
-        alt="bg"
-      />
+      <div
+        className="bg-local flex w-full h-[80vh] justify-center"
+        style={{
+          backgroundImage:
+            "url('https://www.aehlus.com/png/img4.50ec3eb4.png')",
+          backgroundSize: "cover",
+        }}
+      >
+      </div>
       <div className="inline-flex row space-x-8">
         <div className="w-1/2 ml-0">
           <img
-            className="object-scale-down"
+            className="object-cover h-full w-full"
             src="https://www.aehlus.com/png/img7.6170bfe8.png"
             alt="bg"
           />
@@ -24,7 +28,7 @@ const USProductsPage = () => {
         <div className="w-1/2">
           <h1 className="mb-2">Our Products</h1>
           <h2>AI Infrastructure Industry Chain</h2>
-          <p className="text-sm">
+          <p>
             We employ an end-to-end model to convert procured natural gas into
             electrical energy through gas generators. This energy is then
             transmitted directly to data centers for high-performance computing.

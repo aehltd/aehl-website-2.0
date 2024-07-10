@@ -80,7 +80,7 @@ const SECFilingsRow = () => {
             <a className="truncate block hover:text-blue-500" href={entry.link}>
               {entry.title}
             </a>
-            <p className="text-xs">{entry.date}</p>
+            <p className="smalltext">{entry.date}</p>
             <Divider className="my-4 " />
           </li>
         ))}

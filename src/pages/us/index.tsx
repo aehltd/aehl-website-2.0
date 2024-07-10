@@ -3,18 +3,20 @@ import React from "react";
 const USOverview = () => {
   return (
     <div id="container" className="container">
-      <div className="relative">
-        <img
-          src="https://www.aehlus.com/png/img1.c6bbf8d2.png"
-          alt="bg"
-          className="block"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-white text-8xl mb-6 drop-shadow-lg">AEHL</h1>
-          <h1 className="text-white font-bold drop-shadow-lg">
-            Next Generation Infrastructure to Power{" "}
-            <span className="text-green-500">AI</span>
-          </h1>
+      <div
+        className="bg-local flex w-full h-[80vh] justify-center"
+        style={{
+          backgroundImage:
+            "url('https://www.aehlus.com/png/img1.c6bbf8d2.png')",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="flex flex-col items-center justify-center">
+            <h1 className="text-white text-8xl mb-6 drop-shadow-lg">AEHL</h1>
+            <h1 className="text-white font-bold drop-shadow-lg">
+              Next Generation Infrastructure to Power{" "}
+              <span className="text-green-500">AI</span>
+            </h1>
         </div>
       </div>
 
@@ -60,13 +62,15 @@ const USOverview = () => {
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+          backgroundSize: "cover",
         }}
       >
         <div className="row">
           <h1 className="mb-4">Our Strengths</h1>
           <div className="flex space-x-4">
-            <div className="relative ">
+            <div className="relative w-1/4">
               <img
+                className="object-cover w-full h-full"
                 src="https://www.aehlus.com/png/Strengths-1.a36a67d4.png"
                 alt="bg"
               />
@@ -81,8 +85,9 @@ const USOverview = () => {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative w-1/4">
               <img
+                className="object-cover w-full h-full"
                 src="https://www.aehlus.com/png/Strengths-2.b90e5967.png"
                 alt="bg"
               />
@@ -97,8 +102,9 @@ const USOverview = () => {
                 </p>
               </div>
             </div>
-            <div className="relative ">
+            <div className="relative w-1/4">
               <img
+                className="object-cover w-full h-full"
                 src="https://www.aehlus.com/png/Strengths-3.9e5a1c57.png"
                 alt="bg"
               />
@@ -109,12 +115,13 @@ const USOverview = () => {
                 </h3>
                 <p className="text-white drop-shadow-md">
                   Balancing interests in energy, power generation, transmission,
-                  infrastructure & server operationgs
+                  infrastructure & server operations
                 </p>
               </div>
             </div>
-            <div className="relative ">
+            <div className="relative w-1/4">
               <img
+                className="object-cover w-full h-full"
                 src="https://www.aehlus.com/png/Strengths-4.d4502d8c.png"
                 alt="bg"
               />
@@ -134,7 +141,7 @@ const USOverview = () => {
 
       <div className="inline-flex row justify-between">
         <img
-          className="w-[45%]"
+          className="w-[45%] object-cover h-full"
           src="https://www.aehlus.com/png/img6.c41aed10.png"
           alt="bg"
         />

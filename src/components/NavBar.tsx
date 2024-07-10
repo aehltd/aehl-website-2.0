@@ -136,14 +136,14 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex h-14 w-full justify-center">
+    <div className="flex h-16 2xl:h-24 w-full justify-center">
       <Menu
-        className="font-poppins row pt-2 pb-0"
+        className="font-poppins row pt-3 2xl:pt-6 pb-0 !text-base 2xl:!text-2xl"
         onClick={handleClick}
         selectedKeys={[current]}
         mode="horizontal"
       >
-        <img className="h-12 mr-auto pb-2" src={logo} alt="AEHL" />
+        <img className="h-auto pb-3 2xl:pb-6 mr-auto" src={logo} alt="AEHL" />
         {renderMenuItems(items)}
       </Menu>
     </div>

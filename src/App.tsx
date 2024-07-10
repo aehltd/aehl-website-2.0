@@ -19,13 +19,13 @@ import IRBoardPage from "./pages/ir/BoardPage";
 
 const App = () => {
   return (
-    <div className="max-w-screen max-h-screen flex flex-col">
+    <div className="w-screen h-screen flex flex-col">
       <Router>
         <header>
           <NavBar />
         </header>
 
-        <main className="max-h-full overflow-y-auto">
+        <main className="overflow-y-auto w-screen">
           <Routes>
             <Route path="/" element={<HomePage />} />
 

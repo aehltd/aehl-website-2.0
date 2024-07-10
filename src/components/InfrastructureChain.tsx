@@ -96,7 +96,7 @@ const InfrastructureChain: React.FC<ChainProps> = ({ chain }) => {
                   className="max-h-full max-w-full object-scale-down"
                 />
               </div>
-              <p className="text-white text-xxs text-center">{item.name}</p>
+              <p className="text-white minitext text-center">{item.name}</p>
             </li>
             {index < chain.items.length - 1 && (
               <li className="flex mx-2 h-16 items-center">
