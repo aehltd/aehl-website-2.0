@@ -1,82 +1,65 @@
 import React, { useState, useLayoutEffect } from "react";
-import { Menu } from "antd";
+import {  Menu, MenuProps } from "antd";
 import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/nav-logo.png";
 
-type MenuItem = {
-  type: "item" | "group" | "submenu";
-  label: string;
-  key: string;
-  items?: MenuItem[];
-};
+type MenuItem = Required<MenuProps>["items"][number]
+// type MenuItem = {
+//   key: string;
+//   label: React.ReactNode;
+//   children?: MenuItem[];
+//   type?: "group";
+//   disabled?: boolean;
+// };
 
 const items: MenuItem[] = [
-  { type: "item", label: "Home", key: "" },
+  { key: "", label: "Home" },
   {
-    type: "submenu",
-    label: "Texas Energy",
     key: "aehl-us",
-    items: [
-      { type: "item", label: "Overview", key: "aehl-us/overview" },
-      { type: "item", label: "Our Products", key: "aehl-us/products" },
-      { type: "item", label: "Real Time Metrics", key: "aehl-us/metrics" },
+    label: "Texas Energy",
+    children: [
+      { key: "aehl-us/overview", label: "Overview" },
+      { key: "aehl-us/products", label: "Our Products" },
+      { key: "aehl-us/metrics", label: "Real Time Metrics" },
     ],
   },
   {
-    type: "submenu",
-    label: "Kylin Cloud",
     key: "aehl-kylin",
-    items: [
-      { type: "item", label: "Overview", key: "aehl-kylin/overview" },
-      { type: "item", label: "Value Proposition", key: "aehl-kylin/value" },
-      { type: "item", label: "Business Model", key: "aehl-kylin/model" },
+    label: "Kylin Cloud",
+    children: [
+      { key: "aehl-kylin/overview", label: "Overview" },
+      { key: "aehl-kylin/value", label: "Value Proposition" },
+      { key: "aehl-kylin/model", label: "Business Model" },
     ],
   },
   {
-    type: "submenu",
-    label: "Investor Relations",
     key: "ir",
-    items: [
+    label: "Investor Relations",
+    children: [
       {
-        type: "group",
-        label: "Finances",
         key: "finances",
-        items: [
-          {
-            type: "item",
-            label: "Stock Information",
-            key: "ir/finances#stock",
-          },
-          { type: "item", label: "SEC Filings", key: "ir/finances#sec" },
-        ],
-      },
-      {
+        label: "Finances",
         type: "group",
-        label: "News and Media",
-        key: "news",
-        items: [
-          { type: "item", label: "Press Releases", key: "ir/news#press" },
-          {
-            type: "item",
-            label: "Corporate Presentation",
-            key: "ir/news#presentation",
-          },
+        children: [
+          { key: "ir/finances#stock", label: "Stock Information" },
+          { key: "ir/finances#sec", label: "SEC Filings" },
         ],
       },
       {
-        type: "item",
-        label: "Corporate Governance",
-        key: "ir/governance",
+        key: "news",
+        label: "News and Media",
+        type: "group",
+        children: [
+          { key: "ir/news#press", label: "Press Releases" },
+          { key: "ir/news#presentation", label: "Corporate Presentation" },
+        ],
       },
-      {
-        type: "item",
-        label: "Board of Directors",
-        key: "ir/board",
-      },
-      { type: "item", label: "Investor FAQs", key: "ir/faq" },
+      { key: "ir/governance", label: "Corporate Governance" },
+      { key: "ir/board", label: "Board of Directors" },
+      { key: "ir/faq", label: "Investor FAQs" },
     ],
   },
-  { type: "item", label: "Contact Us", key: "contact-us" },
+  { key: "contact-us", label: "Contact Us" },
 ];
 
 const NavBar = () => {
@@ -114,38 +97,20 @@ const NavBar = () => {
     }
   };
 
-  const renderMenuItems = (menuItems: MenuItem[]) => {
-    return menuItems.map((item) => {
-      if (item.items) {
-        if (item.type === "submenu") {
-          return (
-            <Menu.SubMenu key={item.key} title={item.label}>
-              {renderMenuItems(item.items)}
-            </Menu.SubMenu>
-          );
-        } else if (item.type === "group") {
-          return (
-            <Menu.ItemGroup key={item.key} title={item.label}>
-              {renderMenuItems(item.items)}
-            </Menu.ItemGroup>
-          );
-        }
-      }
-      return <Menu.Item key={item.key}>{item.label}</Menu.Item>;
-    });
-  };
-
   return (
-    <div className="flex h-14 2xl:h-20 w-full justify-center">
+    <div className="flex h-14 2xl:h-20 w-full pt-2 2xl:pt-4 text-base 2xl:!text-2xl justify-center">
+      <div className="flex row py-0">
+      {/* <div className="flex-grow items-center h-full w-full mr-auto"> */}
+        <img className="h-10 2xl:h-12 mr-auto" src={logo} alt="AEHL" />
+      {/* </div> */}
       <Menu
-        className="font-poppins row pt-2 2xl:pt-4 pb-0 !text-base 2xl:!text-2xl"
+        className="font-poppins"
         onClick={handleClick}
         selectedKeys={[current]}
         mode="horizontal"
-      >
-        <img className="h-auto pb-2 2xl:pb-4 mr-auto" src={logo} alt="AEHL" />
-        {renderMenuItems(items)}
-      </Menu>
+        items={items}
+      />
+      </div>
     </div>
   );
 };

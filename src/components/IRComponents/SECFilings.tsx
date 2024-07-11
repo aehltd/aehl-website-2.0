@@ -75,8 +75,8 @@ const SECFilingsRow = () => {
     <>
       <h1 className="mb-4">SEC Filings</h1>
       <ul className="grid grid-cols-2 gap-x-8">
-        {dummyData.map((entry) => (
-          <li>
+        {dummyData.map((entry, index) => (
+          <li key={index}>
             <a className="truncate block hover:text-blue-500" href={entry.link}>
               {entry.title}
             </a>
