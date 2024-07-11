@@ -9,7 +9,7 @@ const USProductsPage = () => {
   return (
     <div id="container" className="container">
       <div
-        className="bg-local flex w-full h-[65vh] justify-center"
+        className="bg-local flex w-full h-[40vh] justify-center"
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img4.50ec3eb4.png')",

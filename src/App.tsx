@@ -21,9 +21,9 @@ const App = () => {
   return (
     <div className="w-screen h-screen flex flex-col">
       <Router>
-        <header>
+        <nav className="w-screen">
           <NavBar />
-        </header>
+        </nav>
 
         <main className="overflow-y-auto w-screen">
           <Routes>

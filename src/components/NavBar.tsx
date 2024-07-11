@@ -1,9 +1,10 @@
 import React, { useState, useLayoutEffect } from "react";
-import {  Menu, MenuProps } from "antd";
+import { Menu, Drawer, MenuProps } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/nav-logo.png";
 
-type MenuItem = Required<MenuProps>["items"][number]
+type MenuItem = Required<MenuProps>["items"][number];
 // type MenuItem = {
 //   key: string;
 //   label: React.ReactNode;
@@ -63,7 +64,8 @@ const items: MenuItem[] = [
 ];
 
 const NavBar = () => {
-  const [current, setCurrent] = useState("home");
+  const [visible, setVisible] = useState(false);
+  const [current, setCurrent] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -89,6 +91,7 @@ const NavBar = () => {
   const handleClick = async (e: any) => {
     console.log("click ", e);
     setCurrent(e.key);
+    setVisible(false);
     const [path, hash] = e.key.split("#");
     if (hash) {
       navigate(`/${path}#${hash}`);
@@ -97,19 +100,48 @@ const NavBar = () => {
     }
   };
 
+  const openDrawer = () => {
+    setVisible(true);
+  }
+  const closeDrawer = () => {
+    setVisible(false);
+  }
+
   return (
-    <div className="flex h-14 2xl:h-20 w-full pt-2 2xl:pt-4 text-base 2xl:!text-2xl justify-center">
-      <div className="flex row py-0">
-      {/* <div className="flex-grow items-center h-full w-full mr-auto"> */}
-        <img className="h-10 2xl:h-12 mr-auto" src={logo} alt="AEHL" />
-      {/* </div> */}
-      <Menu
-        className="font-poppins"
-        onClick={handleClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        items={items}
-      />
+    <div className="flex justify-center">
+      <div className="flex row p-0 w-full h-14 2xl:h-20 justify-between">
+        <div className="flex items-center pl-4 py-2">
+          <img src={logo} alt="logo" className="h-full w-full"/>
+        </div>
+        <div className="md:hidden"> {/* Show on mobile, hide on desktop */}
+          <MenuOutlined className="h-full text-2xl pr-4" onClick={openDrawer} />
+        </div>
+
+        <div className="hidden md:flex">
+          <Menu
+            className="font-poppins h-full pt-2 2xl:pt-4 2xl:text-2xl min-w-96"
+            onClick={handleClick}
+            selectedKeys={[current]}
+            mode="horizontal"
+            items={items}
+          />
+        </div>
+      </div>
+      <div className="md:hidden">
+        <Drawer
+            placement="right"
+            closable={true}
+            onClose={closeDrawer}
+            open={visible}
+            >
+            <Menu
+              className="font-poppins !border-0"
+              onClick={handleClick}
+              selectedKeys={[current]}
+              mode="inline"
+              items={items}
+            />
+        </Drawer>
       </div>
     </div>
   );

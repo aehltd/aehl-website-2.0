@@ -39,11 +39,12 @@
     @apply flex flex-col items-center max-w-full;
   }
 
-  .row {
-    @apply p-8 max-w-screen-lg w-full;
-    @apply 3xl:p-16 3xl:max-w-screen-2xl;
-    @apply 4xl:p-20 4xl:max-w-screen-3xl;
-  }
+    .row {
+      @apply p-8 w-full;
+      @apply md:max-w-screen-lg;
+      @apply 3xl:p-16 3xl:max-w-screen-2xl;
+      @apply 4xl:p-20 4xl:max-w-screen-3xl;
+    }
 
   .menutext {
     @apply text-base;

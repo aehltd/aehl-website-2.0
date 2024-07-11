@@ -16,9 +16,6 @@ root.render(
   <ConfigProvider
     theme={{
       components: {
-        Divider: {
-          /* here is your component tokens */
-        },
       },
     }}
   >
