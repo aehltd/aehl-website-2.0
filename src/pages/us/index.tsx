@@ -4,7 +4,7 @@ const USOverview = () => {
   return (
     <div id="container" className="container">
       <div
-        className="bg-local flex w-full h-[80vh] justify-center"
+        className="bg-local flex w-full h-[65vh] justify-center"
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img1.c6bbf8d2.png')",

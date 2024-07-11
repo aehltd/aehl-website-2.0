@@ -55,6 +55,7 @@ const KylinModelPage = () => {
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+          backgroundSize: "cover",
         }}
       >
         <div className="flex row">

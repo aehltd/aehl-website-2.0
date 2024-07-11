@@ -1,6 +1,5 @@
 import React from "react";
 import StockQuoteRow from "../../components/IRComponents/Quote";
-import PressReleasesRow from "../../components/IRComponents/PressReleases";
 import SECFilingsRow from "../../components/IRComponents/SECFilings";
 
 const IRFinancialsPage = () => {
@@ -14,6 +13,7 @@ const IRFinancialsPage = () => {
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+          backgroundSize: "cover",
         }}
       >
         <div id="sec" className="row">

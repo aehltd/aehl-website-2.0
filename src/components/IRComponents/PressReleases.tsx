@@ -81,7 +81,7 @@ const dummyData: dataEntry[] = [
 
 const PressReleasesRow = () => {
   return (
-    <div>
+    <>
       <h1 className="mb-4">Press Releases</h1>
       <ul className="grid grid-cols-2 gap-x-8">
         {dummyData.map((entry) => (
@@ -94,7 +94,7 @@ const PressReleasesRow = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 

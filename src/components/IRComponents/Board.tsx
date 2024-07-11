@@ -84,7 +84,6 @@ const BoardRow = () => {
             ? {
                 backgroundImage: "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
               }
             : {};
   
@@ -93,7 +92,7 @@ const BoardRow = () => {
             return (
               <div
                 key={index}
-                className="flex w-full"
+                className="flex w-full justify-center"
                 style={rowStyle}
               >
                 <div className="flex row space-x-4">
