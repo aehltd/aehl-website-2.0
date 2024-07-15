@@ -37,7 +37,8 @@ const ContactPage = () => {
                 <p>10am–6pm</p>
               </div>
               <div>
-                <h2>Email</h2>
+                <h2>Investor Relations</h2>
+                <p>+1 (646) 694 - 8538</p>
                 <p>ir@aehltd.com</p>
               </div>
             </div>

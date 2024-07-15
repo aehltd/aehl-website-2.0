@@ -17,7 +17,7 @@ const items: MenuItem[] = [
   { key: "", label: "Home" },
   {
     key: "aehl-us",
-    label: "Texas Energy",
+    label: "Energy Business",
     children: [
       { key: "aehl-us/overview", label: "Overview" },
       { key: "aehl-us/products", label: "Our Products" },

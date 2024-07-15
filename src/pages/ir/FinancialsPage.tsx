@@ -5,7 +5,7 @@ import SECFilingsRow from "../../components/IRComponents/SECFilings";
 const IRFinancialsPage = () => {
   return (
     <div id="container" className="container">
-      <div id="stock" className="flex row">
+      <div id="stock" className="flex row mb-8">
         <StockQuoteRow />
       </div>
       <div

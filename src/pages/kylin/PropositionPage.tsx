@@ -72,7 +72,7 @@ const KylinValuePropositionPage = () => {
           </p>
         </div>
       </div>
-      <div className="bg-stone-400 flex w-full justify-center">
+      <div className="bg-slate-400 flex w-full justify-center">
         <div className="row text-center">
           <h1 className="text-white font-semibold mb-8">
             Collaborating Live Streaming Platforms
