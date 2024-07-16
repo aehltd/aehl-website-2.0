@@ -119,10 +119,11 @@ const NavBar = () => {
 
         <div className="hidden md:flex">
           <Menu
-            className="font-poppins h-full pt-2 2xl:pt-4 2xl:text-2xl min-w-96"
+            className="font-poppins h-full pt-2 2xl:pt-4 2xl:text-2xl min-w-0 flex-auto"
             onClick={handleClick}
             selectedKeys={[current]}
             mode="horizontal"
+            disabledOverflow
             items={items}
           />
         </div>
