@@ -36,7 +36,7 @@ const items: MenuItem[] = [
     key: "governance",
     children: [
       { key: "documents", label: "Governance Documents" },
-      { key: "comittee-composition", label: "Committee Composition" },
+      { key: "committee-composition", label: "Committee Composition" },
       { key: "board", label: "Board of Directors" },
     ],
   },

@@ -17,6 +17,7 @@ import NotFoundPage from "./pages/404NotFoundPage";
 import IRBoardPage from "./pages/ir/BoardPage";
 import IROverviewPage from "./pages/ir/OverviewPage";
 import FullNavBar from "./components/FullNavBar";
+import IRCompositionPage from "./pages/ir/CompositionPage";
 
 const App = () => {
   return (
@@ -49,16 +50,16 @@ const App = () => {
             <Route path="/ir/stock-information" element={<IRFinancialsPage />} />
             <Route path="/ir/financials" element={<IRFinancialsPage />} />
             <Route
-              path="/ir/governance/documents"
+              path="/ir/documents"
               element={<IRGovernancePage />}
             />
             <Route
-              path="/ir/governance/commitee-composition"
-              element={<IRGovernancePage />}
+              path="/ir/committee-composition"
+              element={<IRCompositionPage />}
             />
-            <Route path="/ir/governance/board" element={<IRBoardPage />} />
+            <Route path="/ir/board" element={<IRBoardPage />} />
             <Route path="/ir/contact-us" element={<ContactPage />} />
-            <Route path="/ir/contact-us/faqs" element={<IRFAQPage />} /> 
+            <Route path="/ir/faqs" element={<IRFAQPage />} /> 
 
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
