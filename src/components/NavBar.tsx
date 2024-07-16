@@ -5,13 +5,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/nav-logo.png";
 
 type MenuItem = Required<MenuProps>["items"][number];
-// type MenuItem = {
-//   key: string;
-//   label: React.ReactNode;
-//   children?: MenuItem[];
-//   type?: "group";
-//   disabled?: boolean;
-// };
 
 const items: MenuItem[] = [
   { key: "", label: "Home" },
@@ -36,36 +29,39 @@ const items: MenuItem[] = [
   {
     key: "ir",
     label: "Investor Relations",
-    children: [
-      {
-        key: "finances",
-        label: "Finances",
-        type: "group",
-        children: [
-          { key: "ir/finances#stock", label: "Stock Information" },
-          { key: "ir/finances#sec", label: "SEC Filings" },
-        ],
-      },
-      {
-        key: "news",
-        label: "News and Media",
-        type: "group",
-        children: [
-          { key: "ir/news#press", label: "Press Releases" },
-          { key: "ir/news#presentation", label: "Corporate Presentation" },
-        ],
-      },
-      { key: "ir/governance", label: "Corporate Governance" },
-      { key: "ir/board", label: "Board of Directors" },
-      { key: "ir/faq", label: "Investor FAQs" },
-    ],
+    // children: [
+    //   { key: "ir/news#press", label: "Press Releases" },
+    //   { key: "ir/news#presentation", label: "Corporate Presentation" },
+    //   { key: "ir/finances#stock", label: "Stock Information" },
+    //   { key: "ir/finances#sec", label: "SEC Filings" },
+    //   {
+    //     key: "governance",
+    //     label: "Corporate Governance",
+    //     type: "group",
+    //     children: [
+    //       { key: "ir/governance/documents", label: "Governance Documents" },
+    //       { key: "ir/governance/comittees", label: "Committee Composition" },
+    //       { key: "ir/governance/board", label: "Board of Directors" },
+    //     ],
+    //   },
+    //   { key: "ir/faq", label: "Investor FAQs" },
+    // ],
   },
-  { key: "contact-us", label: "Contact Us" },
+  // { key: "contact-us", label: "Contact Us" },
 ];
 
+//Get key from url
+const useCurrentPage = () => {
+  const location = useLocation();
+  const key = location.pathname.split("/")[1];
+  console.log(key)
+  return key;
+}
+
 const NavBar = () => {
+  const currentPage = useCurrentPage();
   const [visible, setVisible] = useState(false);
-  const [current, setCurrent] = useState("");
+  const [current, setCurrent] = useState(currentPage ? currentPage : "");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -88,7 +84,7 @@ const NavBar = () => {
     }
   }, [location]);
 
-  const handleClick = async (e: any) => {
+  const handleClick = (e: any) => {
     console.log("click ", e);
     setCurrent(e.key);
     setVisible(false);
@@ -103,6 +99,7 @@ const NavBar = () => {
   const openDrawer = () => {
     setVisible(true);
   }
+
   const closeDrawer = () => {
     setVisible(false);
   }

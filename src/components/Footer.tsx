@@ -3,7 +3,7 @@ import { Divider } from "antd";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-50 w-full flex items-center justify-center">
+    <div className="bg-slate-100 w-full flex items-center justify-center">
       <div className="flex flex-col row items-center">
         <div className="flex w-full justify-between items-center">
           <h3>Antelope Enterprise Holdings Limited</h3>

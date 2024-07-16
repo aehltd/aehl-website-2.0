@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import HomePage from "./pages";
 import ContactPage from "./pages/ContactPage";
@@ -16,16 +15,15 @@ import IRGovernancePage from "./pages/ir/GovernancePage";
 import IRFAQPage from "./pages/ir/FAQPage";
 import NotFoundPage from "./pages/404NotFoundPage";
 import IRBoardPage from "./pages/ir/BoardPage";
+import IROverviewPage from "./pages/ir/OverviewPage";
+import FullNavBar from "./components/FullNavBar";
 
 const App = () => {
   return (
     <div className="w-screen h-screen flex flex-col">
       <Router>
-        <nav className="w-screen">
-          <NavBar />
-        </nav>
-
-        <main className="overflow-y-auto w-screen">
+        <FullNavBar />
+        <div className="overflow-y-auto w-screen">
           <Routes>
             <Route path="/" element={<HomePage />} />
 
@@ -43,17 +41,29 @@ const App = () => {
             />
             <Route path="/aehl-kylin/model" element={<KylinModelPage />} />
 
-            <Route path="/ir/finances" element={<IRFinancialsPage />} />
-            <Route path="/ir/news" element={<IRNewsPage />} />
-            <Route path="/ir/governance" element={<IRGovernancePage />} />
-            <Route path="/ir/board" element={<IRBoardPage />} />
-            <Route path="/ir/faq" element={<IRFAQPage />} />
+            <Route path="/ir" element={<IROverviewPage />} />
+            <Route path="/ir/overview" element={<IROverviewPage />} />
+            <Route path="/ir/press-releases" element={<IRNewsPage />} />
+            <Route path="/ir/events-presentations" element={<IRNewsPage />} />
+            <Route path="/ir/sec-filings" element={<IRFinancialsPage />} />
+            <Route path="/ir/stock-information" element={<IRFinancialsPage />} />
+            <Route path="/ir/financials" element={<IRFinancialsPage />} />
+            <Route
+              path="/ir/governance/documents"
+              element={<IRGovernancePage />}
+            />
+            <Route
+              path="/ir/governance/commitee-composition"
+              element={<IRGovernancePage />}
+            />
+            <Route path="/ir/governance/board" element={<IRBoardPage />} />
+            <Route path="/ir/contact-us" element={<ContactPage />} />
+            <Route path="/ir/contact-us/faqs" element={<IRFAQPage />} /> 
 
-            <Route path="/contact-us" element={<ContactPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer />
-        </main>
+        </div>
       </Router>
     </div>
   );
