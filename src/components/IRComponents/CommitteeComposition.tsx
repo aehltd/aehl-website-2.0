@@ -46,7 +46,7 @@ const Committee: CommitteeItem[] = [
     nominatingCommittee: "M",
   },
   {
-    honorific: "Mr.",   
+    honorific: "Mr.",
     name: "Dian Zhang",
     position: "Independent Director",
     auditCommittee: "C",
@@ -69,6 +69,7 @@ const Committee: CommitteeItem[] = [
     position: "Director",
   },
 ];
+
 const CommitteeComposition = () => {
   const colorItem = (item: string | undefined) => {
     if (item === "M") {
@@ -80,43 +81,67 @@ const CommitteeComposition = () => {
   };
 
   return (
-    <table className="table-auto w-full">
-      <thead className="bg-slate-400 text-white">
-        <tr>
-          <th className="font-semibold py-2">Director</th>
-          <th className="font-semibold py-2">Position</th>
-          <th className="font-semibold py-2">Audit Committee</th>
-          <th className="font-semibold py-2">Compensation Committee</th>
-          <th className="font-semibold py-2">Nominating Committee</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Committee.map((item, index) => {
-          const isEvenRow = (index + 1) % 2 === 0;
-          const colorRow = isEvenRow ? "bg-slate-100" : "bg-white";
-
-          return (
-            <tr key={index} className={colorRow}>
-              <td className="border h-10 px-4 py-2 text-center">
-                {item.honorific} {item.name}
-              </td>
-              <td className="border h-10 px-4 py-2 text-center">
-                {item.position}
-              </td>
-              <td className={`border h-10 px-4 py-2 text-center font-bold ${colorItem(item.auditCommittee)}`}>
-                {item.auditCommittee}
-              </td>
-              <td className={`border h-10 px-4 py-2 text-center font-bold ${colorItem(item.compensationCommittee)}`}>
-                {item.compensationCommittee}
-              </td>
-              <td className={`border h-10 px-4 py-2 text-center font-bold ${colorItem(item.nominatingCommittee)}`}>
-                {item.nominatingCommittee}
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <div>
+      <table className="min-w-full divide-y divide-gray-200 table-auto w-full">
+        <thead className="bg-slate-400 text-white">
+          <tr>
+            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+              Director
+            </th>
+            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+              Position
+            </th>
+            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+              Audit Committee
+            </th>
+            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+              Compensation Committee
+            </th>
+            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+              Nominating Committee
+            </th>
+          </tr>
+        </thead>
+        <tbody className="bg-white divide-y divide-gray-200">
+          {Committee.map((item, index) => {
+            return (
+              <tr
+                key={index}
+                className={index % 2 === 0 ? "bg-white" : "bg-slate-100"}
+              >
+                <td className="border px-6 py-3 whitespace-nowrap text-center">
+                  {item.honorific} {item.name}
+                </td>
+                <td className="border px-6 py-3 whitespace-nowrap text-center">
+                  {item.position}
+                </td>
+                <td
+                  className={`border px-6 py-3 whitespace-nowrap text-center font-bold ${colorItem(
+                    item.auditCommittee
+                  )}`}
+                >
+                  {item.auditCommittee}
+                </td>
+                <td
+                  className={`border px-6 py-3 whitespace-nowrap text-center font-bold ${colorItem(
+                    item.compensationCommittee
+                  )}`}
+                >
+                  {item.compensationCommittee}
+                </td>
+                <td
+                  className={`border px-6 py-3 whitespace-nowrap text-center font-bold ${colorItem(
+                    item.nominatingCommittee
+                  )}`}
+                >
+                  {item.nominatingCommittee}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

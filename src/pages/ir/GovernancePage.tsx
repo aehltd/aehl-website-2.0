@@ -1,4 +1,5 @@
 import React from "react";
+import Documents from "../../components/IRComponents/Documents";
 
 const IRGovernancePage = () => {
   return (
@@ -7,17 +8,18 @@ const IRGovernancePage = () => {
         <h1>Corporate Governance</h1>
         <p>Page under construction.</p>
       </div>
-      {/* <div
+      <div
         className="bg-local flex w-full justify-center"
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+          backgroundSize: "cover",
         }}
       >
-      </div> */}
-      <div id="documents" className="row">
-        <h1>Documents</h1>
-        <p>Page under construction.</p>
+        <div id="documents" className="row">
+          <h1 className="mb-4">Documents</h1>
+          <Documents />
+        </div>
       </div>
     </div>
   );
