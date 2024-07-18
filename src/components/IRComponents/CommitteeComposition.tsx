@@ -81,8 +81,8 @@ const CommitteeComposition = () => {
   };
 
   return (
-    <div>
-      <table className="min-w-full divide-y divide-gray-200 table-auto w-full">
+    <div className="overflow-x-auto">
+      <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
         <thead className="bg-slate-400 text-white">
           <tr>
             <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">

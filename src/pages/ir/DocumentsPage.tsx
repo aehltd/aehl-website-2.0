@@ -1,10 +1,10 @@
 import React from "react";
 import Documents from "../../components/IRComponents/Documents";
 
-const IRGovernancePage = () => {
+const IRDocumentsPage = () => {
   return (
     <div id="container" className="container">
-      <div id="overview" className="row">
+      {/* <div id="overview" className="row">
         <h1>Corporate Governance</h1>
         <p>Page under construction.</p>
       </div>
@@ -15,14 +15,14 @@ const IRGovernancePage = () => {
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
           backgroundSize: "cover",
         }}
-      >
+      > */}
         <div id="documents" className="row">
           <h1 className="mb-4">Documents</h1>
           <Documents />
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
 
-export default IRGovernancePage;
+export default IRDocumentsPage;

@@ -1,22 +1,28 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import FullNavBar from "./components/FullNavBar";
 import Footer from "./components/Footer";
+
 import HomePage from "./pages";
 import ContactPage from "./pages/ContactPage";
+
 import USOverview from "./pages/us";
 import USProductsPage from "./pages/us/ProductsPage";
 import USMetricsPage from "./pages/us/MetricsPage";
+
 import KylinOverviewPage from "./pages/kylin";
 import KylinValuePropositionPage from "./pages/kylin/PropositionPage";
 import KylinModelPage from "./pages/kylin/ModelPage";
+
 import IRFinancialsPage from "./pages/ir/FinancialsPage";
 import IRNewsPage from "./pages/ir/NewsPage";
-import IRGovernancePage from "./pages/ir/GovernancePage";
+import IRDocumentsPage from "./pages/ir/DocumentsPage";
 import IRFAQPage from "./pages/ir/FAQPage";
 import NotFoundPage from "./pages/404NotFoundPage";
 import IRBoardPage from "./pages/ir/BoardPage";
 import IROverviewPage from "./pages/ir/OverviewPage";
-import FullNavBar from "./components/FullNavBar";
+import IRContactPage from "./pages/ir/ContactPage";
 import IRCompositionPage from "./pages/ir/CompositionPage";
 
 const App = () => {
@@ -51,16 +57,17 @@ const App = () => {
             <Route path="/ir/financials" element={<IRFinancialsPage />} />
             <Route
               path="/ir/documents"
-              element={<IRGovernancePage />}
+              element={<IRDocumentsPage />}
             />
             <Route
               path="/ir/committee-composition"
               element={<IRCompositionPage />}
             />
             <Route path="/ir/board" element={<IRBoardPage />} />
-            <Route path="/ir/contact-us" element={<ContactPage />} />
+            <Route path="/ir/contact-us" element={<IRContactPage />} />
             <Route path="/ir/faqs" element={<IRFAQPage />} /> 
 
+            <Route path="/contact-us" element={<ContactPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer />

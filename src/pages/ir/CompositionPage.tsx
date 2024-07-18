@@ -14,7 +14,7 @@ const IRCompositionPage = () => {
           Below is the list of the Board of Directors and their positions in
           each committee.
         </p>
-        <div className="flex space-x-16 my-4">
+        <div className="my-4">
           <div className="flex space-x-2">
             <p className="text-black font-bold">C </p>
             <p>-</p>
@@ -23,7 +23,7 @@ const IRCompositionPage = () => {
           <div className="flex space-x-2">
             <p className="text-slate-500 font-bold">M</p>
             <p>-</p>
-            <p>Vice Chairman</p>
+            <p>Member</p>
           </div>
         </div>
         <CommitteeComposition />

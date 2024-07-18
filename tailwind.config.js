@@ -18,12 +18,20 @@ module.exports = {
     },
     extend: {
       screens: {
+        'lg-half': '512px',
+        '2xl': '1536px',
+        '2xl-half': '768px',
         '3xl': '1920px',
+        '3xl-half': '960px',
         '4xl': '2560px'
       },
       maxWidth: {
+        'lg-half': '512px',
         '2xl': '1536px',
+        '2xl-half': '768px',
         '3xl': '1920px',
+        '3xl-half': '960px',
+        '4xl': '2560px'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

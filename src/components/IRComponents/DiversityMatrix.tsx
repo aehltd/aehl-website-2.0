@@ -43,7 +43,8 @@ const DemographicsData: DemographicsDataType = {
 const DiversityMatrix = () => {
   return (
     <div>
-      <table className="min-w-full divide-y divide-gray-200">
+        <div className="overflow-x-auto">
+      <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
         <thead className="bg-slate-400 text-white">
           <tr>
             <th
@@ -87,8 +88,9 @@ const DiversityMatrix = () => {
           </tr>
         </tbody>
       </table>
-
-      <table className="min-w-full divide-y divide-gray-200 mt-6">
+      </div>
+      <div className="overflow-x-auto">
+      <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
         <thead className="bg-slate-400 text-white">
           <tr>
             <th className="px-6 py-3 text-start text-xs font-medium uppercase tracking-wider">
@@ -128,8 +130,10 @@ const DiversityMatrix = () => {
           </tr>
         </tbody>
       </table>
+      </div>
 
-      <table className="min-w-full divide-y divide-gray-200 mt-6">
+      <div className="overflow-x-auto">
+      <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
         <thead className="bg-slate-400 text-white">
           <tr>
             <th
@@ -165,6 +169,7 @@ const DiversityMatrix = () => {
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

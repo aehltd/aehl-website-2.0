@@ -73,20 +73,22 @@ const board: BoardEntry[] = [
 ];
 
 const BoardRow = () => {
-    return (
-      <div className="w-full">
+  return (
+    <>
+      <div className="hidden md:block w-full">
         {board.map((entry, index) => {
           // Determine if the row is odd or even
-          const isOddRow = index % 2 === 0; 
-  
+          const isOddRow = index % 2 === 0;
+
           // Apply background style to the entire row if it's an alternate row
           const rowStyle = isOddRow
             ? {
-                backgroundImage: "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+                backgroundImage:
+                  "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
                 backgroundSize: "cover",
               }
             : {};
-  
+
           // Wrap every three entries in a row div
           if (index % 3 === 0) {
             return (
@@ -96,29 +98,62 @@ const BoardRow = () => {
                 style={rowStyle}
               >
                 <div className="flex row space-x-4">
-                {board.slice(index, index + 3).map((subEntry, subIndex) => (
-                  <div
-                    key={subIndex}
-                    className="flex flex-col items-center bg-slate-200 p-4 rounded-lg w-1/3"
-                  >
-                    <img
-                      src={subEntry.image}
-                      alt={subEntry.name}
-                      className="w-32 h-32 rounded-full mb-4"
-                    />
-                    <h2 className="text-lg font-bold mb-2">{subEntry.name}</h2>
-                    <p className="text-start">{subEntry.description}</p>
-                  </div>
-                ))}
+                  {board.slice(index, index + 3).map((subEntry, subIndex) => (
+                    <div
+                      key={index + subIndex} // Changed to use unique key
+                      className="flex flex-col items-center bg-slate-200 p-4 rounded-lg w-1/3"
+                    >
+                      <img
+                        src={subEntry.image}
+                        alt={subEntry.name}
+                        className="w-32 h-32 rounded-full mb-4"
+                      />
+                      <h2 className="text-lg font-bold mb-2">
+                        {subEntry.name}
+                      </h2>
+                      <p className="text-start">{subEntry.description}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             );
-          }
-  
-          return null;
+          } else return null;
         })}
       </div>
-    );
-  };
+
+      <div className="md:hidden w-full">
+        {board.map((entry, index) => {
+          const isOddRow = index % 2 === 1;
+          //If odd row, make background
+          const rowStyle = isOddRow
+            ? {
+                backgroundImage:
+                  "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+                backgroundSize: "cover",
+              }
+            : {};
+
+          return (
+            <div
+              key={index}
+              className="flex w-full justify-center"
+              style={rowStyle}
+            >
+              <div className="flex flex-col items-center bg-slate-200 p-4 m-4 rounded-lg w-full">
+                <img
+                  src={entry.image}
+                  alt={entry.name}
+                  className="w-32 h-32 rounded-full mb-4"
+                />
+                <h2 className="text-lg font-bold mb-2">{entry.name}</h2>
+                <p className="text-start">{entry.description}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+};
 
 export default BoardRow;

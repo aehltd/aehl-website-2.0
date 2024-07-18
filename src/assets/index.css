@@ -46,6 +46,13 @@
     @apply 4xl:p-20 4xl:max-w-screen-3xl;
   }
 
+  .halfrow {
+    @apply p-8 w-full;
+    @apply md:max-w-screen-lg-half;
+    @apply 3xl:p-16 3xl:max-w-screen-2xl-half;
+    @apply 4xl:p-20 4xl:max-w-screen-3xl-half;
+  }
+
   .menutext {
     @apply text-base;
     @apply 3xl:text-2xl;

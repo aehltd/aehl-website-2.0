@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { Menu, Drawer, MenuProps } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -29,34 +29,17 @@ const items: MenuItem[] = [
   {
     key: "ir",
     label: "Investor Relations",
-    // children: [
-    //   { key: "ir/news#press", label: "Press Releases" },
-    //   { key: "ir/news#presentation", label: "Corporate Presentation" },
-    //   { key: "ir/finances#stock", label: "Stock Information" },
-    //   { key: "ir/finances#sec", label: "SEC Filings" },
-    //   {
-    //     key: "governance",
-    //     label: "Corporate Governance",
-    //     type: "group",
-    //     children: [
-    //       { key: "ir/governance/documents", label: "Governance Documents" },
-    //       { key: "ir/governance/comittees", label: "Committee Composition" },
-    //       { key: "ir/governance/board", label: "Board of Directors" },
-    //     ],
-    //   },
-    //   { key: "ir/faq", label: "Investor FAQs" },
-    // ],
   },
-  // { key: "contact-us", label: "Contact Us" },
+  { key: "contact-us", label: "Contact Us" },
 ];
 
 //Get key from url
-const useCurrentPage = () => {
+const useCurrentPage = () => {  
   const location = useLocation();
   const key = location.pathname.split("/")[1];
-  console.log(key)
+  console.log(key);
   return key;
-}
+};
 
 const NavBar = () => {
   const currentPage = useCurrentPage();
@@ -64,6 +47,10 @@ const NavBar = () => {
   const [current, setCurrent] = useState(currentPage ? currentPage : "");
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+    setCurrent(currentPage);
+  }, [currentPage]);
 
   useLayoutEffect(() => {
     const scrollId = location.hash.replace("#", "");
@@ -98,19 +85,21 @@ const NavBar = () => {
 
   const openDrawer = () => {
     setVisible(true);
-  }
+  };
 
   const closeDrawer = () => {
     setVisible(false);
-  }
+  };
 
   return (
     <div className="flex justify-center">
       <div className="flex row p-0 w-full h-14 2xl:h-20 justify-between">
         <div className="flex items-center pl-4 py-2">
-          <img src={logo} alt="logo" className="h-full w-full"/>
+          <img src={logo} alt="logo" className="h-full w-full" />
         </div>
-        <div className="md:hidden"> {/* Show on mobile, hide on desktop */}
+        <div className="md:hidden">
+          {" "}
+          {/* Show on mobile, hide on desktop */}
           <MenuOutlined className="h-full text-2xl pr-4" onClick={openDrawer} />
         </div>
 
@@ -127,18 +116,18 @@ const NavBar = () => {
       </div>
       <div className="md:hidden">
         <Drawer
-            placement="right"
-            closable={true}
-            onClose={closeDrawer}
-            open={visible}
-            >
-            <Menu
-              className="font-poppins !border-0"
-              onClick={handleClick}
-              selectedKeys={[current]}
-              mode="inline"
-              items={items}
-            />
+          placement="right"
+          closable={true}
+          onClose={closeDrawer}
+          open={visible}
+        >
+          <Menu
+            className="font-poppins !border-0"
+            onClick={handleClick}
+            selectedKeys={[current]}
+            mode="inline"
+            items={items}
+          />
         </Drawer>
       </div>
     </div>
