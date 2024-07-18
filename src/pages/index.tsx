@@ -27,7 +27,7 @@ const HomePage = () => {
             backgroundPosition: "center",
           }}
         ></div>
-        <div className="absolute inset-0 bg-black opacity-25"></div>
+        <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
         <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-end">
           <img src={logoImage} alt="logo" className="w-3/4 drop-shadow-2xl" />
           <h2 className="mt-16 text-white font-semibold drop-shadow-lg">

@@ -14,7 +14,8 @@ import USMetricsPage from "./pages/us/MetricsPage";
 import KylinOverviewPage from "./pages/kylin";
 import KylinModelPage from "./pages/kylin/ModelPage";
 
-import IRFinancialsPage from "./pages/ir/FinancialsPage";
+import IRFilingsPage from "./pages/ir/FilingsPage";
+import IRStockPage from "./pages/ir/StockPage";
 import IRNewsPage from "./pages/ir/NewsPage";
 import IRDocumentsPage from "./pages/ir/DocumentsPage";
 import IRFAQPage from "./pages/ir/FAQPage";
@@ -51,9 +52,8 @@ const App = () => {
             <Route path="/ir/overview" element={<IROverviewPage />} />
             <Route path="/ir/press-releases" element={<IRNewsPage />} />
             <Route path="/ir/events-presentations" element={<IRNewsPage />} />
-            <Route path="/ir/sec-filings" element={<IRFinancialsPage />} />
-            <Route path="/ir/stock-information" element={<IRFinancialsPage />} />
-            <Route path="/ir/financials" element={<IRFinancialsPage />} />
+            <Route path="/ir/sec-filings" element={<IRFilingsPage />} />
+            <Route path="/ir/stock-information" element={<IRStockPage />} />
             <Route
               path="/ir/documents"
               element={<IRDocumentsPage />}
