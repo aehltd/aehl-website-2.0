@@ -1,20 +1,24 @@
 import React from "react";
+import logoImage from "../../assets/companylogo/大白色.png";
 
 const USOverview = () => {
   return (
     <div id="container" className="container">
       <div
-        className="bg-local flex w-full h-[56.25vw] justify-center"
+        className="relative flex w-full h-[80vh] justify-center"
+    
+      >
+        <div className="absolute inset-0 bg-cover bg-center" 
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img1.c6bbf8d2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center"
-        }}
-      >
-        <div className="flex flex-col items-center justify-center">
-            <h1 className="text-white text-8xl mb-6 drop-shadow-lg">AEHL</h1>
-            <h1 className="text-white font-bold drop-shadow-lg">
+        }}></div>
+        <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center space-y-16">
+            <img src={logoImage} alt="Logo" className="w-1/2 drop-shadow-2xl"/>
+            <h1 className="text-white font-bold drop-shadow-2xl">
               Next Generation Infrastructure to Power{" "}
               <span className="text-green-500">AI</span>
             </h1>

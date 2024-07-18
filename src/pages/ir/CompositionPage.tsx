@@ -6,10 +6,7 @@ const IRCompositionPage = () => {
   return (
     <div className="container">
       <div className="row">
-        <h1>IR Committee Composition</h1>
-        <p>Page under construction.</p>
-      </div>
-      <div className="row">
+        <h1>Committee Composition</h1>
         <p>
           Below is the list of the Board of Directors and their positions in
           each committee.
@@ -37,6 +34,7 @@ const IRCompositionPage = () => {
         }}
       >
         <div className="row">
+        <h1>Diversity Matrix</h1>
           <p className="mb-4">
             Below is the diversity matrix of the Board of Directors.
           </p>

@@ -6,17 +6,16 @@ const KylinModelPage = () => {
   return (
     <div id="container" className="container">
       <div
-        className="bg-local flex w-full h-[80vh] justify-center"
+        className="bg-local flex w-full h-[40vh] bg-center justify-center"
         style={{
           backgroundImage:
             "url('https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/24942941-dc52-4b21-afd5-1143691ddbdd/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145557.jpg?content-type=image%2Fjpeg')",
-          backgroundSize: "cover",
+          backgroundSize: "cover ",
         }}
-      >
-      </div>
-      <div className="row">
-        <div>
-          <h2>Our Business</h2>
+      ></div>
+      <div className="flex row">
+        <div className="flex flex-col w-1/2">
+          <h1>Our Platform</h1>
           <p>
             At AEHL, we focus on enabling B-end manufacturers and C-end talents
             to realize their economic value through live streaming platforms,
@@ -28,6 +27,9 @@ const KylinModelPage = () => {
             micro-entrepreneurs.
           </p>
         </div>
+        <div className="flex items-center justify-center m-8 mr-0 border w-1/2">
+          Image
+        </div>
       </div>
       <div
         className="flex bg-local w-full justify-center"
@@ -38,7 +40,7 @@ const KylinModelPage = () => {
         }}
       >
         <div className="flex row">
-          <div className="flex items-center justify-center m-8 ml-0 border w-1/2">
+          <div className="flex items-center justify-center m-8 ml-0 mb-0 border w-1/2">
             Image
           </div>
           <div className="w-1/2">

@@ -22,7 +22,7 @@ const items: MenuItem[] = [
     label: "Kylin Cloud",
     children: [
       { key: "aehl-kylin/overview", label: "Overview" },
-      { key: "aehl-kylin/value", label: "Value Proposition" },
+      //{ key: "aehl-kylin/value", label: "Value Proposition" },
       { key: "aehl-kylin/model", label: "Business Model" },
     ],
   },

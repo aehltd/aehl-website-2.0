@@ -12,7 +12,6 @@ import USProductsPage from "./pages/us/ProductsPage";
 import USMetricsPage from "./pages/us/MetricsPage";
 
 import KylinOverviewPage from "./pages/kylin";
-import KylinValuePropositionPage from "./pages/kylin/PropositionPage";
 import KylinModelPage from "./pages/kylin/ModelPage";
 
 import IRFinancialsPage from "./pages/ir/FinancialsPage";
@@ -38,13 +37,13 @@ const App = () => {
             <Route path="/aehl-us/products" element={<USProductsPage />} />
             <Route path="/aehl-us/metrics" element={<USMetricsPage />} />
 
+            {/* <Route
+              path="/aehl-kylin/overview"
+              element={<KylinOverviewPage />}
+            /> */}
             <Route
               path="/aehl-kylin/overview"
               element={<KylinOverviewPage />}
-            />
-            <Route
-              path="/aehl-kylin/value"
-              element={<KylinValuePropositionPage />}
             />
             <Route path="/aehl-kylin/model" element={<KylinModelPage />} />
 

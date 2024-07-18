@@ -5,7 +5,7 @@ const USMetricsPage = () => {
     <div id="container" className="container">
       <div className="row">
         <h1>AEHL US Real-Time Metrics</h1>
-        <p>Page under construction.</p>
+        <p>Coming soon!</p>
       </div>
     </div>
   );
