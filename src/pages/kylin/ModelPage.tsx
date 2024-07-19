@@ -1,7 +1,5 @@
 import React from "react";
 import { Collapse } from "antd";
-import kylinBBPVideo from "../../assets/videos/kylin bbp.mp4";
-import kylinPlatformVideo from "../../assets/videos/kylin platform.mp4";
 const { Panel } = Collapse;
 
 const KylinModelPage = () => {
@@ -30,9 +28,32 @@ const KylinModelPage = () => {
           </p>
         </div>
         <div className="flex items-center justify-center ml-8 w-1/2">
-          <video autoPlay muted loop>
-            <source src={kylinPlatformVideo} type="video/mp4" />
-          </video>
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "0px",
+              paddingBottom: "56.250%",
+            }}
+          >
+            <iframe
+              title="Kylin Model Video"
+              allow="fullscreen"
+              allowFullScreen
+              height="100%"
+              src="https://streamable.com/e/i4rur7"
+              width="100%"
+              style={{
+                border: "none",
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                left: "0px",
+                top: "0px",
+                overflow: "hidden",
+              }}
+            ></iframe>
+          </div>
         </div>
       </div>
       <div
@@ -45,9 +66,32 @@ const KylinModelPage = () => {
       >
         <div className="flex row">
           <div className="flex items-center justify-center mr-8 w-1/2">
-            <video autoPlay muted loop>
-              <source src={kylinBBPVideo} type="video/mp4" />
-            </video>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "0px",
+                paddingBottom: "56.250%",
+              }}
+            >
+              <iframe
+                title="Kylin BBP Video"
+                allow="fullscreen"
+                allowFullScreen
+                height="100%"
+                src="https://streamable.com/e/v3zyhb?"
+                width="100%"
+                style={{
+                  border: "none",
+                  width: "100%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "0px",
+                  top: "0px",
+                  overflow: "hidden",
+                }}
+              ></iframe>
+            </div>
           </div>
           <div className="w-1/2">
             <h1 className="mb-4">Our Services</h1>

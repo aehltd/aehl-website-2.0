@@ -1,6 +1,5 @@
 import React from "react";
 import logoImage from "../../assets/companylogo/大白色.png";
-import kylinOverview from "../../assets/videos/kylin overview.mp4";
 import businessImage from "../../assets/6049046d97a5fe05f83d64ebfe1b7a4.jpg";
 import { useNavigate } from "react-router-dom";
 import red from "../../assets/logos/小红书.png";
@@ -75,9 +74,32 @@ const KylinOverviewPage = () => {
       >
         <div className="row">
           <div className="flex items-center justify-center ml-0 mb-4">
-            <video autoPlay muted loop>
-              <source src={kylinOverview} type="video/mp4" />
-            </video>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "0px",
+                paddingBottom: "42.656%",
+              }}
+            >
+              <iframe
+                title="Kylin Tour Video"
+                allow="fullscreen"
+                allowFullScreen
+                height="100%"
+                src="https://streamable.com/e/19gy9c?"
+                width="100%"
+                style={{
+                  border: "none",
+                  width: "100%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "0px",
+                  top: "0px",
+                  overflow: "hidden",
+                }}
+              ></iframe>
+            </div>
           </div>
           <div>
             <h1>Our Vision</h1>
