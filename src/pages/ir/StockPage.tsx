@@ -3,24 +3,28 @@ import {
   SingleTicker,
   AdvancedRealTimeChart,
   FundamentalData,
+  MiniChart,
 } from "react-ts-tradingview-widgets";
 
 const IRStockPage = () => {
   return (
     <div id="container" className="container">
-      <div className="row">
-        <div className="flex w-full justify-between space-x-8">
-          <div className="flex flex-col">
-            <h1>Stock Information</h1>
-            <p className="smalltext">
-              AEHL New Energy, Inc. Ordinary Shares (AEHL)
-            </p>
-          </div>
-
-          <div>
-            <SingleTicker symbol="AEHL" />
+      <div className="flex w-full justify-center bg-slate-400">
+        <div className="row">
+          <div className="flex w-full justify-between items-center space-x-8">
+            <div className="flex flex-col">
+              <h1 className="text-white">Stock Information</h1>
+              <p className="smalltext text-white">
+                AEHL New Energy, Inc. Ordinary Shares (AEHL)
+              </p>
+            </div>
+            <div>
+              <MiniChart dateRange="3M" symbol="AEHL" />
+            </div>
           </div>
         </div>
+      </div>
+      <div className="row">
         <AdvancedRealTimeChart
           symbol="AEHL"
           details

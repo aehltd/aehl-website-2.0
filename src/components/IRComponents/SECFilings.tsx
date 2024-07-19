@@ -72,20 +72,17 @@ const dummyData: dataEntry[] = [
 
 const SECFilingsRow = () => {
   return (
-    <>
-      <h1 className="mb-4">SEC Filings</h1>
-      <ul className="grid grid-cols-2 gap-x-8">
-        {dummyData.map((entry, index) => (
-          <li key={index}>
-            <a className="truncate block hover:text-blue-500" href={entry.link}>
-              {entry.title}
-            </a>
-            <p className="smalltext">{entry.date}</p>
-            <Divider className="my-4 " />
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="grid grid-cols-2 gap-x-8">
+      {dummyData.map((entry, index) => (
+        <li key={index}>
+          <a className="truncate block hover:text-blue-500" href={entry.link}>
+            {entry.title}
+          </a>
+          <p className="smalltext">{entry.date}</p>
+          <Divider className="my-4 " />
+        </li>
+      ))}
+    </ul>
   );
 };
 

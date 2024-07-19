@@ -1,5 +1,7 @@
 import React from "react";
 import logoImage from "../../assets/companylogo/大白色.png";
+import kylinOverview from "../../assets/videos/kylin overview.mp4";
+import businessImage from "../../assets/6049046d97a5fe05f83d64ebfe1b7a4.jpg";
 import { useNavigate } from "react-router-dom";
 import red from "../../assets/logos/小红书.png";
 import kuaishou from "../../assets/logos/快手.png";
@@ -71,13 +73,15 @@ const KylinOverviewPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="flex row">
-          <div className="flex items-center justify-center m-8 ml-0 mb-0 border w-1/2 bg-white">
-            Image
+        <div className="row">
+          <div className="flex items-center justify-center ml-0 mb-4">
+            <video autoPlay muted loop>
+              <source src={kylinOverview} type="video/mp4" />
+            </video>
           </div>
-          <div className="w-1/2 text-end">
+          <div>
             <h1>Our Vision</h1>
-            <p>
+            <p className="text-gray-700">
               Live stream e-commerce has become a mainstream trend,
               revolutionizing how businesses reach and engage customers. We
               envision a future where businesses and live streaming talents can
@@ -92,7 +96,14 @@ const KylinOverviewPage = () => {
         </div>
       </div>
       <div className="flex row">
-        <div className="w-1/2">
+        <div className="flex items-center justify-center m-8 ml-0 mb-0 border w-1/2 bg-white">
+          <img
+            src={businessImage}
+            alt="business"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="w-1/2 text-end">
           <h1>Our Business</h1>
           <p>
             Our integrated platform seamlessly connects businesses with a vast
@@ -103,14 +114,11 @@ const KylinOverviewPage = () => {
             stream commerce realm with confidence and succeed in captivating
             today's digital-savvy consumers.
           </p>
-          <div className="mr-auto mt-4">
+          <div className="ml-auto mt-4">
             <Button type="primary" size="large" onClick={handleNavToModel}>
               Learn More
             </Button>
           </div>
-        </div>
-        <div className="flex items-center justify-center m-8 mr-0 mb-0 border w-1/2 bg-white">
-          Image
         </div>
       </div>
       <div className="bg-slate-400 flex w-full justify-center">

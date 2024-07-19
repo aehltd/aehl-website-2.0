@@ -1,13 +1,12 @@
 import React from "react";
 import PressReleasesRow from "../../components/IRComponents/PressReleases";
-import PresentationsRow from "../../components/IRComponents/Presentations";
-
 const IRNewsPage = () => {
   return (
     <div id="container" className="container">
-      <div id="press" className="row">
-        <h1>IR News Page</h1>
-        <p>Page under construction.</p>
+      <div className="flex w-full justify-center bg-slate-400">
+        <div className="row">
+          <h1 className="text-white">Newsroom</h1>
+        </div>
       </div>
       <div
         className="bg-local flex w-full justify-center"
@@ -18,11 +17,9 @@ const IRNewsPage = () => {
         }}
       >
         <div className="row">
+          <h1 className="mb-4">Press Releases</h1>
           <PressReleasesRow />
         </div>
-      </div>
-      <div id="presentation" className="row">
-        <PresentationsRow />
       </div>
     </div>
   );

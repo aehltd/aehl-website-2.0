@@ -16,10 +16,14 @@ const IRDocumentsPage = () => {
           backgroundSize: "cover",
         }}
       > */}
-        <div id="documents" className="row">
-          <h1 className="mb-4">Documents</h1>
-          <Documents />
+      <div className="flex w-full justify-center bg-slate-400">
+        <div className="row">
+          <h1 className="text-white">Documents</h1>
         </div>
+      </div>
+      <div className="row">
+        <Documents />
+      </div>
       {/* </div> */}
     </div>
   );

@@ -4,24 +4,23 @@ import logoImage from "../../assets/companylogo/大白色.png";
 const USOverview = () => {
   return (
     <div id="container" className="container">
-      <div
-        className="relative flex w-full h-[80vh] justify-center"
-    
-      >
-        <div className="absolute inset-0 bg-cover bg-center" 
-        style={{
-          backgroundImage:
-            "url('https://www.aehlus.com/png/img1.c6bbf8d2.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}></div>
+      <div className="relative flex w-full h-[80vh] justify-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://www.aehlus.com/png/img1.c6bbf8d2.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
         <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
         <div className="relative z-10 flex flex-col items-center justify-center space-y-16">
-            <img src={logoImage} alt="Logo" className="w-1/2 drop-shadow-2xl"/>
-            <h1 className="text-white font-bold drop-shadow-2xl">
-              Next Generation Infrastructure to Power{" "}
-              <span className="text-green-500">AI</span>
-            </h1>
+          <img src={logoImage} alt="Logo" className="w-1/2 drop-shadow-2xl" />
+          <h1 className="text-white font-bold drop-shadow-2xl">
+            Next Generation Infrastructure to Power{" "}
+            <span className="text-green-500">AI</span>
+          </h1>
         </div>
       </div>
 
@@ -57,8 +56,16 @@ const USOverview = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center m-8 mr-0 border w-1/2">
-          Image
+        <div className="flex items-center justify-center m-8 mr-0 border w-1/2 h-auto">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/_hrj5RUicgU?autoplay=1&mute=1&loop=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
 

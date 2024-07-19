@@ -5,6 +5,13 @@ import DiversityMatrix from "../../components/IRComponents/DiversityMatrix";
 const IRCompositionPage = () => {
   return (
     <div className="container">
+      <div className="flex w-full justify-center bg-slate-400">
+        <div className="row">
+          <h1 className="text-white">
+            Committee Composition and Diversity Matrix
+          </h1>
+        </div>
+      </div>
       <div className="row">
         <h1>Committee Composition</h1>
         <p>
@@ -34,7 +41,7 @@ const IRCompositionPage = () => {
         }}
       >
         <div className="row">
-        <h1>Diversity Matrix</h1>
+          <h1>Diversity Matrix</h1>
           <p className="mb-4">
             Below is the diversity matrix of the Board of Directors.
           </p>

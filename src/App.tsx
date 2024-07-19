@@ -17,6 +17,7 @@ import KylinModelPage from "./pages/kylin/ModelPage";
 import IRFilingsPage from "./pages/ir/FilingsPage";
 import IRStockPage from "./pages/ir/StockPage";
 import IRNewsPage from "./pages/ir/NewsPage";
+import IREventsPresentationsPage from "./pages/ir/EventsPresentationsPage";
 import IRDocumentsPage from "./pages/ir/DocumentsPage";
 import IRFAQPage from "./pages/ir/FAQPage";
 import NotFoundPage from "./pages/404NotFoundPage";
@@ -24,6 +25,7 @@ import IRBoardPage from "./pages/ir/BoardPage";
 import IROverviewPage from "./pages/ir/OverviewPage";
 import IRContactPage from "./pages/ir/ContactPage";
 import IRCompositionPage from "./pages/ir/CompositionPage";
+import IREmailAlertsPage from "./pages/ir/EmailAlertsPage";
 
 const App = () => {
   return (
@@ -51,20 +53,21 @@ const App = () => {
             <Route path="/ir" element={<IROverviewPage />} />
             <Route path="/ir/overview" element={<IROverviewPage />} />
             <Route path="/ir/press-releases" element={<IRNewsPage />} />
-            <Route path="/ir/events-presentations" element={<IRNewsPage />} />
+            <Route
+              path="/ir/events-presentations"
+              element={<IREventsPresentationsPage />}
+            />
             <Route path="/ir/sec-filings" element={<IRFilingsPage />} />
             <Route path="/ir/stock-information" element={<IRStockPage />} />
-            <Route
-              path="/ir/documents"
-              element={<IRDocumentsPage />}
-            />
+            <Route path="/ir/documents" element={<IRDocumentsPage />} />
             <Route
               path="/ir/committee-composition"
               element={<IRCompositionPage />}
             />
             <Route path="/ir/board" element={<IRBoardPage />} />
-            <Route path="/ir/contact-us" element={<IRContactPage />} />
-            <Route path="/ir/faqs" element={<IRFAQPage />} /> 
+            <Route path="/ir/contact-ir" element={<IRContactPage />} />
+            <Route path="/ir/faqs" element={<IRFAQPage />} />
+            <Route path="/ir/email-alerts" element={<IREmailAlertsPage />} />
 
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="*" element={<NotFoundPage />} />

@@ -3,17 +3,20 @@ import React from "react";
 const IROverviewPage = () => {
   return (
     <div id="container" className="container">
-      <div className="row">
-        <h1>Overview</h1>
-
-        <p className="mt-4">
+      <div className="flex w-full justify-center bg-slate-400">
+        <div className="row">
+          <h1 className="text-white">Overview</h1>
+        </div>
+      </div>
+      <div className="row space-y-4">
+        <p>
           Antelope Enterprise Holding Limited (“Antelope Enterprise”) primarily
           consists of two business segments, an energy supply business based in
           the United States and a livestreaming ecommerce business based in
           China.
         </p>
 
-        <div className="mt-4"> 
+        <div>
           <h2>Energy Supply Business - AEHL US</h2>
           <p>
             We aim to launch an energy supply business through AEHL US, formerly
@@ -31,7 +34,7 @@ const IROverviewPage = () => {
           </p>
         </div>
 
-        <div className="mt-4">
+        <div>
           <h2>Livestreaming Ecommerce Business - AEHL Kylin Cloud</h2>
           <p>
             Our livestreaming ecommerce business is operated in China through

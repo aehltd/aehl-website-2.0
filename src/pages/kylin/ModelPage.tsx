@@ -1,5 +1,7 @@
 import React from "react";
 import { Collapse } from "antd";
+import kylinBBPVideo from "../../assets/videos/kylin bbp.mp4";
+import kylinPlatformVideo from "../../assets/videos/kylin platform.mp4";
 const { Panel } = Collapse;
 
 const KylinModelPage = () => {
@@ -15,7 +17,7 @@ const KylinModelPage = () => {
       ></div>
       <div className="flex row">
         <div className="flex flex-col w-1/2">
-          <h1>Our Platform</h1>
+          <h1 className="mb-4">Business Model</h1>
           <p>
             At AEHL, we focus on enabling B-end manufacturers and C-end talents
             to realize their economic value through live streaming platforms,
@@ -27,8 +29,10 @@ const KylinModelPage = () => {
             micro-entrepreneurs.
           </p>
         </div>
-        <div className="flex items-center justify-center m-8 mr-0 border w-1/2">
-          Image
+        <div className="flex items-center justify-center ml-8 w-1/2">
+          <video autoPlay muted loop>
+            <source src={kylinPlatformVideo} type="video/mp4" />
+          </video>
         </div>
       </div>
       <div
@@ -40,8 +44,10 @@ const KylinModelPage = () => {
         }}
       >
         <div className="flex row">
-          <div className="flex items-center justify-center m-8 ml-0 mb-0 border w-1/2">
-            Image
+          <div className="flex items-center justify-center mr-8 w-1/2">
+            <video autoPlay muted loop>
+              <source src={kylinBBPVideo} type="video/mp4" />
+            </video>
           </div>
           <div className="w-1/2">
             <h1 className="mb-4">Our Services</h1>

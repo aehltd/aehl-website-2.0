@@ -42,9 +42,9 @@ const items: MenuItem[] = [
   },
   {
     key: "contact",
-    label: "Contact Us",
+    label: "Contact Info",
     children: [
-      { key: "contact-us", label: "Contact Investor Relations" },
+      { key: "contact-ir", label: "Contact IR" },
       { key: "faqs", label: "FAQs" },
       {
         key: "email-alerts",

@@ -3,7 +3,6 @@ import React from "react";
 const PresentationsRow = () => {
   return (
     <div>
-      <h1>Company Presentation</h1>
       <embed
         src={require("../../assets/AEHL Company Presentation June 2024.pdf")}
         type="application/pdf"

@@ -81,9 +81,12 @@ const HomePage = () => {
             </div>
           </div>
           <div className="col-span-1">
-            <div className="border flex h-full items-center justify-center bg-white">
-              AEHL US Energy Image
-            </div>
+
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661715583676-165c827b1cff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="kylin img"
+              className="w-full h-full object-cover rounded-s-xl shadow-lg"
+            />
           </div>
         </div>
         <div className="grid grid-cols-2 w-full py-8 3xl:py-16 4xl:py-20">
@@ -91,7 +94,7 @@ const HomePage = () => {
             <img
               src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/449012af-b66b-4de0-b1a8-3d3e85b9196d/24990dd2bc453748013327e58d39340.jpg?content-type=image%2Fjpeg"
               alt="kylin img"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-e-xl shadow-lg"
             />
           </div>
           <div className="halfrow col-span-1 flex justify-end items-end mt-32">
@@ -139,8 +142,8 @@ const HomePage = () => {
           />
         </div>
         <div className="flex flex-col items-end mt-8">
-          <h3>Weilai "Will" Zhang</h3>
-          <h3>AEHL Chairman and CEO</h3>
+          <h2>Weilai "Will" Zhang</h2>
+          <p>AEHL Chairman and CEO</p >
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { Button, Input } from "antd";
 import React from "react";
 
 const ContactPage = () => {
@@ -36,11 +37,11 @@ const ContactPage = () => {
                 <p>Monday–Friday</p>
                 <p>10am–6pm</p>
               </div>
-              <div>
+              {/* <div>
                 <h2>Investor Relations</h2>
                 <p>+1 (646) 694 - 8538</p>
                 <p>ir@aehltd.com</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="w-[60%] h-[60vh]">
@@ -61,13 +62,34 @@ const ContactPage = () => {
         }}
       >
         <div className="flex flex-col row items-center">
-          <p className="">
-            If you are interested in working with AEHL and joining us in our
-            exciting future, please fill in the information below.
+          <p className="m-4">
+            If you have any inquiries, feel free to send us an email with the
+            form below.
           </p>
-          <div className="flex border m-8 h-96 w-96 bg-white items-center justify-center">
-            <p>Email form</p>
-            {/* TODO: Add contact email form */}
+          <div className="p-4 max-w-lg border bg-white rounded-xl shadow-lg">
+            <div className="space-y-4">
+              <div className="flex space-x-4">
+                <div>
+                  <label>First Name</label>
+                  <Input placeholder="John" />
+                </div>
+                <div>
+                  <label>Last Name</label>
+                  <Input placeholder="Doe" />
+                </div>
+              </div>
+              <div>
+                <label>Email Address</label>
+                <Input placeholder="john.doe@gmail.com" />
+              </div>
+              <div>
+                <label>Message</label>
+                <Input.TextArea rows={4} placeholder="Enter your message..." />
+              </div>
+              <div className="flex w-full justify-center">
+              <Button type="primary">Send</Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
