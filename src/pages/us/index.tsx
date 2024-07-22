@@ -4,7 +4,7 @@ import logoImage from "../../assets/companylogo/大白色.png";
 const USOverview = () => {
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full h-[80vh] justify-center">
+      <div className="relative flex w-full md:h-[80vh] justify-center overflow-hidden text-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -15,57 +15,63 @@ const USOverview = () => {
           }}
         ></div>
         <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center space-y-16">
-          <img src={logoImage} alt="Logo" className="w-1/2 drop-shadow-2xl" />
-          <h1 className="text-white font-bold drop-shadow-2xl">
+        <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
+          <img
+            src={logoImage}
+            alt="Logo"
+            className="w-full md:w-3/4 drop-shadow-2xl"
+          />
+          <h1 className="mt-16 text-white font-bold drop-shadow-2xl">
             Next Generation Infrastructure to Power{" "}
             <span className="text-green-500">AI</span>
           </h1>
         </div>
       </div>
 
-      <div className="flex row">
-        <div className="w-1/2 flex flex-col space-y-2">
-          <h1 className="">Vision & Mission</h1>
-          <div>
-            <h3>Quick Reaction</h3>
-            <p>
-              Constructing a comprehensive industry-wide model covering from the
-              energy sector to the AI end.
-            </p>
+      <div className="flex row flex-col">
+        <h1 className="">Vision & Mission</h1>
+        <div className="flex w-full flex-col-reverse md:flex-row">
+          <div className="w-full md:w-1/2 flex flex-col space-y-2">
+            <div>
+              <h3>Quick Reaction</h3>
+              <p>
+                Constructing a comprehensive industry-wide model covering from
+                the energy sector to the AI end.
+              </p>
+            </div>
+            <div>
+              <h3>Adapt to Changes</h3>
+              <p>
+                Resolving the interest conflicts among various stakeholders in
+                the supply chain.
+              </p>
+            </div>
+            <div>
+              <h3>Act Immediately</h3>
+              <p>
+                Rapidly constructing infrastructure to address the issue of
+                power shortages
+              </p>
+            </div>
+            <div>
+              <h3>Result-Driven</h3>
+              <p>
+                Security barriers for technology infrastructure with significant
+                cost competitive advantages
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Adapt to Changes</h3>
-            <p>
-              Resolving the interest conflicts among various stakeholders in the
-              supply chain.
-            </p>
+          <div className="flex items-center justify-center my-8 md:ml-8 border w-full md:w-1/2 h-auto">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/_hrj5RUicgU?autoplay=1&mute=1&loop=1"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
-          <div>
-            <h3>Act Immediately</h3>
-            <p>
-              Rapidly constructing infrastructure to address the issue of power
-              shortages
-            </p>
-          </div>
-          <div>
-            <h3>Result-Driven</h3>
-            <p>
-              Security barriers for technology infrastructure with significant
-              cost competitive advantages
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center justify-center m-8 mr-0 border w-1/2 h-auto">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/_hrj5RUicgU?autoplay=1&mute=1&loop=1"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
         </div>
       </div>
 
@@ -79,85 +85,89 @@ const USOverview = () => {
       >
         <div className="row">
           <h1 className="mb-4">Our Strengths</h1>
-          <div className="flex space-x-4">
-            <div className="relative w-1/4">
-              <img
-                className="object-cover w-full h-full"
-                src="https://www.aehlus.com/png/Strengths-1.a36a67d4.png"
-                alt="bg"
-              />
-              <div className="absolute inset-0 bg-custom-gradient"></div>
-              <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
-                <h3 className="text-white drop-shadow-md font-semibold">
-                  Consistent Service
-                </h3>
-                <p className="text-white drop-shadow-md">
-                  Tech operations companies generally do not switch service
-                  providers easily
-                </p>
+          <div className="flex w-full flex-col md:flex-row space-y-4 md:space-y-0">
+            <div className="flex md:mr-2 w-full md:w-1/2 space-x-4">
+              <div className="relative">
+                <img
+                  className="object-cover w-full h-full"
+                  src="https://www.aehlus.com/png/Strengths-1.a36a67d4.png"
+                  alt="bg"
+                />
+                <div className="absolute inset-0 bg-custom-gradient"></div>
+                <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
+                  <h3 className="text-white drop-shadow-lg font-semibold">
+                    Consistent Service
+                  </h3>
+                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                    Tech operations companies generally do not switch service
+                    providers easily
+                  </p>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                  className="object-cover w-full h-full"
+                  src="https://www.aehlus.com/png/Strengths-2.b90e5967.png"
+                  alt="bg"
+                />
+                <div className="absolute inset-0 bg-custom-gradient"></div>
+                <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
+                  <h3 className="text-white drop-shadow-lg font-semibold">
+                    Stability
+                  </h3>
+                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                    Consistent and stable power supply is the core of
+                    technological infrastructure
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="relative w-1/4">
-              <img
-                className="object-cover w-full h-full"
-                src="https://www.aehlus.com/png/Strengths-2.b90e5967.png"
-                alt="bg"
-              />
-              <div className="absolute inset-0 bg-custom-gradient"></div>
-              <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
-                <h3 className="text-white drop-shadow-md font-semibold">
-                  Stability
-                </h3>
-                <p className="text-white drop-shadow-md">
-                  Consistent and stable power supply is the core of
-                  technological infrastructure
-                </p>
+            <div className="flex md:ml-2 w-full md:w-1/2 space-x-4">
+              <div className="relative">
+                <img
+                  className="object-cover w-full h-full"
+                  src="https://www.aehlus.com/png/Strengths-3.9e5a1c57.png"
+                  alt="bg"
+                />
+                <div className="absolute inset-0 bg-custom-gradient"></div>
+                <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
+                  <h3 className="text-white drop-shadow-lg font-semibold">
+                    Profit Share
+                  </h3>
+                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                    Balancing interests in energy, power generation,
+                    transmission, infrastructure & server operations
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="relative w-1/4">
-              <img
-                className="object-cover w-full h-full"
-                src="https://www.aehlus.com/png/Strengths-3.9e5a1c57.png"
-                alt="bg"
-              />
-              <div className="absolute inset-0 bg-custom-gradient"></div>
-              <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
-                <h3 className="text-white drop-shadow-md font-semibold">
-                  Profit Share
-                </h3>
-                <p className="text-white drop-shadow-md">
-                  Balancing interests in energy, power generation, transmission,
-                  infrastructure & server operations
-                </p>
-              </div>
-            </div>
-            <div className="relative w-1/4">
-              <img
-                className="object-cover w-full h-full"
-                src="https://www.aehlus.com/png/Strengths-4.d4502d8c.png"
-                alt="bg"
-              />
-              <div className="absolute inset-0 bg-custom-gradient"></div>
-              <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
-                <h3 className="text-white drop-shadow-md font-semibold">
-                  Maximizing Profit
-                </h3>
-                <p className="text-white drop-shadow-md">
-                  Maximizing value in digital infrastructure industry
-                </p>
+              <div className="relative">
+                <img
+                  className="object-cover w-full h-full"
+                  src="https://www.aehlus.com/png/Strengths-4.d4502d8c.png"
+                  alt="bg"
+                />
+                <div className="absolute inset-0 bg-custom-gradient"></div>
+                <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
+                  <h3 className="text-white drop-shadow-lg font-semibold">
+                    Maximizing Profit
+                  </h3>
+                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                    Maximizing value in digital infrastructure industry
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="inline-flex row justify-between">
+      <div className="flex row flex-col space-y-8 md:flex-row md:justify-between md:space-x-16 md:space-y-0">
         <img
-          className="w-[45%] object-cover h-full"
+          className="md:w-1/2 object-cover h-full"
           src="https://www.aehlus.com/png/img6.c41aed10.png"
           alt="bg"
         />
-        <div className="flex flex-col w-[45%] justify-center">
+        <div className="flex flex-col md:w-1/2 justify-center">
           <h2>Team</h2>
           <p>
             Our team has extensive experience in technology infrastructure, with

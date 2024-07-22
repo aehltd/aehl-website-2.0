@@ -39,7 +39,7 @@ module.exports = {
       },
       backgroundImage: {
         "custom-gradient":
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%)",
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 90%)",
       },
     },
   },

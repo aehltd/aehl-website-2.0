@@ -10,16 +10,17 @@ const ContactPage = () => {
           backgroundImage:
             "url('https://www.aehlus.com/png/img3.0cd01d99.png')",
           backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-white text-7xl mb-6 drop-shadow-lg">Join AEHL</h1>
         </div>
       </div>
-      <div className="row">
-        <div className="flex space-x-8">
-          <div className="flex flex-col w-[40%]">
-            <h1>Contact Us</h1>
+      <div className="flex row flex-col">
+        <h1>Contact Us</h1>
+        <div className="flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row md:space-x-8">
+          <div className="flex flex-col md:w-[2/5] mt-4">
             <div className="flex flex-col mt-auto h-4/5 justify-evenly">
               <div>
                 <h2>Phone</h2>
@@ -44,7 +45,7 @@ const ContactPage = () => {
               </div> */}
             </div>
           </div>
-          <div className="w-[60%] h-[60vh]">
+          <div className="w-full md:w-[60%] h-[60vh] my-4">
             <iframe
               title="AEHL Location"
               src="https://maps.google.com/maps?q=350+5th+Ave,+New+York,+NY+10118&hl=en&z=17&output=embed"

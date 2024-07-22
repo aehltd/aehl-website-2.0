@@ -21,7 +21,7 @@ const KylinOverviewPage = () => {
 
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full h-[80vh] justify-center overflow-hidden">
+      <div className="relative flex w-full md:h-[80vh] justify-center overflow-hidden text-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -31,37 +31,39 @@ const KylinOverviewPage = () => {
           }}
         ></div>
         <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center space-y-16">
-          <img src={logoImage} alt="Logo" className="w-1/2 drop-shadow-2xl" />
+        <div className="relative z-10 flex flex-col w-full h-full items-center justify-center p-16 space-y-16">
+          <img
+            src={logoImage}
+            alt="Logo"
+            className="w-full md:w-3/4 drop-shadow-2xl"
+          />
           <h1 className="text-white font-semibold drop-shadow-2xl">
             The Future of Livestreaming Ecommerce
           </h1>
         </div>
       </div>
 
-      <div className="flex row">
-        <div className="flex w-full justify-evenly items-center">
-          <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
-            <span className="material-icons-outlined text-8xl text-gray-500">
-              apartment
-            </span>
-            <h1>600 Cities</h1>
-            <p>Services in 600+ cities</p>
-          </div>
-          <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
-            <span className="material-icons-outlined text-8xl text-gray-500">
-              currency_yuan
-            </span>
-            <h1>3 Billion RMB</h1>
-            <p>Annual transaction volume</p>
-          </div>
-          <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
-            <span className="material-icons-outlined text-8xl text-gray-500">
-              trending_up
-            </span>
-            <h1>120 Brands</h1>
-            <p>Served 120+ major brands</p>
-          </div>
+      <div className="flex row flex-col md:flex-row text-center justify-evenly items-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
+          <span className="material-icons-outlined text-8xl text-gray-500">
+            apartment
+          </span>
+          <h1>600 Cities</h1>
+          <p>Services in 600+ cities</p>
+        </div>
+        <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
+          <span className="material-icons-outlined text-8xl text-gray-500">
+            currency_yuan
+          </span>
+          <h1>3 Billion RMB</h1>
+          <p>Annual transaction volume</p>
+        </div>
+        <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
+          <span className="material-icons-outlined text-8xl text-gray-500">
+            trending_up
+          </span>
+          <h1>120 Brands</h1>
+          <p>Served 120+ major brands</p>
         </div>
       </div>
       <div
@@ -117,15 +119,16 @@ const KylinOverviewPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex row">
-        <div className="flex items-center justify-center m-8 ml-0 mb-0 border w-1/2 bg-white">
+
+      <div className="flex row flex-col md:flex-row">
+        <div className="flex my-4 md:mr-8 md:mb-0 md:w-1/2">
           <img
             src={businessImage}
             alt="business"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-1/2 text-end">
+        <div className="flex flex-col w-full md:w-1/2 md:text-end">
           <h1>Our Business</h1>
           <p>
             Our integrated platform seamlessly connects businesses with a vast
@@ -148,17 +151,27 @@ const KylinOverviewPage = () => {
           <h1 className="text-white font-semibold mb-8">
             Collaborating Live Streaming Platforms
           </h1>
-          <div className="flex w-full justify-center items-center space-x-8">
-            <img src={red} alt="小红书" />
-            <img src={kuaishou} alt="快手" />
-            <img src={jingdong} alt="京东" />
-            <img src={toutiao} alt="头条" />
-          </div>
-          <div className="flex w-full justify-center items-center space-x-8">
-            <img src={douyin} alt="抖音" />
-            <img src={tiktok} alt="TikTok" />
-            <img src={bilibili} alt="哔哩哔哩" />
-            <img src={xigua} alt="西瓜视频" />
+          <div className="flex w-full flex-col 4xl:flex-row justify-center 4xl:justify-evenly items-center">
+            <div className="flex w-full flex-col md:flex-row 4xl:w-1/2 justify-evenly items-center">
+              <div className="flex w-full justify-evenly items-center">
+                <img src={red} alt="小红书" />
+                <img src={kuaishou} alt="快手" />
+              </div>
+              <div className="flex w-full justify-evenly items-center">
+                <img src={jingdong} alt="京东" />
+                <img src={toutiao} alt="头条" />
+              </div>
+            </div>
+            <div className="flex w-full flex-col md:flex-row 4xl:w-1/2 justify-evenly items-center">
+              <div className="flex w-full justify-evenly items-center">
+                <img src={tiktok} alt="TikTok" />
+                <img src={douyin} alt="抖音" />
+              </div>
+              <div className="flex w-full justify-evenly items-center">
+                <img src={bilibili} alt="哔哩哔哩" />
+                <img src={xigua} alt="西瓜视频" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

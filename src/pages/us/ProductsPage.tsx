@@ -17,15 +17,15 @@ const USProductsPage = () => {
         }}
       >
       </div>
-      <div className="inline-flex row space-x-8">
-        <div className="w-1/2 ml-0">
+      <div className="flex row flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
+        <div className="md:w-1/2 ml-0">
           <img
             className="object-cover h-full w-full"
             src="https://www.aehlus.com/png/img7.6170bfe8.png"
             alt="bg"
           />
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <h1 className="mb-2">Our Products</h1>
           <h2>AI Infrastructure Industry Chain</h2>
           <p>
@@ -39,7 +39,7 @@ const USProductsPage = () => {
         </div>
       </div>
 
-      <div className="flex row space-x-4">
+      <div className="flex row flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
         <InfrastructureChain chain={endToEndChain} />
         <InfrastructureChain chain={traditionalChain} />
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  SingleTicker,
   AdvancedRealTimeChart,
   FundamentalData,
   MiniChart,
@@ -11,14 +10,14 @@ const IRStockPage = () => {
     <div id="container" className="container">
       <div className="flex w-full justify-center bg-slate-400">
         <div className="row">
-          <div className="flex w-full justify-between items-center space-x-8">
+          <div className="flex w-full flex-col md:flex-row items-center space-y-4 md:space-y-0">
             <div className="flex flex-col">
               <h1 className="text-white">Stock Information</h1>
               <p className="smalltext text-white">
                 AEHL New Energy, Inc. Ordinary Shares (AEHL)
               </p>
             </div>
-            <div>
+            <div className="md:ml-auto">
               <MiniChart dateRange="3M" symbol="AEHL" />
             </div>
           </div>
