@@ -1,31 +1,33 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import FullNavBar from "./components/FullNavBar";
 import Footer from "./components/Footer";
 
-import HomePage from "./pages";
-import ContactPage from "./pages/ContactPage";
+const HomePage = lazy(() => import("./pages"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
-import USOverview from "./pages/us";
-import USProductsPage from "./pages/us/ProductsPage";
-import USMetricsPage from "./pages/us/MetricsPage";
+const USOverview = lazy(() => import("./pages/us"));
+const USProductsPage = lazy(() => import("./pages/us/ProductsPage"));
+const USMetricsPage = lazy(() => import("./pages/us/MetricsPage"));
 
-import KylinOverviewPage from "./pages/kylin";
-import KylinModelPage from "./pages/kylin/ModelPage";
+const KylinOverviewPage = lazy(() => import("./pages/kylin"));
+const KylinModelPage = lazy(() => import("./pages/kylin/ModelPage"));
 
-import IRFilingsPage from "./pages/ir/FilingsPage";
-import IRStockPage from "./pages/ir/StockPage";
-import IRNewsPage from "./pages/ir/NewsPage";
-import IREventsPresentationsPage from "./pages/ir/EventsPresentationsPage";
-import IRDocumentsPage from "./pages/ir/DocumentsPage";
-import IRFAQPage from "./pages/ir/FAQPage";
-import NotFoundPage from "./pages/404NotFoundPage";
-import IRBoardPage from "./pages/ir/BoardPage";
-import IROverviewPage from "./pages/ir/OverviewPage";
-import IRContactPage from "./pages/ir/ContactPage";
-import IRCompositionPage from "./pages/ir/CompositionPage";
-import IREmailAlertsPage from "./pages/ir/EmailAlertsPage";
+const IRFilingsPage = lazy(() => import("./pages/ir/FilingsPage"));
+const IRStockPage = lazy(() => import("./pages/ir/StockPage"));
+const IRNewsPage = lazy(() => import("./pages/ir/NewsPage"));
+const IREventsPresentationsPage = lazy(
+  () => import("./pages/ir/EventsPresentationsPage")
+);
+const IRDocumentsPage = lazy(() => import("./pages/ir/DocumentsPage"));
+const IRFAQPage = lazy(() => import("./pages/ir/FAQPage"));
+const NotFoundPage = lazy(() => import("./pages/404NotFoundPage"));
+const IRBoardPage = lazy(() => import("./pages/ir/BoardPage"));
+const IROverviewPage = lazy(() => import("./pages/ir/OverviewPage"));
+const IRContactPage = lazy(() => import("./pages/ir/ContactPage"));
+const IRCompositionPage = lazy(() => import("./pages/ir/CompositionPage"));
+const IREmailAlertsPage = lazy(() => import("./pages/ir/EmailAlertsPage"));
 
 const App = () => {
   return (
@@ -33,45 +35,43 @@ const App = () => {
       <Router>
         <FullNavBar />
         <div className="overflow-y-auto w-screen">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
 
-            <Route path="/aehl-us/overview" element={<USOverview />} />
-            <Route path="/aehl-us/products" element={<USProductsPage />} />
-            <Route path="/aehl-us/metrics" element={<USMetricsPage />} />
+              <Route path="/aehl-us/overview" element={<USOverview />} />
+              <Route path="/aehl-us/products" element={<USProductsPage />} />
+              <Route path="/aehl-us/metrics" element={<USMetricsPage />} />
 
-            {/* <Route
-              path="/aehl-kylin/overview"
-              element={<KylinOverviewPage />}
-            /> */}
-            <Route
-              path="/aehl-kylin/overview"
-              element={<KylinOverviewPage />}
-            />
-            <Route path="/aehl-kylin/model" element={<KylinModelPage />} />
+              <Route
+                path="/aehl-kylin/overview"
+                element={<KylinOverviewPage />}
+              />
+              <Route path="/aehl-kylin/model" element={<KylinModelPage />} />
 
-            <Route path="/ir" element={<IROverviewPage />} />
-            <Route path="/ir/overview" element={<IROverviewPage />} />
-            <Route path="/ir/press-releases" element={<IRNewsPage />} />
-            <Route
-              path="/ir/events-presentations"
-              element={<IREventsPresentationsPage />}
-            />
-            <Route path="/ir/sec-filings" element={<IRFilingsPage />} />
-            <Route path="/ir/stock-information" element={<IRStockPage />} />
-            <Route path="/ir/documents" element={<IRDocumentsPage />} />
-            <Route
-              path="/ir/committee-composition"
-              element={<IRCompositionPage />}
-            />
-            <Route path="/ir/board" element={<IRBoardPage />} />
-            <Route path="/ir/contact-ir" element={<IRContactPage />} />
-            <Route path="/ir/faqs" element={<IRFAQPage />} />
-            <Route path="/ir/email-alerts" element={<IREmailAlertsPage />} />
+              <Route path="/ir" element={<IROverviewPage />} />
+              <Route path="/ir/overview" element={<IROverviewPage />} />
+              <Route path="/ir/press-releases" element={<IRNewsPage />} />
+              <Route
+                path="/ir/events-presentations"
+                element={<IREventsPresentationsPage />}
+              />
+              <Route path="/ir/sec-filings" element={<IRFilingsPage />} />
+              <Route path="/ir/stock-information" element={<IRStockPage />} />
+              <Route path="/ir/documents" element={<IRDocumentsPage />} />
+              <Route
+                path="/ir/committee-composition"
+                element={<IRCompositionPage />}
+              />
+              <Route path="/ir/board" element={<IRBoardPage />} />
+              <Route path="/ir/contact-ir" element={<IRContactPage />} />
+              <Route path="/ir/faqs" element={<IRFAQPage />} />
+              <Route path="/ir/email-alerts" element={<IREmailAlertsPage />} />
 
-            <Route path="/contact-us" element={<ContactPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
+              <Route path="/contact-us" element={<ContactPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
           <Footer />
         </div>
       </Router>
