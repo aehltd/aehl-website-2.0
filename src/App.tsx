@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import FullNavBar from "./components/FullNavBar";
 import Footer from "./components/Footer";
+import LoadingPage from "./pages/LoadingPage";
 
 const HomePage = lazy(() => import("./pages"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -35,7 +36,7 @@ const App = () => {
       <Router>
         <FullNavBar />
         <div className="overflow-y-auto w-screen">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<LoadingPage/>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
 
