@@ -16,19 +16,17 @@ const KylinModelPage = () => {
       <div className="flex row flex-col">
         <h1>Business Model</h1>
         <div className="flex flex-col-reverse md:flex-row">
-          <div className="flex md:w-1/2">
-            <p>
-              At AEHL, we focus on enabling B-end manufacturers and C-end
-              talents to realize their economic value through live streaming
-              platforms, social e-commerce, online education, and other
-              platforms. We provide integrated technology and service support
-              for the three parties in the new business ecosystem, offering
-              business opportunity matching, employment security, and new
-              business micro-entrepreneurship services for product manufacturers
-              and new business micro-entrepreneurs.
-            </p>
-          </div>
-          <div className="flex items-center justify-center my-4 md:ml-8 md:w-1/2">
+          <p className="flex md:w-1/2 items-center">
+            At AEHL, we focus on enabling B-end manufacturers and C-end talents
+            to realize their economic value through live streaming platforms,
+            social e-commerce, online education, and other platforms. We provide
+            integrated technology and service support for the three parties in
+            the new business ecosystem, offering business opportunity matching,
+            employment security, and new business micro-entrepreneurship
+            services for product manufacturers and new business
+            micro-entrepreneurs.
+          </p>
+          <div className="flex items-center justify-center my-4 md:my-0 md:ml-8 md:w-1/2">
             <div
               style={{
                 position: "relative",
