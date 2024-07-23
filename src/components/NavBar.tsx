@@ -38,7 +38,7 @@ const useCurrentPage = () => {
   const location = useLocation();
   const key = location.pathname.split("/")[1];
   console.log(key);
-  return key;
+  return key || "";
 };
 
 const NavBar = () => {
