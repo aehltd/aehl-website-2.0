@@ -1,5 +1,4 @@
 import React from "react";
-import logoImage from "../../assets/companylogo/大白色.png";
 
 const USOverview = () => {
   return (
@@ -17,7 +16,7 @@ const USOverview = () => {
         <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
         <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
           <img
-            src={logoImage}
+            src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/e55ba965-5b03-4ee7-80f7-da4419ea35ee/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg"
             alt="Logo"
             className="w-full md:w-3/4 drop-shadow-2xl"
           />

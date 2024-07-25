@@ -1,8 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import landingImage from "../assets/3D.jpg";
-import logoImage from "../assets/companylogo/大白色.png";
-import ceoImage from "../assets/board/weilai-zhang.png";
 import { Button } from "antd";
 
 const HomePage = () => {
@@ -22,7 +19,7 @@ const HomePage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center filter blur-sm"
           style={{
-            backgroundImage: `url(${landingImage})`,
+            backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -30,7 +27,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-slate-700 opacity-50"></div>
         <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
           <img
-            src={logoImage}
+            src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/e55ba965-5b03-4ee7-80f7-da4419ea35ee/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg"
             alt="logo"
             className="w-full md:w-3/4 drop-shadow-3xl"
           />
@@ -73,7 +70,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col items-end justify-end w-full md:w-56">
             <img
-              src={ceoImage}
+              src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/078ea913-4f11-49ae-a1fa-980bc7ae2081/weilai-zhang.png"
               alt="ceo"
               className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
             />
@@ -100,9 +97,9 @@ const HomePage = () => {
                     <h1 className="mb-4">A New Energy Model</h1>
                     <p>
                       With data centers based in Texas, we are an emerging
-                      energy supply business that aims to provide an innovative, low-cost
-                      solution to the rapidly growing needs of the AI and
-                      cryptocurrency sectors.
+                      energy supply business that aims to provide an innovative,
+                      low-cost solution to the rapidly growing needs of the AI
+                      and cryptocurrency sectors.
                     </p>
                     <div className="mr-auto mt-4">
                       <Button
@@ -164,7 +161,7 @@ const HomePage = () => {
                   <p>
                     Operating in China as Kylin Cloud, we aim to provide a
                     one-stop solution in the rapidly growing field of livestream
-                    e-commerce. With over 600 billion RMB in annual transaction
+                    e-commerce. With over 300 million RMB in annual transaction
                     volume, we are at the very forefront of this revolution.
                   </p>
                   <div className="ml-auto mt-4">
