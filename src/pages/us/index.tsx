@@ -34,29 +34,29 @@ const USOverview = () => {
             <div>
               <h3>Quick Reaction</h3>
               <p>
-                Constructing a comprehensive industry-wide model covering from
-                the energy sector to the AI end.
+                Constructing a comprehensive industry-wide model for the energy
+                sector.
               </p>
             </div>
             <div>
               <h3>Adapt to Changes</h3>
               <p>
-                Resolving the interest conflicts among various stakeholders in
-                the supply chain.
+                Resolving conflicts among various stakeholders in the supply
+                chain.
               </p>
             </div>
             <div>
               <h3>Act Immediately</h3>
               <p>
-                Rapidly constructing infrastructure to address the issue of
-                power shortages
+                Rapidly building infrastructure to address the issue of power
+                shortages
               </p>
             </div>
             <div>
-              <h3>Result-Driven</h3>
+              <h3>Results Driven</h3>
               <p>
-                Security barriers for technology infrastructure with significant
-                cost competitive advantages
+                Secure barriers utilizing technology infrastructure with
+                significant cost competitive advantages
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ const USOverview = () => {
                     Consistent Service
                   </h3>
                   <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
-                    Tech operations companies generally do not switch service
+                    Tech operators companies generally do not switch service
                     providers easily
                   </p>
                 </div>
@@ -151,7 +151,7 @@ const USOverview = () => {
                     Maximizing Profit
                   </h3>
                   <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
-                    Maximizing value in digital infrastructure industry
+                    Maximizing value in the digital infrastructure industry
                   </p>
                 </div>
               </div>

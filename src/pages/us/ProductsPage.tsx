@@ -15,8 +15,7 @@ const USProductsPage = () => {
             "url('https://www.aehlus.com/png/img4.50ec3eb4.png')",
           backgroundSize: "cover",
         }}
-      >
-      </div>
+      ></div>
       <div className="flex row flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
         <div className="md:w-1/2 ml-0">
           <img
@@ -29,12 +28,13 @@ const USProductsPage = () => {
           <h1 className="mb-2">Our Products</h1>
           <h2>AI Infrastructure Industry Chain</h2>
           <p>
-            We employ an end-to-end model to convert procured natural gas into
-            electrical energy through gas generators. This energy is then
-            transmitted directly to data centers for high-performance computing.
-            Compared to conventional methods, this model eliminates intermediary
-            steps like transmission to the power grid and processing by public
-            utilities, resulting in lower losses and higher efficiency.
+            Our plan is to employ an end-to-end model to convert procured
+            natural gas into electrical energy through gas generators. This
+            energy is then transmitted directly to data centers for
+            high-performance computing. Compared to conventional methods, this
+            model eliminates intermediary steps like transmission to the power
+            grid and processing by public utilities, resulting in lower losses
+            and higher efficiency.
           </p>
         </div>
       </div>

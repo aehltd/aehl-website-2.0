@@ -52,7 +52,7 @@ const KylinOverviewPage = () => {
           <span className="material-icons-outlined text-8xl text-gray-500">
             trending_up
           </span>
-          <h1>120 Brands</h1>
+          <h1>120+ Brands</h1>
           <p>Served 120+ major brands</p>
         </div>
       </div>
@@ -96,15 +96,13 @@ const KylinOverviewPage = () => {
           <div>
             <h1>Our Vision</h1>
             <p className="text-gray-700">
-              Live stream e-commerce has become a mainstream trend,
-              revolutionizing how businesses reach and engage customers. We
-              envision a future where businesses and live streaming talents can
-              seamlessly connect and thrive in this new era of e-commerce. At
-              Antelope Enterprise Holdings Limited, we are at the forefront of
-              this transformation - By leveraging cutting-edge technology and
-              our extensive network, we aim to empower businesses and
-              individuals to achieve their full potential in the digital
-              economy.
+              Livestreaming ecommerce is becoming mainstream, revolutionizing
+              how businesses reach and engage customers. We seamlessly connect
+              businesses with live streaming talent as a wide range of products
+              becomes available at the fingertips of our consumers. By
+              leveraging cutting-edge technology and our extensive network, we
+              aim to empower businesses and individuals to achieve their full
+              potential in the digital economy.
             </p>
           </div>
         </div>
@@ -125,9 +123,9 @@ const KylinOverviewPage = () => {
             network of broadcasters and influencers, unlocking new avenues for
             product promotion, customer acquisition, and sustained growth. With
             industry-leading solutions, unparalleled resources, and a relentless
-            pursuit of innovation, we enable our partners to navigate the live
-            stream commerce realm with confidence and succeed in captivating
-            today's digital-savvy consumers.
+            pursuit of innovation, we enable our partners to navigate the
+            livestreaming ecommerce world with confidence and succeed in
+            captivating today's digital-savvy consumers.
           </p>
           <div className="ml-auto mt-4">
             <Button type="primary" size="large" onClick={handleNavToModel}>
@@ -139,7 +137,7 @@ const KylinOverviewPage = () => {
       <div className="bg-slate-400 flex w-full justify-center">
         <div className="row text-center">
           <h1 className="text-white font-semibold mb-8">
-            Collaborating Live Streaming Platforms
+            Collaborating Livestreaming Platforms
           </h1>
           <div className="flex w-full flex-col 4xl:flex-row justify-center 4xl:justify-evenly items-center">
             <div className="flex w-full flex-col md:flex-row 4xl:w-1/2 justify-evenly items-center">

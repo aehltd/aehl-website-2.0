@@ -157,12 +157,13 @@ const HomePage = () => {
               </div>
               <div className="halfrow col-span-1 flex justify-end items-end mt-32">
                 <div className="flex flex-col p-8 bg-white shadow-lg rounded-xl">
-                  <h1 className="mb-4">The Live Streaming Commerce Frontier</h1>
+                  <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
                   <p>
                     Operating in China as Kylin Cloud, we aim to provide a
-                    one-stop solution in the rapidly growing field of livestream
-                    e-commerce. With over 300 million RMB in annual transaction
-                    volume, we are at the very forefront of this revolution.
+                    one-stop solution in the rapidly growing field of
+                    livestreaming ecommerce. With over 300 million RMB in annual
+                    transaction volume, we are at the very forefront of this
+                    revolution.
                   </p>
                   <div className="ml-auto mt-4">
                     <Button
@@ -184,12 +185,13 @@ const HomePage = () => {
                 className="m-16 -ml-24 w-full h-2/3 object-cover rounded-e-xl shadow-lg"
               />
               <div className="absolute bottom-0 flex flex-col p-8 m-8 -mr-16 pr-24 bg-white shadow-lg rounded-xl">
-                <h1 className="mb-4">The Live Streaming Commerce Frontier</h1>
+                <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
                 <p>
                   Operating in China as Kylin Cloud, we aim to provide a
-                  one-stop solution in the rapidly growing field of livestream
-                  e-commerce. With over 600 billion RMB in annual transaction
-                  volume, we are at the very forefront of this revolution.
+                  one-stop solution in the rapidly growing field of
+                  livestreaming ecommerce. With over 300 million RMB in annual
+                  transaction volume, we are at the very forefront of this
+                  revolution.
                 </p>
                 <div className="ml-auto mt-4">
                   <Button

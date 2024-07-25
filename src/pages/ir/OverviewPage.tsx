@@ -38,7 +38,7 @@ const IROverviewPage = () => {
           <h2>Livestreaming Ecommerce Business - AEHL Kylin Cloud</h2>
           <p>
             Our livestreaming ecommerce business is operated in China through
-            our 51% subsidiary, Hainan Kylin and provide one-stop solutions for
+            our 51% subsidiary, Hainan Kylin and provides a one-stop solution for
             our customers to adopt the emerging sales channel of livestreaming
             ecommerce. We believe that livestreaming ecommerce is an important
             growth engine for consumer good brands as it leverages the content

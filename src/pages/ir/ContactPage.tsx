@@ -10,16 +10,21 @@ const IRContactPage = () => {
       </div>
       <div className="row">
         <div className="space-y-4">
-          <h2>
-            All investor inquiries should be directed towards our IR department.
+          <h2 className="pb-4">
+            Investor inquiries should be directed towards our investor relations
+            representative.
           </h2>
+          <div>
+            <h1>David Rutnick</h1>
+            <p>Precept Investor Relations LLC</p>
+          </div>
           <div>
             <h2>Phone</h2>
             <p>+1 (646) 694 - 8538</p>
           </div>
           <div>
             <h2>Email</h2>
-            <p>ir@aehltd.com</p>
+            <p>david.rutnick@preceptir.com</p>
           </div>
         </div>
       </div>

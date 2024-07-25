@@ -21,10 +21,9 @@ const KylinModelPage = () => {
             to realize their economic value through live streaming platforms,
             social e-commerce, online education, and other platforms. We provide
             integrated technology and service support for the three parties in
-            the new business ecosystem, offering business opportunity matching,
-            employment security, and new business micro-entrepreneurship
-            services for product manufacturers and new business
-            micro-entrepreneurs.
+            this new business ecosystem, offering business opportunity matching,
+            employment security, and business support services for product
+            manufacturers and new micro-entrepreneurs.
           </p>
           <div className="flex items-center justify-center my-4 md:my-0 md:ml-8 md:w-1/2">
             <div
@@ -99,9 +98,9 @@ const KylinModelPage = () => {
               <Collapse accordion>
                 <Panel header="Talent Matching" key="1">
                   <p>
-                    With a pool of over 400,000 live streamers and influencers,
-                    which is rapidly growing, we provide businesses with the
-                    most accurate and tailored collaboration solutions.
+                    With a pool of over 800,000 livestreaming hosts and
+                    influencers, we provide businesses with tailored
+                    collaboration solutions.
                   </p>
                 </Panel>
                 <Panel header="KylinCloud BBP Model" key="2">
