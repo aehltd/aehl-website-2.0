@@ -5,8 +5,15 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#000000" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/wp-content/themes/generatepress/css/qmod-style.css"
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,6 +32,52 @@
     <title>Antelope Enterprise Holdings Limited</title>
   </head>
   <body>
+    <!-- QMod fullnewssummary -->
+    <div
+      data-qmod-tool="fullnewssummary"
+      data-qmod-params='{"lang":"en","socialshare":true,"resultsPerPage":10,"excludeTopics":"NONCOMPANY","noSrc":"qmr","summLen":100,"showLogo":false,"lowHigh":false,"videonews":true,"showVideos":true,"showSharingButtons":true,"showThumbnail":false,"dateHeadings":true,"yearSelect":false,"yearSelectNumYears":2,"yearSelected":0,"datePickerFormat":"Y-m-d","symbol":"AEHL"}'
+      class="qtool"
+    ></div>
+
+    <!-- QMod Loader Script: Include Just once on any page containing one or more QMods -->
+    <script
+      id="qmod"
+      type="application/javascript"
+      src="https://qmod.quotemedia.com/js/qmodLoader.js"
+      data-qmod-wmid="101150"
+    ></script>
+
+    <!-- QuoteMedia Attribution Footer: Include on any page containing one or more QMods -->
+    <div class="qmod-attribution">
+      <a href="https://www.quotemedia.com/coverage" class="qmf-link"
+        >Financial Market Data</a
+      >
+      copyright © 2020
+      <a href="https://www.quotemedia.com" class="qmf-link">QuoteMedia</a>. Data
+      delayed 15 minutes unless otherwise indicated (view
+      <a href="https://www.quotemedia.com/legal/tos/#times" class="qmf-link"
+        >delay times</a
+      >
+      for all exchanges). <span class="qmf-rt">RT</span>=Real-Time,
+      <span class="qmf-non-rt">EOD</span>=End of Day,
+      <span class="qmf-non-rt">PD</span>=Previous Day.
+      <a href="https://www.quotemedia.com/coverage" class="qmf-link"
+        >Market Data</a
+      >
+      powered by
+      <a href="https://www.quotemedia.com" class="qmf-link">QuoteMedia</a>.
+      Analyst Ratings by Zacks.
+      <a href="https://www.quotemedia.com/legal/tos/" class="qmf-link"
+        >Terms of Use</a
+      >.
+      <div class="qmf-logo">
+        <a href="https://www.quotemedia.com"
+          ><img
+            src="//www.quotemedia.com/footer/logo.png"
+            alt="QuoteMedia logo"
+        /></a>
+      </div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" className="max-h-full"></div>
     <!--
