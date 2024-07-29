@@ -35,9 +35,10 @@ const items: MenuItem[] = [
     label: "Corporate Governance",
     key: "governance",
     children: [
-      { key: "documents", label: "Governance Documents" },
-      { key: "committee-composition", label: "Committee Composition" },
       { key: "board", label: "Board of Directors" },
+      { key: "committee-composition", label: "Committee Composition" },
+      { key: "diversity-matrix", label: "Diversity Matrix" },
+      { key: "documents", label: "Governance Documents" },
     ],
   },
   {

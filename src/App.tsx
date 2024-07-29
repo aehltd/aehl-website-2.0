@@ -28,6 +28,7 @@ const IRBoardPage = lazy(() => import("./pages/ir/BoardPage"));
 const IROverviewPage = lazy(() => import("./pages/ir/OverviewPage"));
 const IRContactPage = lazy(() => import("./pages/ir/ContactPage"));
 const IRCompositionPage = lazy(() => import("./pages/ir/CompositionPage"));
+const IRDiversityPage = lazy(() => import("./pages/ir/DiversityPage"));
 const IREmailAlertsPage = lazy(() => import("./pages/ir/EmailAlertsPage"));
 
 const App = () => {
@@ -66,6 +67,10 @@ const App = () => {
                 <Route
                   path="/ir/committee-composition"
                   element={<IRCompositionPage />}
+                />
+                <Route
+                  path="/ir/diversity-matrix"
+                  element={<IRDiversityPage />}
                 />
                 <Route path="/ir/board" element={<IRBoardPage />} />
                 <Route path="/ir/contact-ir" element={<IRContactPage />} />
