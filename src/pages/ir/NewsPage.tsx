@@ -32,7 +32,7 @@ const IRNewsPage = () => {
         </div>
       </div>
       <div
-        className="bg-local flex w-full justify-center"
+        className="bg-local flex flex-col w-full justify-center"
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
@@ -40,7 +40,7 @@ const IRNewsPage = () => {
         }}
       >
         <div className="row">
-          <QModComponent tool="fullnewssummary" params={JSON.stringify(params)} />
+          <QModComponent tool="fullnewssummary" params={JSON.stringify(params)} datatracked />
         </div>
         <div className="row">
           <QModFooter />

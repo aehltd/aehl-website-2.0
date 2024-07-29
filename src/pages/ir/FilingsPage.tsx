@@ -32,7 +32,7 @@ const IRFilingsPage = () => {
         </div>
       </div>
       <div className="row">
-        <QModComponent tool="filings" params={JSON.stringify(params)} />
+        <QModComponent tool="filings" params={JSON.stringify(params)} datatracked />
       </div>
       <div className="row">
         <QModFooter />

@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Checkbox, Input } from "antd";
+import QModComponent from "../../components/QModWidget";
+import QModFooter from "../../components/QModFooter";
 
 //NOTE: THIS IS A DEMO. SO NO FUNCTIONALITY IS ACTUALLY BEING DONE.
 const IREmailAlertsPage = () => {
@@ -11,10 +13,16 @@ const IREmailAlertsPage = () => {
         </div>
       </div>
       <div className="row">
-        <h1>Subscribe to our Investor Email Alerts</h1>
+        <QModComponent
+          tool={"iralertsmodule"}
+          params={JSON.stringify({ symbol: "AEHL" })}
+          datatracked
+        />
+        <QModFooter />
+        {/* <h1>Subscribe to our Investor Email Alerts</h1>
         <p className="mb-4">
-            If you are interested in working with AEHL and joining us in our
-            exciting future, please fill in the information below.
+          If you are interested in working with AEHL and joining us in our
+          exciting future, please fill in the information below.
         </p>
         <div className="max-w-lg space-y-4">
           <div>
@@ -38,14 +46,26 @@ const IREmailAlertsPage = () => {
           <div className="space-y-4">
             <h3>Select the alerts that you would like to recieve: </h3>
             <div className="flex flex-col">
-              <Checkbox className="text" onChange={() => {}}>Select All</Checkbox>
-              <Checkbox className="text" onChange={() => {}}>News Releases</Checkbox>
-              <Checkbox className="text" onChange={() => {}}>Events and Presentations</Checkbox>
-              <Checkbox className="text" onChange={() => {}}>SEC Filings and Reports</Checkbox>
-              <Checkbox className="text" onChange={() => {}}>Stock Information</Checkbox>
+              <Checkbox className="text" onChange={() => {}}>
+                Select All
+              </Checkbox>
+              <Checkbox className="text" onChange={() => {}}>
+                News Releases
+              </Checkbox>
+              <Checkbox className="text" onChange={() => {}}>
+                Events and Presentations
+              </Checkbox>
+              <Checkbox className="text" onChange={() => {}}>
+                SEC Filings and Reports
+              </Checkbox>
+              <Checkbox className="text" onChange={() => {}}>
+                Stock Information
+              </Checkbox>
             </div>
           </div>
-          <Button className="text"  type="primary">Subscribe</Button>
+          <Button className="text" type="primary">
+            Subscribe
+          </Button>
         </div>
       </div>
       <div
@@ -66,7 +86,7 @@ const IREmailAlertsPage = () => {
             </div>
           </div>
           <Button type="primary">Unsubscribe</Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
