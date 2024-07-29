@@ -1,6 +1,29 @@
 import React from "react";
-import PressReleasesRow from "../../components/IRComponents/PressReleases";
+import QModComponent from "../../components/QModWidget";
+import QModFooter from "../../components/QModFooter";
+
 const IRNewsPage = () => {
+  const params = {
+    lang: "en",
+    socialshare: true,
+    resultsPerPage: 10,
+    excludeTopics: "NONCOMPANY",
+    noSrc: "qmr",
+    summLen: 100,
+    showLogo: false,
+    lowHigh: false,
+    videonews: true,
+    showVideos: true,
+    showSharingButtons: true,
+    showThumbnail: false,
+    dateHeadings: true,
+    yearSelect: false,
+    yearSelectNumYears: 2,
+    yearSelected: 0,
+    datePickerFormat: "Y-m-d",
+    symbol: "AEHL"
+  };
+
   return (
     <div id="container" className="container">
       <div className="flex w-full justify-center bg-slate-400">
@@ -17,8 +40,10 @@ const IRNewsPage = () => {
         }}
       >
         <div className="row">
-          <h1 className="mb-4">Press Releases</h1>
-          <PressReleasesRow />
+          <QModComponent tool="fullnewssummary" params={JSON.stringify(params)} />
+        </div>
+        <div className="row">
+          <QModFooter />
         </div>
       </div>
     </div>

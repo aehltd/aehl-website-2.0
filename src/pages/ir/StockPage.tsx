@@ -1,11 +1,41 @@
 import React from "react";
 import {
-  AdvancedRealTimeChart,
-  FundamentalData,
+  // AdvancedRealTimeChart,
+  // FundamentalData,
   MiniChart,
 } from "react-ts-tradingview-widgets";
+import QModComponent from "../../components/QModWidget";
+import QModFooter from "../../components/QModFooter";
 
 const IRStockPage = () => {
+  const params = {
+    symbol: "AEHL",
+  };
+
+  const detailedQuoteTabChartParams = {
+    symbol: "AEHL",
+    lang: "en",
+    chcon: "off",
+    chfrmon: "off",
+    chton: "off",
+    chdon: "off",
+    chbgch: "ffffff",
+    chbg: "ffffff",
+    chgrd: "0a6283",
+    chbdr: "0a6283",
+    chxyc: "0a6283",
+    chln: "0a6283",
+    chfill: "0a6283",
+    chfill2: "0a6283",
+    chscale: "3m",
+    chtype: "Mountain",
+    chlowwh: 10,
+    chfnts: 14,
+    svg: true,
+    showLogo: false,
+    lowHigh: false,
+  };
+
   return (
     <div id="container" className="container">
       <div className="flex w-full justify-center bg-slate-400">
@@ -24,6 +54,18 @@ const IRStockPage = () => {
         </div>
       </div>
       <div className="row">
+        <QModComponent
+          tool={"miniquotecharts"}
+          params={JSON.stringify(params)}
+        />
+      </div>
+      <div className="row">
+        <QModComponent
+          tool={"detailedquotetabchart"}
+          params={JSON.stringify(detailedQuoteTabChartParams)}
+        />
+      </div>
+      {/* <div className="row">
         <AdvancedRealTimeChart
           symbol="AEHL"
           details
@@ -33,7 +75,7 @@ const IRStockPage = () => {
           hide_side_toolbar
           hide_top_toolbar
         />
-      </div>
+      </div> */}
       <div
         className="bg-local flex w-full justify-center"
         style={{
@@ -42,8 +84,14 @@ const IRStockPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="flex flex-col row h-96">
-          <FundamentalData symbol="AEHL" width="100%" height="100%" />
+        <div className="row">
+          <QModComponent
+            tool={"minifundamentals"}
+            params={JSON.stringify(params)}
+          />
+        </div>
+        <div className="row">
+          <QModFooter />
         </div>
       </div>
     </div>

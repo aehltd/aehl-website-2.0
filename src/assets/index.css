@@ -29,7 +29,7 @@
   }
 
   a {
-    @apply text-base text-black;
+    @apply text-base text-blue-500 underline;
     /* @apply 3xl:text-2xl; */
   }
 }

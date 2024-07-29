@@ -18,29 +18,29 @@ const QModFooter = () => {
     <div className="qmod-attribution">
       <a href="https://www.quotemedia.com/coverage" className="qmf-link">
         Financial Market Data
-      </a>
-      copyright © 2020
+      </a>{" "}
+      copyright © 2020{" "}
       <a href="https://www.quotemedia.com" className="qmf-link">
         QuoteMedia
       </a>
-      . Data delayed 15 minutes unless otherwise indicated (view
+      . Data delayed 15 minutes unless otherwise indicated (view{" "}
       <a
         href="https://www.quotemedia.com/legal/tos/#times"
         className="qmf-link"
       >
         delay times
-      </a>
-      for all exchanges). <span className="qmf-rt">RT</span>=Real-Time,
-      <span className="qmf-non-rt">EOD</span>=End of Day,
-      <span className="qmf-non-rt">PD</span>=Previous Day.
+      </a>{" "}
+      for all exchanges). <span className="qmf-rt">RT</span>=Real-Time,{" "}
+      <span className="qmf-non-rt">EOD</span>=End of Day,{" "}
+      <span className="qmf-non-rt">PD</span>=Previous Day.{" "}
       <a href="https://www.quotemedia.com/coverage" className="qmf-link">
         Market Data
-      </a>
-      powered by
+      </a>{" "}
+      powered by{" "}
       <a href="https://www.quotemedia.com" className="qmf-link">
         QuoteMedia
       </a>
-      . Analyst Ratings by Zacks.
+      . Analyst Ratings by Zacks.{" "}
       <a href="https://www.quotemedia.com/legal/tos/" className="qmf-link">
         Terms of Use
       </a>
