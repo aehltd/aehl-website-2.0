@@ -1,9 +1,9 @@
 import React from "react";
-//import { Button, Checkbox, Input } from "antd";
-import QModComponent from "../../components/QModWidget";
-import QModFooter from "../../components/QModFooter";
+import { Button, Checkbox, Input } from "antd";
+// import QModComponent from "../../components/QModWidget";
+// import QModFooter from "../../components/QModFooter";
 
-//NOTE: THIS IS A DEMO. SO NO FUNCTIONALITY IS ACTUALLY BEING DONE.
+//TODO: IMPLEMENT FORMS
 const IREmailAlertsPage = () => {
   return (
     <div className="container" id="container">
@@ -13,13 +13,13 @@ const IREmailAlertsPage = () => {
         </div>
       </div>
       <div className="row">
-        <QModComponent
+        {/* <QModComponent
           tool={"iralertsmodule"}
           params={JSON.stringify({ symbol: "AEHL" })}
           datatracked
         />
-        <QModFooter />
-        {/* <h1>Subscribe to our Investor Email Alerts</h1>
+        <QModFooter /> */}
+        <h1>Subscribe to our Investor Email Alerts</h1>
         <p className="mb-4">
           If you are interested in working with AEHL and joining us in our
           exciting future, please fill in the information below.
@@ -86,7 +86,7 @@ const IREmailAlertsPage = () => {
             </div>
           </div>
           <Button type="primary">Unsubscribe</Button>
-        </div> */}
+        </div>
       </div>
     </div>
   );

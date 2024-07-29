@@ -32,10 +32,23 @@ const IRFilingsPage = () => {
         </div>
       </div>
       <div className="row">
-        <QModComponent tool="filings" params={JSON.stringify(params)} datatracked />
+        <QModComponent
+          tool="filings"
+          params={JSON.stringify(params)}
+          datatracked
+        />
       </div>
-      <div className="row">
-        <QModFooter />
+      <div
+        className="bg-local flex flex-col w-full justify-center"
+        style={{
+          backgroundImage:
+            "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="row">
+          <QModFooter />
+        </div>
       </div>
     </div>
   );

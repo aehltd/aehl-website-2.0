@@ -1,16 +1,12 @@
 import React from "react";
-import {
-  // AdvancedRealTimeChart,
-  // FundamentalData,
-  MiniChart,
-} from "react-ts-tradingview-widgets";
+//import { AdvancedRealTimeChart, FundamentalData, MiniChart, } from "react-ts-tradingview-widgets";
 import QModComponent from "../../components/QModWidget";
 import QModFooter from "../../components/QModFooter";
 
 const IRStockPage = () => {
-  const params = {
-    symbol: "AEHL",
-  };
+  // const params = {
+  //   symbol: "AEHL",
+  // };
 
   const detailedQuoteTabChartParams = {
     symbol: "AEHL",
@@ -47,19 +43,19 @@ const IRStockPage = () => {
                 AEHL New Energy, Inc. Ordinary Shares (AEHL)
               </p>
             </div>
-            <div className="md:ml-auto">
+            {/* <div className="md:ml-auto">
               <MiniChart dateRange="3M" symbol="AEHL" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <QModComponent
           tool={"miniquotecharts"}
           params={JSON.stringify(params)}
           datatracked
         />
-      </div>
+      </div> */}
       <div className="row">
         <QModComponent
           tool={"detailedquotetabchart"}
@@ -86,13 +82,13 @@ const IRStockPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="row">
+        {/* <div className="row">
           <QModComponent
             tool={"minifundamentals"}
             params={JSON.stringify(params)}
             datatracked
           />
-        </div>
+        </div> */}
         <div className="row">
           <QModFooter />
         </div>

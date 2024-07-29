@@ -21,7 +21,7 @@ const IRNewsPage = () => {
     yearSelectNumYears: 2,
     yearSelected: 0,
     datePickerFormat: "Y-m-d",
-    symbol: "AEHL"
+    symbol: "AEHL",
   };
 
   return (
@@ -31,6 +31,15 @@ const IRNewsPage = () => {
           <h1 className="text-white">Newsroom</h1>
         </div>
       </div>
+
+      <div className="row">
+        <QModComponent
+          tool="fullnewssummary"
+          params={JSON.stringify(params)}
+          datatracked
+        />
+      </div>
+      
       <div
         className="bg-local flex flex-col w-full justify-center"
         style={{
@@ -39,9 +48,6 @@ const IRNewsPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="row">
-          <QModComponent tool="fullnewssummary" params={JSON.stringify(params)} datatracked />
-        </div>
         <div className="row">
           <QModFooter />
         </div>
