@@ -56,3 +56,5 @@ const QModFooter = () => {
     </div>
   );
 };
+
+export default QModFooter;
