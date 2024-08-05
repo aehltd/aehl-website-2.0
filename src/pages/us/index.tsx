@@ -34,8 +34,8 @@ const USOverview = () => {
             <div>
               <h3>Quick Reaction</h3>
               <p>
-                Constructing a comprehensive industry-wide model for the energy
-                sector.
+                Constructing a comprehensive industry-wide model covering the
+                energy sector.
               </p>
             </div>
             <div>
@@ -98,8 +98,8 @@ const USOverview = () => {
                     Consistent Service
                   </h3>
                   <p className="minitext sm:text-xs text-white drop-shadow-lg">
-                    Tech operators companies generally do not switch service
-                    providers easily
+                    Energy operators companies generally do not switch tech
+                    service providers easily
                   </p>
                 </div>
               </div>
@@ -115,8 +115,8 @@ const USOverview = () => {
                     Stability
                   </h3>
                   <p className="minitext sm:text-xs text-white drop-shadow-lg">
-                    Consistent and stable power supply is the core of
-                    technological infrastructure
+                    We are aiming to provide consistent and stable power supply,
+                    which is the core of technological infrastructure
                   </p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const USOverview = () => {
                 <div className="absolute inset-0 bg-custom-gradient"></div>
                 <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
                   <h3 className="text-white drop-shadow-lg font-semibold">
-                    Profit Share
+                    Dissemination of Value
                   </h3>
                   <p className="minitext sm:text-xs text-white drop-shadow-lg">
                     Balancing interests in energy, power generation,
@@ -148,10 +148,10 @@ const USOverview = () => {
                 <div className="absolute inset-0 bg-custom-gradient"></div>
                 <div className="absolute inset-5 flex flex-col items-center justify-end text-center">
                   <h3 className="text-white drop-shadow-lg font-semibold">
-                    Maximizing Profit
+                    Maximizing Efficiency
                   </h3>
                   <p className="minitext sm:text-xs text-white drop-shadow-lg">
-                    Maximizing value in the digital infrastructure industry
+                    Maximizing efficiency in the digital infrastructure industry
                   </p>
                 </div>
               </div>
@@ -169,11 +169,10 @@ const USOverview = () => {
         <div className="flex flex-col md:w-1/2 justify-center">
           <h2>Team</h2>
           <p>
-            Our team has extensive experience in technology infrastructure, with
-            members coming.
+            Our team is rapidly building comprehensive experience in technology infrastructure.
           </p>
           <p>
-            Our expertise includes data center construction,high-performance
+            Our expertise includes data center construction, high-performance
             computing operations, and natural resource hedging.
           </p>
         </div>

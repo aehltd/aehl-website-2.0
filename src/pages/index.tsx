@@ -54,8 +54,9 @@ const HomePage = () => {
           <div className="flex-1">
             <h1 className="mb-4">CEO Message</h1>
             <p className="text-slate-600">
-              We primarily operate in two exciting business segments. I believe
-              that there is a prosperous future ahead for the development of
+              We primarily operate in two exciting business segments,
+              livestreaming e-commerce and energy solutions. I believe that
+              there is a prosperous future ahead for the development of
               innovative energy solutions. The boom in the AI industry as well
               as cryptocurrency mining has led to a gap in the power supply and
               we believe that we can develop a cost-effective structure to
@@ -132,9 +133,10 @@ const HomePage = () => {
             <div className="absolute bottom-0 flex flex-col p-8 m-8 -ml-16 pl-24 bg-white shadow-lg rounded-xl">
               <h1 className="mb-4">A New Energy Solution</h1>
               <p>
-                With data centers based in Texas, we are an emerging energy
-                supply business that aims to provide a low-cost solution to the
-                rapidly growing needs of both AI and cryptocurrency sectors.
+                We plan to service data centers based in Texas, we are an
+                emerging energy supply business that aims to provide a low-cost
+                solution to the rapidly growing needs of both AI and
+                cryptocurrency sectors.
               </p>
               <div className="mr-auto mt-4">
                 <Button type="primary" size="large" onClick={handleNavToUS}>

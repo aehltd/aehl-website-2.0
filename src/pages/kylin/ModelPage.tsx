@@ -105,10 +105,10 @@ const KylinModelPage = () => {
                 </Panel>
                 <Panel header="KylinCloud BBP Model" key="2">
                   <p>
-                    We are the industry's first to introduce the KylinCloud BBP
-                    (Business-to-Business-to-Person) model, making it easier
-                    than ever for businesses to connect with the right talents
-                    and manage their e-commerce campaigns.
+                    We believe we are the industry's first to introduce the
+                    KylinCloud BBP (Business-to-Business-to-Person) model,
+                    making it easier than ever for businesses to connect with
+                    the right talents and manage their ecommerce campaigns.
                   </p>
                 </Panel>
                 <Panel header="Full-Process Monitoring" key="3">

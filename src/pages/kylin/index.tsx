@@ -98,9 +98,9 @@ const KylinOverviewPage = () => {
             <p className="text-gray-700">
               Livestreaming ecommerce is becoming mainstream, revolutionizing
               how businesses reach and engage customers. We seamlessly connect
-              businesses with live streaming talent as a wide range of products
-              becomes available at the fingertips of our consumers. By
-              leveraging cutting-edge technology and our extensive network, we
+              businesses with live streaming talent, and consumers benefit as a
+              wide range of products become available at the fingertips and at
+              highly competitive prices. By leveraging our extensive network, we
               aim to empower businesses and individuals to achieve their full
               potential in the digital economy.
             </p>
@@ -122,10 +122,10 @@ const KylinOverviewPage = () => {
             Our integrated platform seamlessly connects businesses with a vast
             network of broadcasters and influencers, unlocking new avenues for
             product promotion, customer acquisition, and sustained growth. With
-            industry-leading solutions, unparalleled resources, and a relentless
-            pursuit of innovation, we enable our partners to navigate the
-            livestreaming ecommerce world with confidence and succeed in
-            captivating today's digital-savvy consumers.
+            industry-leading solutions and a relentless pursuit of innovation,
+            we enable our partners to navigate the livestreaming ecommerce world
+            with confidence and succeed in captivating today's digital-savvy
+            consumers.
           </p>
           <div className="ml-auto mt-4">
             <Button type="primary" size="large" onClick={handleNavToModel}>

@@ -9,7 +9,7 @@ const items: MenuItem[] = [
   { key: "", label: "Home" },
   {
     key: "aehl-us",
-    label: "Energy Business",
+    label: "AEHL US",
     children: [
       { key: "aehl-us/overview", label: "Overview" },
       { key: "aehl-us/products", label: "Our Products" },

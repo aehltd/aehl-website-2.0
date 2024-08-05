@@ -12,7 +12,7 @@ const IRContactPage = () => {
         <div className="space-y-4">
           <h2 className="pb-4">
             Investor inquiries should be directed towards our investor relations
-            representative.
+            representative:
           </h2>
           <div>
             <h1>David Rutnick</h1>

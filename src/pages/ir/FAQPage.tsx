@@ -9,13 +9,13 @@ const FAQ: FAQItem[] = [
   {
     question: "What is Antelope Enterprise's business?",
     answer:
-      "Antelope Enterprise engages in two businesses: (1) an energy transmission in the US, via its wholly-owned subsidiary, AEHL US LLC, and (2) livestreaming ecommerce in China, via its 51% ownership position in Kylin Cloud.",
+      "Antelope Enterprise engages in two businesses: (1) an energy suppply business in the US, via its wholly-owned subsidiary, AEHL US LLC, and (2) livestreaming ecommerce in China, via its 51% owned subsidiary in Kylin Cloud.",
   },
   {
     question:
       "What are Antelope Enterprise's ticker symbol, exchange, and CUSIP?",
     answer:
-      'Antelope Enterprise\'s common stock is traded on the NASDAQ Global Market under the symbol "AEHL." The CUSIP number is G041JN122 for the common stock.',
+      'Antelope Enterprise\'s class A ordinary shares are traded on the NASDAQ Capital Market under the symbol "AEHL." The CUSIP number is G041JN122 for the class A ordinary shares.',
   },
   {
     question: "When was Antelope Enterprise founded?",
@@ -25,7 +25,7 @@ const FAQ: FAQItem[] = [
   {
     question: "How many of the Company's shares are outstanding?",
     answer:
-      "As of June 28, 2024, there were approximately 8.9 million common shares outstanding.",
+      "As of July 31, 2024, there were approximately 9.9 million class A ordinary shares and 2.3 million class B ordinary shares outstanding. Only the class A ordinary shares are trading on the NASDAQ Capital Market.",
   },
   {
     question: "When is the next earnings release?",
@@ -41,11 +41,6 @@ const FAQ: FAQItem[] = [
     question:
       "Who is Antelope Enterprise' independent Certified Public Accountant?",
     answer: "ARK Pro CPA & Co is Antelope Enterprise’s independent auditor.",
-  },
-  {
-    question: "Who is Antelope Enterprise' outside legal counsel?",
-    answer:
-      "Hunter Taubman Fischer & Li LLC is Antelope Enterprise' outside legal counsel.",
   },
   {
     question: "Who is Antelope Enterprise' investor relations firm?",

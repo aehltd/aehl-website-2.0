@@ -10,7 +10,7 @@ const IREventsPresentationsPage = () => {
         </div>
       </div>
       <div className="row">
-        <h1 className="mb-4">Events</h1>
+        <h1 className="mb-4">Upcoming Events</h1>
         <p>No events scheduled.</p>
       </div>
       <div
@@ -22,8 +22,7 @@ const IREventsPresentationsPage = () => {
         }}
       >
         <div id="presentation" className="row">
-          <h1>Company Presentation</h1>
-          <p>Updated June 2024</p>
+          <h1 className="mb-4">Past Events</h1>
           <PresentationsRow />
         </div>
       </div>
