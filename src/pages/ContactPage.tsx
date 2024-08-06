@@ -1,5 +1,5 @@
-import { Button, Input } from "antd";
 import React from "react";
+import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => {
   return (
@@ -68,29 +68,7 @@ const ContactPage = () => {
             form below.
           </p>
           <div className="p-4 max-w-lg border bg-white rounded-xl shadow-lg">
-            <div className="space-y-4">
-              <div className="flex space-x-4">
-                <div>
-                  <label>First Name</label>
-                  <Input placeholder="John" />
-                </div>
-                <div>
-                  <label>Last Name</label>
-                  <Input placeholder="Doe" />
-                </div>
-              </div>
-              <div>
-                <label>Email Address</label>
-                <Input placeholder="john.doe@gmail.com" />
-              </div>
-              <div>
-                <label>Message</label>
-                <Input.TextArea rows={4} placeholder="Enter your message..." />
-              </div>
-              <div className="flex w-full justify-center">
-              <Button type="primary">Send</Button>
-              </div>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>
