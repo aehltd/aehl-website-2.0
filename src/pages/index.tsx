@@ -49,38 +49,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div id="ceo-message" className="row">
-        <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 ">
-          <div className="flex-1">
-            <h1 className="mb-4">CEO Message</h1>
-            <p className="text-slate-600">
-              We primarily operate in two exciting business segments,
-              livestreaming e-commerce and energy solutions. I believe that
-              there is a prosperous future ahead for the development of
-              innovative energy solutions. The boom in the AI industry as well
-              as cryptocurrency mining has led to a gap in the power supply and
-              we believe that we can develop a cost-effective structure to
-              bridge this gap. In terms of livestreaming ecommerce, Kylin Cloud
-              serves as a beacon of innovation. We're not just providing a
-              service, we're creating an environment where smaller influencers
-              and brands thrive, bringing a much needed democratization to this
-              sphere. I am confident that we will redefine the landscape of both
-              of these evolving landscapes thereby deliver significant value to
-              our shareholders.
-            </p>
-          </div>
-          <div className="flex flex-col items-end justify-end">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/078ea913-4f11-49ae-a1fa-980bc7ae2081/weilai-zhang.png"
-              alt="ceo"
-              className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
-            />
-            <h2>Weilai "Will" Zhang</h2>
-            <p>AEHL Chairman and CEO</p>
-          </div>
-        </div>
-      </div>
-
       <div
         className="bg-local flex flex-col w-full items-center"
         style={{
@@ -201,6 +169,38 @@ const HomePage = () => {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ceo-message" className="row">
+        <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 ">
+          <div className="flex-1">
+            <h1 className="mb-4">CEO Message</h1>
+            <p className="text-slate-600">
+              We primarily operate in two exciting business segments,
+              livestreaming e-commerce and energy solutions. I believe that
+              there is a prosperous future ahead for the development of
+              innovative energy solutions. The boom in the AI industry as well
+              as cryptocurrency mining has led to a gap in the power supply and
+              we believe that we can develop a cost-effective structure to
+              bridge this gap. In terms of livestreaming ecommerce, Kylin Cloud
+              serves as a beacon of innovation. We're not just providing a
+              service, we're creating an environment where smaller influencers
+              and brands thrive, bringing a much needed democratization to this
+              sphere. I am confident that we will redefine the landscape of both
+              of these evolving landscapes thereby deliver significant value to
+              our shareholders.
+            </p>
+          </div>
+          <div className="flex flex-col items-end justify-end">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/078ea913-4f11-49ae-a1fa-980bc7ae2081/weilai-zhang.png"
+              alt="ceo"
+              className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
+            />
+            <h2>Weilai "Will" Zhang</h2>
+            <p>AEHL Chairman and CEO</p>
           </div>
         </div>
       </div>
