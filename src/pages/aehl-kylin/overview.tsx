@@ -28,21 +28,21 @@ export default function KylinOverview() {
 
       <div className="flex row flex-col md:flex-row text-center justify-evenly items-center space-y-4 md:space-y-0 md:space-x-4">
         <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
-          <span className="material-icons-outlined !text-8xl text-gray-500">
+          <span className="material-symbols-outlined !text-8xl text-gray-500">
             apartment
           </span>
           <h1>600 Cities</h1>
           <p>Services in 600+ cities</p>
         </div>
         <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
-          <span className="material-icons-outlined !text-8xl text-gray-500">
+          <span className="material-symbols-outlined !text-8xl text-gray-500">
             currency_yuan
           </span>
           <h1>3 Million RMB</h1>
           <p>Annual transaction volume</p>
         </div>
         <div className="flex flex-col items-center p-8 border-2 rounded-md shadow-md">
-          <span className="material-icons-outlined !text-8xl text-gray-500">
+          <span className="material-symbols-outlined !text-8xl text-gray-500">
             trending_up
           </span>
           <h1>120+ Brands</h1>
