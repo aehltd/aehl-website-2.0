@@ -32,9 +32,9 @@
     /* @apply 3xl:text-2xl; */
   }
 
-  span {
+  /* span {
     @apply text-base;
-  }
+  } */
 }
 
 @layer components {
