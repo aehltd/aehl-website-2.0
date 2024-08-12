@@ -11,9 +11,9 @@ export default function Home() {
     <div id="container" className="container">
       <div className="relative flex w-full justify-center overflow-hidden text-center">
         <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm"
+          className="absolute inset-0 bg-cover bg-center filter blur-sm mainBackground"
           style={{
-            backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
+            // backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -66,7 +66,7 @@ export default function Home() {
       </div> */}
 
       <div
-        className="bg-local flex flex-col w-full items-center"
+        className="bg-local flex flex-col w-full items-center p-10"
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
@@ -76,7 +76,7 @@ export default function Home() {
         <div id="aehl-us">
           <div className="hidden md:block">
             <div className="grid grid-cols-2 w-full py-8 3xl:py-16 4xl:py-20">
-              <div className="col-span-1 flex justify-end">
+              <div className="col-span-1 flex justify-center">
                 <div className="halfrow pt-32">
                   <div className="flex flex-col p-8 bg-white shadow-lg rounded-xl">
                     <h1 className="mb-4">A New Energy Model</h1>
@@ -100,7 +100,7 @@ export default function Home() {
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661715583676-165c827b1cff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="kylin img"
-                  className="w-full h-full object-cover rounded-s-xl shadow-lg"
+                  className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
             </div>
@@ -138,28 +138,31 @@ export default function Home() {
                 <img
                   src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/449012af-b66b-4de0-b1a8-3d3e85b9196d/24990dd2bc453748013327e58d39340.jpg?content-type=image%2Fjpeg"
                   alt="kylin img"
-                  className="w-full h-full object-cover rounded-e-xl shadow-lg"
+                  className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
-              <div className="halfrow col-span-1 flex justify-end items-end mt-32">
-                <div className="flex flex-col p-8 bg-white shadow-lg rounded-xl">
-                  <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
-                  <p>
-                    Operating in China as Kylin Cloud, we aim to provide a
-                    one-stop solution in the rapidly growing field of
-                    livestreaming ecommerce. With over 300 million RMB in annual
-                    transaction volume, we are at the very forefront of this
-                    revolution.
-                  </p>
-                  <div className="ml-auto mt-4">
-                    <Link href="/aehl-kylin/overview" passHref>
-                      <Button type="primary" size="middle">
-                        Learn More
-                      </Button>
-                    </Link>
+              <div className="col-span-1 flex justify-center">
+                {/* <div className="halfrow items-end mt-32"> */}
+                  <div className="halfrow flex flex-col p-8 bg-white shadow-lg rounded-xl mt-32">
+                    <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
+                    <p>
+                      Operating in China as Kylin Cloud, we aim to provide a
+                      one-stop solution in the rapidly growing field of
+                      livestreaming ecommerce. With over 300 million RMB in annual
+                      transaction volume, we are at the very forefront of this
+                      revolution.
+                    </p>
+                    <div className="ml-auto mt-4">
+                      <Link href="/aehl-kylin/overview" passHref>
+                        <Button type="primary" size="middle">
+                          Learn More
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
+
             </div>
           </div>
 
