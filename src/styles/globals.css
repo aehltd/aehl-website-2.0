@@ -80,8 +80,4 @@
     @apply text-sm;
     /* @apply 3xl:text-lg; */
   }
-
-  .mainBackground {
-    background-color: #333333; /* Your custom hex code */
-  }
 }
