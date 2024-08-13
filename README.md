@@ -55,5 +55,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ### Contact
 For any inquiries, please contact:
 
-Company Name: Antelope Enterprise Holdings USA Inc.
+Company Name: Antelope Enterprise Holdings Limited.
 Email: dev@aehltd.com
