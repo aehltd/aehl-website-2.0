@@ -11,9 +11,9 @@ export default function Home() {
     <div id="container" className="container">
       <div className="relative flex w-full justify-center overflow-hidden text-center">
         <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm mainBackground"
+          className="absolute inset-0 bg-cover bg-center filter blur-sm"
           style={{
-            // backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
+            backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

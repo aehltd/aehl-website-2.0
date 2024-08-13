@@ -58,19 +58,22 @@ const items: MenuItem[] = [
     ],
   },
   {
+    key: "/ir/faqs", 
+    label: <Link href="/ir/faqs">FAQs</Link>
+  },
+  {
     key: "/ir/contact",
-    label: "Contact Info",
-    children: [
-      {
-        key: "/ir/contact-ir",
-        label: <Link href="/ir/contact-ir">Contact IR</Link>,
-      },
-      { key: "/ir/faqs", label: <Link href="/ir/faqs">FAQs</Link> },
-      {
-        key: "/ir/email-alerts",
-        label: <Link href="/ir/email-alerts">Email Alerts</Link>,
-      },
-    ],
+    label: <Link href="/ir/contact-ir">Contact</Link>,
+    // children: [
+    //   {
+    //     key: "/ir/contact-ir",
+    //     label: <Link href="/ir/contact-ir">Contact IR</Link>,
+    //   },
+    //   {
+    //     key: "/ir/email-alerts",
+    //     label: <Link href="/ir/email-alerts">Email Alerts</Link>,
+    //   },
+    // ],
   },
 ];
 
