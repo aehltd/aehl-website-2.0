@@ -9,15 +9,15 @@ type DocumentType = {
 const documents: DocumentType[] = [
   {
     name: "The Code of Ethics",
-    url: "https://aehltd.squarespace.com/s/China-Ceramics-Code-of-Ethics.pdf",
+    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Code-of-Ethics.pdf",
   },
   {
     name: "The Charter of the Audit Committee",
-    url: "https://aehltd.squarespace.com/s/China-Ceramics-Audit-Committee-Charter.pdf",
+    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Audit-Committee-Charter.pdf",
   },
   {
     name: "The Charter of the Nomination Committee",
-    url: "https://aehltd.squarespace.com/s/China-Ceramics-Governance-and-Nominating-Commtitee-Charter.pdf",
+    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Governance-and-Nominating-Committee-Charter.pdf",
   },
   {
     name: "The Charter of the Compensation Committee",
@@ -25,7 +25,7 @@ const documents: DocumentType[] = [
   },
   {
     name: "Whistleblower Policy of China Ceramics",
-    url: "https://aehltd.squarespace.com/s/China-Ceramics-Whistleblower-Policy.pdf",
+    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Whistleblower-Policy.pdf",
   },
 ];
 
