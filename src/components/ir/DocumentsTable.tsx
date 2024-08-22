@@ -21,7 +21,7 @@ const documents: DocumentType[] = [
   },
   {
     name: "The Charter of the Compensation Committee",
-    url: "https://aehltd.squarespace.com/s/CompensationCommitteeCharter-AmendedRestated.pdf",
+    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Compensation-Committee-Charter-Amended-Restated-zzkb.pdf",
   },
   {
     name: "Whistleblower Policy of China Ceramics",
