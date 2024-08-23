@@ -9,23 +9,23 @@ type DocumentType = {
 const documents: DocumentType[] = [
   {
     name: "The Code of Ethics",
-    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Code-of-Ethics.pdf",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1724337827/Antelope_Enterprise_-_Code_of_Ethics_yrnrnc.pdf",
   },
   {
     name: "The Charter of the Audit Committee",
-    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Audit-Committee-Charter.pdf",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1724337827/Antelope_Enterprise_-_Audit_Committee_Charter_adf130.pdf",
   },
   {
     name: "The Charter of the Nomination Committee",
-    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Governance-and-Nominating-Committee-Charter.pdf",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1724337827/Antelope_Enterprise_-_Governance_and_Nominating_Committee_Charter_kdcaur.pdf",
   },
   {
     name: "The Charter of the Compensation Committee",
-    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Compensation-Committee-Charter-Amended-Restated-zzkb.pdf",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1724337828/Antelope_Enterprise_-_Compensation_Committee_Charter_-_Amended_Restated_ts9arz.pdf",
   },
   {
     name: "Whistleblower Policy of China Ceramics",
-    url: "https://aehltd.squarespace.com/s/Antelope-Enterprise-Whistleblower-Policy.pdf",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1724337827/Antelope_Enterprise_-_Whistleblower_Policy_esfsyr.pdf"
   },
 ];
 

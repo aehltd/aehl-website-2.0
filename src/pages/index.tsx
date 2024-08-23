@@ -9,27 +9,22 @@ export default function Home() {
 
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full justify-center overflow-hidden text-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm"
-          style={{
-            backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-slate-700 opacity-50"></div>
-        <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/e55ba965-5b03-4ee7-80f7-da4419ea35ee/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg"
-            alt="logo"
-            className="w-full md:w-3/4 drop-shadow-3xl"
-          />
-          <h2 className="mt-16 text-white font-semibold drop-shadow-lg">
+      <div  className="relative flex justify-center items-center text-center w-full h-full bg-cover"
+            style={{backgroundImage:'url(https://res.cloudinary.com/aehl/image/upload/v1724428460/3D_dohdwm.jpg)',
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    aspectRatio: '16/9',
+                    }}>
+          <h2 className="absolute inline-block w-3/4 text-white font-semibold drop-shadow-lg"
+              style={{
+                top: '80%', // Position the text at 80% from the top
+                transform: 'translateY(-50%)', // Adjust for vertical alignment
+                // fontSize: 'clamp(1rem, 3vw, 2.5rem)',
+                fontSize: '2.7vw',
+              }}>
             A Beacon of Innovation in an Evolving Energy and Technology
             Landscape
           </h2>
-        </div>
       </div>
 
       <div className="flex w-full bg-slate-400 justify-center text-white">
