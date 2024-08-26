@@ -60,13 +60,11 @@ export default function NavBar({current, isIRSection}: {current: string, isIRSec
     <div className="flex justify-center">
       <div className="flex row p-0 h-14 justify-between">
         <div className="flex items-center pl-4 py-2">
-          <a href="/">
             <img
               src = "https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
               alt = "logo"
               className = "h-full w-full"
             />
-          </a>
         </div>
         <div className="md:hidden">
           <MenuOutlined className="h-full pr-4" onClick={openDrawer} />
