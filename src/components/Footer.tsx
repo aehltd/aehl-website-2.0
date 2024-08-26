@@ -6,11 +6,10 @@ export default function Footer() {
       <div className="flex flex-col row items-center">
         <div className="flex w-full justify-between items-center">
           <h2>Antelope Enterprise Holdings Limited</h2>
-            <img
-              src = "https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
-              alt = "logo"
-              className = "h-full w-full"
-            />
+          <img
+            src = "https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
+            alt="logo"
+          />
         </div>
         <Divider className="my-2" />
         <div className="flex w-full justify-between space-x-16">
