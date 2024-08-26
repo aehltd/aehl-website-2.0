@@ -9,14 +9,14 @@ export default function KylinOverview() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/585c5fdd-4198-4d3c-b0b4-d7a9d6aac4e9/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145549.jpg')",
+              "url('https://res.cloudinary.com/aehl/image/upload/v1724428455/image4-1_va07bo.jpg')",
             backgroundSize: "cover",
           }}
         ></div>
         <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
         <div className="relative z-10 flex flex-col w-full h-full items-center justify-center p-16 space-y-16">
           <img
-            src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/e55ba965-5b03-4ee7-80f7-da4419ea35ee/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg"
+            src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
             alt="Logo"
             className="w-full md:w-3/4 drop-shadow-2xl"
           />
@@ -53,7 +53,7 @@ export default function KylinOverview() {
         className="bg-local flex w-full justify-center"
         style={{
           backgroundImage:
-            "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
           backgroundSize: "cover",
         }}
       >
@@ -104,7 +104,7 @@ export default function KylinOverview() {
       <div className="flex row flex-col md:flex-row">
         <div className="flex my-4 md:mr-8 md:mb-0 md:w-1/2">
           <img
-            src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/0e1e7924-1981-49cc-89fa-73f5628f7890/6049046d97a5fe05f83d64ebfe1b7a4.jpg"
+            src="https://res.cloudinary.com/aehl/image/upload/v1724428454/image2-2_fjgknc.jpg"
             alt="business"
             className="w-full h-full object-cover"
           />
@@ -138,43 +138,43 @@ export default function KylinOverview() {
             <div className="flex w-full flex-col md:flex-row 4xl:w-1/2 justify-evenly items-center">
               <div className="flex w-full justify-evenly items-center">
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/fab2712b-12d3-4c03-9675-989518ecc72a/%E5%B0%8F%E7%BA%A2%E4%B9%A6.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724428447/%E5%B0%8F%E7%BA%A2%E4%B9%A6_d5u9yo.png"
                   alt="小红书"
                 />
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/6539c476-f692-4534-b1e4-054df8be1a7f/%E5%BF%AB%E6%89%8B.png"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428451/%E5%BF%AB%E6%89%8B_fvsuyq.png"
                   alt="快手"
                 />
               </div>
               <div className="flex w-full justify-evenly items-center">
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/a23b9ad8-d18a-46a9-8ae8-90e8e92dc2f8/%E4%BA%AC%E4%B8%9C.png"
-                  alt="京东"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428451/%E4%BA%AC%E4%B8%9C_b5u9vi.png"
+                  alt = "京东"
                 />
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/a2a95e4e-12f2-46bc-aab1-7d6e7fdd2028/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1.png"
-                  alt="头条"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428453/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1_vfu7wc.png"
+                  alt = "今日头条"
                 />
               </div>
             </div>
             <div className="flex w-full flex-col md:flex-row 4xl:w-1/2 justify-evenly items-center">
               <div className="flex w-full justify-evenly items-center">
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/798d4e5a-3400-4c41-b636-ab94eeb749e3/TikTok.png"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428449/TikTok_aepoag.png"
                   alt="TikTok"
                 />
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/fbe24af6-4372-4279-8518-fa2f9f9543a3/%E6%8A%96%E9%9F%B3.png"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428448/%E6%8A%96%E9%9F%B3_sctelm.png"
                   alt="抖音"
                 />
               </div>
               <div className="flex w-full justify-evenly items-center">
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/114f7b2e-77fa-4fe3-9717-bd0f83c56570/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9.png"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428449/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9_idd9e3.png"
                   alt="哔哩哔哩"
                 />
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/d1438c86-ca12-4dc0-a6b0-dd54bf116fa7/%E8%A5%BF%E7%93%9C%E8%A7%86%E9%A2%91.png"
+                  src = "https://res.cloudinary.com/aehl/image/upload/v1724428452/%E8%A5%BF%E7%93%9C%E8%A7%86%E9%A2%91_jzim14.png"
                   alt="西瓜视频"
                 />
               </div>

@@ -9,27 +9,22 @@ export default function Home() {
 
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full justify-center overflow-hidden text-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm"
-          style={{
-            backgroundImage: `url(https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/340d967e-cf1f-4c4e-ab6d-b44c8737a53f/3D.jpg)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-slate-700 opacity-50"></div>
-        <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/e55ba965-5b03-4ee7-80f7-da4419ea35ee/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg"
-            alt="logo"
-            className="w-full md:w-3/4 drop-shadow-3xl"
-          />
-          <h2 className="mt-16 text-white font-semibold drop-shadow-lg">
+      <div  className="relative flex justify-center items-center text-center w-full h-full bg-cover"
+            style={{backgroundImage:'url(https://res.cloudinary.com/aehl/image/upload/v1724428460/3D_dohdwm.jpg)',
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    aspectRatio: '16/9',
+                    }}>
+          <h2 className="absolute inline-block w-3/4 text-white font-semibold drop-shadow-lg"
+              style={{
+                top: '80%', // Position the text at 80% from the top
+                transform: 'translateY(-50%)', // Adjust for vertical alignment
+                // fontSize: 'clamp(1rem, 3vw, 2.5rem)',
+                fontSize: '2.7vw',
+              }}>
             A Beacon of Innovation in an Evolving Energy and Technology
             Landscape
           </h2>
-        </div>
       </div>
 
       <div className="flex w-full bg-slate-400 justify-center text-white">
@@ -69,7 +64,7 @@ export default function Home() {
         className="bg-local flex flex-col w-full items-center p-10"
         style={{
           backgroundImage:
-            "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
           backgroundSize: "cover",
         }}
       >
@@ -98,7 +93,7 @@ export default function Home() {
               </div>
               <div className="col-span-1">
                 <img
-                  src="https://plus.unsplash.com/premium_photo-1661715583676-165c827b1cff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724684787/Untitled_design_xpg7sk.jpg"
                   alt="kylin img"
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
@@ -108,7 +103,7 @@ export default function Home() {
 
           <div className="relative md:hidden h-[80vh]">
             <img
-              src="https://plus.unsplash.com/premium_photo-1661715583676-165c827b1cff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724684787/Untitled_design_xpg7sk.jpg"
               alt="kylin img"
               className="m-16 -mr-24 w-full h-2/3 object-cover rounded-s-xl shadow-lg"
             />
@@ -136,13 +131,12 @@ export default function Home() {
             <div className="grid grid-cols-2 w-full py-8 3xl:py-16 4xl:py-20">
               <div className="col-span-1">
                 <img
-                  src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/449012af-b66b-4de0-b1a8-3d3e85b9196d/24990dd2bc453748013327e58d39340.jpg?content-type=image%2Fjpeg"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724428459/image1_c9ca55.jpg"
                   alt="kylin img"
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
-                {/* <div className="halfrow items-end mt-32"> */}
                   <div className="halfrow flex flex-col p-8 bg-white shadow-lg rounded-xl mt-32">
                     <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
                     <p>
@@ -160,7 +154,6 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                {/* </div> */}
               </div>
 
             </div>
@@ -168,7 +161,7 @@ export default function Home() {
 
           <div className="relative md:hidden h-[80vh]">
             <img
-              src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/449012af-b66b-4de0-b1a8-3d3e85b9196d/24990dd2bc453748013327e58d39340.jpg?content-type=image%2Fjpeg"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428459/image1_c9ca55.jpg"
               alt="kylin img"
               className="m-16 -ml-24 w-full h-2/3 object-cover rounded-e-xl shadow-lg"
             />
@@ -217,9 +210,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-end justify-end">
             <img
-              src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/078ea913-4f11-49ae-a1fa-980bc7ae2081/weilai-zhang.png"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png"
               alt="ceo"
-              className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
+              className="w-56 mb-2 object-cover rounded-md drop-shadow-md"
             />
             <h2>Weilai &quot;Will&quot; Zhang</h2>
             <p>AEHL Chairman and CEO</p>

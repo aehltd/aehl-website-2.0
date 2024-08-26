@@ -14,11 +14,11 @@ export default function IREventsPresentationsPage() {
       </div>
       <div
         className="bg-local flex w-full justify-center"
-        style={{
-          backgroundImage:
-            "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
-          backgroundSize: "cover",
-        }}
+        // style={{
+        //   backgroundImage:
+        //     "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
+        //   backgroundSize: "cover",
+        // }}
       >
         <div id="presentation" className="row">
           <h1 className="mb-4">Past Events</h1>

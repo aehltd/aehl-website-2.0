@@ -7,7 +7,7 @@ export default function ContactUs() {
         className="bg-local flex w-full h-[65vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://www.aehlus.com/png/img3.0cd01d99.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724430444/img3.0cd01d99_ukqlxc.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
