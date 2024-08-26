@@ -6,7 +6,7 @@ export default function USOverview() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://www.aehlus.com/png/img1.c6bbf8d2.png')",
+              "url('https://res.cloudinary.com/aehl/image/upload/v1724430440/img1.c6bbf8d2_jabqxm.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -14,7 +14,7 @@ export default function USOverview() {
         <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
         <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
           <img
-            src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/e55ba965-5b03-4ee7-80f7-da4419ea35ee/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg"
+            src = "https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
             alt="Logo"
             className="w-full md:w-3/4 drop-shadow-2xl"
           />
@@ -76,7 +76,7 @@ export default function USOverview() {
         className="bg-local flex w-full justify-center"
         style={{
           backgroundImage:
-            "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
           backgroundSize: "cover",
         }}
       >
@@ -87,7 +87,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://www.aehlus.com/png/Strengths-1.a36a67d4.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724430443/Strengths_1_hwjy8h.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -104,7 +104,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://www.aehlus.com/png/Strengths-2.b90e5967.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724430438/Strengths-2.b90e5967_tczbv2.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -123,7 +123,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://www.aehlus.com/png/Strengths-3.9e5a1c57.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724430445/Strengths-3.9e5a1c57_o0u5yc.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -140,7 +140,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://www.aehlus.com/png/Strengths-4.d4502d8c.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/v1724430442/Strengths-4.d4502d8c_vi00ya.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -161,7 +161,7 @@ export default function USOverview() {
       <div className="flex row flex-col space-y-8 md:flex-row md:justify-between md:space-x-16 md:space-y-0">
         <img
           className="md:w-1/2 object-cover h-full"
-          src="https://www.aehlus.com/png/img6.c41aed10.png"
+          src="https://res.cloudinary.com/aehl/image/upload/v1724430439/img6.c41aed10_sjc3zh.png"
           alt="bg"
         />
         <div className="flex flex-col md:w-1/2 justify-center">

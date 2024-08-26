@@ -39,11 +39,11 @@ export default function IRSECFilings() {
         </div>
         <div
           className="bg-local flex flex-col w-full items-center"
-          style={{
-            backgroundImage:
-              "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
-            backgroundSize: "cover",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
+          //   backgroundSize: "cover",
+          // }}
         >
           <div className="row">
             <QModFooter />

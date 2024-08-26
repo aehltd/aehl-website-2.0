@@ -10,7 +10,7 @@ export default function USProducts() {
         className="bg-local flex w-full h-[40vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://www.aehlus.com/png/img4.50ec3eb4.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724430441/img4.50ec3eb4_vgyxwa.png')",
           backgroundSize: "cover",
         }}
       ></div>
@@ -18,7 +18,7 @@ export default function USProducts() {
         <div className="md:w-1/2 ml-0">
           <img
             className="object-cover h-full w-full"
-            src="https://www.aehlus.com/png/img7.6170bfe8.png"
+            src="https://res.cloudinary.com/aehl/image/upload/v1724430442/img7.6170bfe8_vq3cnh.png"
             alt="bg"
           />
         </div>

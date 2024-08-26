@@ -31,7 +31,7 @@ export default function KylinModel() {
         className="bg-local flex w-full h-[40vh] bg-center justify-center"
         style={{
           backgroundImage:
-            "url('https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/24942941-dc52-4b21-afd5-1143691ddbdd/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601145557.jpg?content-type=image%2Fjpeg')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724428457/image5-1_vawwhv.jpg')",
           backgroundSize: "cover ",
         }}
       ></div>
@@ -77,17 +77,11 @@ export default function KylinModel() {
           </div>
         </div>
       </div>
-      <div
-        className="flex bg-local w-full justify-center"
-        style={{
-          backgroundImage:
-            "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="flex bg-local w-full justify-center">
         <div className="flex row flex-col">
           <h1>Our Services</h1>
-          <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="flex flex-col md:flex-row items-center justify-center"
+                style={{height:"36vh"}}>
             <div className="flex items-center justify-center my-4 md:mr-8 w-full md:w-1/2">
               <div
                 style={{
