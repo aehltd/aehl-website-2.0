@@ -49,46 +49,12 @@ export default function KylinOverview() {
           <p>Served 120+ major brands</p>
         </div>
       </div>
-      <div
-        className="bg-local flex w-full justify-center"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
-          backgroundSize: "cover",
-        }}
-      >
-        <div className="row">
-          <div className="flex items-center justify-center ml-0 mb-4">
-            <div
-              style={{
-                position: "relative",
-                width: "100%",
-                height: "0px",
-                paddingBottom: "42.656%",
-              }}
-            >
-              <iframe
-                title="Kylin Tour Video"
-                allow="fullscreen"
-                allowFullScreen
-                height="100%"
-                src="https://streamable.com/e/19gy9c?"
-                width="100%"
-                style={{
-                  border: "none",
-                  width: "100%",
-                  height: "100%",
-                  position: "absolute",
-                  left: "0px",
-                  top: "0px",
-                  overflow: "hidden",
-                }}
-              ></iframe>
-            </div>
-          </div>
-          <div>
-            <h1>Our Vision</h1>
-            <p className="text-gray-700">
+
+      <div className="flex row flex-col md:flex-row">
+        <div className="flex w-1/2">
+        <div>
+            <h1 className="mb-4">Our Vision</h1>
+            <p>
               Livestreaming ecommerce is becoming mainstream, revolutionizing
               how businesses reach and engage customers. We seamlessly connect
               businesses with live streaming talent, and consumers benefit as a
@@ -98,6 +64,15 @@ export default function KylinOverview() {
               potential in the digital economy.
             </p>
           </div>
+        </div>
+        <div className="flex w-full pl-4">
+              <iframe
+                title="Kylin Tour Video"
+                allow="fullscreen"
+                allowFullScreen
+                src="https://streamable.com/e/19gy9c?"
+                style={{width:"100%"}}
+              ></iframe>
         </div>
       </div>
 
@@ -110,7 +85,7 @@ export default function KylinOverview() {
           />
         </div>
         <div className="flex flex-col w-full md:w-1/2 md:text-end">
-          <h1>Our Business</h1>
+          <h1 className="mb-4">Our Business</h1>
           <p>
             Our integrated platform seamlessly connects businesses with a vast
             network of broadcasters and influencers, unlocking new avenues for
@@ -129,7 +104,8 @@ export default function KylinOverview() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-400 flex w-full justify-center">
+
+      <div className="bg-gray-400 flex w-full justify-center">
         <div className="row text-center">
           <h1 className="text-white font-semibold mb-8">
             Collaborating Livestreaming Platforms

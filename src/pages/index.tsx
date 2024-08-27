@@ -27,7 +27,7 @@ export default function Home() {
           </h2>
       </div>
 
-      <div className="flex w-full bg-slate-400 justify-center text-white">
+      <div className="flex w-full justify-center">
         <div id="mission-statement" className="row text-center">
           <h1>Mission Statement</h1>
           <h2>
@@ -61,19 +61,14 @@ export default function Home() {
       </div> */}
 
       <div
-        className="bg-local flex flex-col w-full items-center p-10"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
-          backgroundSize: "cover",
-        }}
+        className="bg-local flex flex-col w-full items-center pt-0 px-10"
       >
         <div id="aehl-us">
           <div className="hidden md:block">
             <div className="grid grid-cols-2 w-full py-8 3xl:py-16 4xl:py-20">
               <div className="col-span-1 flex justify-center">
                 <div className="halfrow pt-32">
-                  <div className="flex flex-col p-8 bg-white shadow-lg rounded-xl">
+                  <div className="flex flex-col p-8 bg-white shadow-2xl rounded-xl">
                     <h1 className="mb-4">A New Energy Model</h1>
                     <p>
                       With data centers based in Texas, we are an emerging
@@ -133,7 +128,7 @@ export default function Home() {
                 <img
                   src="https://res.cloudinary.com/aehl/image/upload/v1724428459/image1_c9ca55.jpg"
                   alt="kylin img"
-                  className="w-full h-full object-cover rounded-xl shadow-lg"
+                  className="w-full h-full object-cover rounded-xl shadow-2xl"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
@@ -212,7 +207,7 @@ export default function Home() {
             <img
               src="https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png"
               alt="ceo"
-              className="w-56 mb-2 object-cover rounded-md drop-shadow-md"
+              className="w-56 mb-2 object-cover rounded-2xl drop-shadow-md"
             />
             <h2>Weilai &quot;Will&quot; Zhang</h2>
             <p>AEHL Chairman and CEO</p>

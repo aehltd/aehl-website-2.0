@@ -83,11 +83,11 @@ export default function IRBar({current}: {current: string}) {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="flex w-full justify-end md:justify-center bg-slate-100">
+    <div className="flex justify-center bg-gray-400">
+      <div className="flex w-full justify-end md:justify-center">
         <div className="hidden md:flex">
           <Menu
-            className="font-poppins text-center min-w-0 flex-auto bg-slate-100"
+            className="font-poppins text-center min-w-0 flex-auto bg-gray-400"
             onClick={handleClick}
             selectedKeys={[current]}
             mode="horizontal"
@@ -97,7 +97,7 @@ export default function IRBar({current}: {current: string}) {
         </div>
         <div className="md:hidden flex items-center flex-col w-full">
           <Menu
-            className="font-poppins !border-0 w-full bg-slate-100"
+            className="font-poppins !border-0 w-full"
             onClick={handleClick}
             selectedKeys={[current]}
             openKeys={openKeys}

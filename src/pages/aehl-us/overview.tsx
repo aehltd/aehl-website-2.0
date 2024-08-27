@@ -20,13 +20,13 @@ export default function USOverview() {
           />
           <h1 className="mt-16 text-white font-bold drop-shadow-2xl">
             Next Generation Infrastructure to Power{" "}
-            <span className="text-green-500">AI</span>
+            <span className="text-green">AI</span>
           </h1>
         </div>
       </div>
 
       <div className="flex row flex-col">
-        <h1 className="">Vision & Mission</h1>
+        <h1 className="mb-4">Vision & Mission</h1>
         <div className="flex w-full flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2 flex flex-col space-y-2">
             <div>
@@ -72,14 +72,7 @@ export default function USOverview() {
         </div>
       </div>
 
-      <div
-        className="bg-local flex w-full justify-center"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724429466/img12.f4ed389f_te7lgl.png')",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="bg-local flex w-full justify-center">
         <div className="row">
           <h1 className="mb-4">Our Strengths</h1>
           <div className="flex w-full flex-col md:flex-row space-y-4 md:space-y-0">
@@ -165,7 +158,7 @@ export default function USOverview() {
           alt="bg"
         />
         <div className="flex flex-col md:w-1/2 justify-center">
-          <h2>Team</h2>
+          <h1 className="mb-4">Team</h1>
           <p>
             Our team is rapidly building comprehensive experience in technology
             infrastructure.

@@ -57,7 +57,7 @@ export default function NavBar({current, isIRSection}: {current: string, isIRSec
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-gray-200">
       <div className="flex row p-0 h-14 justify-between">
         <div className="flex items-center pl-4 py-2">
             <img
@@ -72,7 +72,7 @@ export default function NavBar({current, isIRSection}: {current: string, isIRSec
 
         <div className="hidden md:flex">
           <Menu
-            className="text-base font-poppins h-full pt-2 min-w-0 flex-auto"
+            className="text-base font-poppins h-full pt-2 min-w-0 flex-auto bg-gray-200"
             selectedKeys={[currPage]}
             mode="horizontal"
             disabledOverflow

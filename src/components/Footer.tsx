@@ -2,7 +2,7 @@ import { Divider } from "antd";
 
 export default function Footer() {
   return (
-    <div className="bg-slate-100 w-full flex items-center justify-center">
+    <div className="bg-gray-200 w-full flex items-center justify-center">
       <div className="flex flex-col row items-center">
         <div className="flex w-full justify-between items-center">
           <h2>Antelope Enterprise Holdings Limited</h2>
