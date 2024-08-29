@@ -55,7 +55,7 @@ const FAQ: FAQItem[] = [
 export default function IRFAQ() {
   return (
     <div id="container" className="container">
-      <div className="flex w-full justify-center bg-slate-400">
+      <div className="flex w-full justify-center bg-gray-500">
         <div className="row">
           <h1 className="text-white">FAQ</h1>
         </div>
@@ -63,7 +63,7 @@ export default function IRFAQ() {
       <ul className="flex row flex-col space-y-8">
         {FAQ.map((item, index) => (
           <li key={index} className="flex flex-col">
-            <h2>
+            <h2 className="tracking-wide font-bold py-4">
               {index + 1}. {item.question}
             </h2>
             <p>{item.answer}</p>

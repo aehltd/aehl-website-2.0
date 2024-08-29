@@ -25,19 +25,22 @@ const config: Config = {
     colors: {
       // Configure your color palette here
       'white': '#FFFFFF',
-      'midnight': '#272727',
+      'midnight': '#323643',
+      'midnight2': '#606470',
       'green': '#50D890',
-      'tealD': '#D2D3D3',
+      'sky': '#93DEFF',
       gray: {
-          100: '#f7fafc',
-          200: '#edf2f7',
-          300: '#e2e8f0',
-          400: '#cbd5e0',
-          500: '#a0aec0', // This is gray-500
-          600: '#718096',
-          700: '#4a5568',
-          800: '#2d3748',
-          900: '#1a202c',
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280', // This is gray-500
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+          950: '#030712',
         },
       slate: {
           50: '#f8f9fa',
@@ -51,7 +54,6 @@ const config: Config = {
           800: '#212529',
           900: '#121416',
         },
-
 
     },
     extend: {

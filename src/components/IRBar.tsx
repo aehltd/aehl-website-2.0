@@ -31,7 +31,7 @@ const items: MenuItem[] = [
   },
   {
     key: "/ir/stock-information",
-    label: <Link href="/ir/stock-information">Stock Information</Link>,
+    label: <Link href="/ir/stock-information">Stock Price</Link>,
   },
   {
     key: "/ir/governance",
@@ -83,11 +83,12 @@ export default function IRBar({current}: {current: string}) {
   };
 
   return (
-    <div className="flex justify-center bg-gray-400">
-      <div className="flex w-full justify-end md:justify-center">
+    <div className="flex justify-center bg-white">
+      <div className="flex row p-0 justify-end">
+        {/* <h2>Investor Relations</h2> */}
         <div className="hidden md:flex">
           <Menu
-            className="font-poppins text-center min-w-0 flex-auto bg-gray-400"
+            className="text-base font-poppins h-full min-w-0 flex-auto bg-white"
             onClick={handleClick}
             selectedKeys={[current]}
             mode="horizontal"

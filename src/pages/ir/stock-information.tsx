@@ -33,7 +33,7 @@ export default function IRStockInfo() {
 
   return (
     <div id="container" className="container">
-      <div className="flex w-full justify-center bg-slate-400">
+      <div className="flex w-full justify-center bg-slate-500">
         <div className="row">
           <div className="flex w-full flex-col md:flex-row items-center space-y-4 md:space-y-0">
             <div className="flex flex-col">

@@ -25,7 +25,7 @@ export default function IRSECFilings() {
   
     return (
       <div id="container" className="container">
-        <div className="flex w-full justify-center bg-slate-400">
+        <div className="flex w-full justify-center bg-slate-500">
           <div className="row">
             <h1 className="text-white">SEC Filings</h1>
           </div>

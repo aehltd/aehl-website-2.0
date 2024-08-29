@@ -6,7 +6,7 @@ export default function UnsubscribeForm () {
 
   return (
     <Form layout="vertical" onFinish={handleFinish}>
-      <h1>Unsubscribe from Email Alerts</h1>
+      <h1 className="font-bold tracking-wide">Unsubscribe from Email Alerts</h1>
       <div className="max-w-lg">
         <h2 className="mb-4">Enter your email address below.</h2>
         <div>
