@@ -6,6 +6,37 @@ type IrLinks = {
   link: string;
 };
 
+type aehlUsLinks = {
+  label: string;
+  link: string;
+};
+
+type aehlKylinLinks = {
+  label: string;
+  link: string;
+};
+
+const aehlUsLink: aehlUsLinks[] = [
+  {
+    label: "About AEHL US",
+    link: "/aehl-us/overview",
+  },
+  {
+    label: "Products",
+    link: "/aehl-us/products",
+  },
+];
+const aehlKylinLink: aehlKylinLinks[] = [
+  {
+    label: "About AEHL Kylin",
+    link: "/aehl-kylin/overview",
+  },
+  {
+    label: "Business Model",
+    link: "/aehl-kylin/model",
+  },
+];
+
 const IrLink: IrLinks[] = [
   {
     label: "Investor Relations",
@@ -58,7 +89,9 @@ export default function Footer() {
     <div className="bg-gray-100 w-full flex items-center justify-center">
       <div className="flex flex-col row items-center">
         <div className="flex w-full justify-between items-center">
-          <h2>Antelope Enterprise Holdings Limited</h2>
+          <h2 className="font-bold tracking-widest">
+            Antelope Enterprise Holdings Limited
+          </h2>
           <img
             src="https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
             alt="logo"
@@ -69,54 +102,11 @@ export default function Footer() {
         <div className="grid grid-cols-3 gap-6 w-full">
           <div className="text-start px-5">
             <ul className="list-none">
-              <li className="py-1">
+              <li className="py-2">
                 <h3 className="font-semibold">AEHL US</h3>
               </li>
-              <li className="py-0.5">
-                <Link
-                  href="/aehl-us/overview"
-                  className="text-midnight2 hover:underline hover:font-bold"
-                >
-                  About AEHL US
-                </Link>
-              </li>
-              <li className="py-0.5">
-                <Link
-                  href="/aehl-us/products"
-                  className="text-midnight2 hover:underline hover:font-bold"
-                >
-                  Products
-                </Link>
-              </li>
-              <li className="py-0.5">
-                <h3 className="font-semibold">AEHL Kylin</h3>
-              </li>
-              <li className="py-0.5">
-                <Link
-                  href="/aehl-kylin/overview"
-                  className="text-midnight2 hover:underline hover:font-bold"
-                >
-                  About AEHL Kylin
-                </Link>
-              </li>
-              <li className="py-0.5">
-                <Link
-                  href="/aehl-kylin/model"
-                  className="text-midnight2 hover:underline hover:font-bold"
-                >
-                  Business Model
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="text-start px-5">
-            <ul className="list-none">
-              <li className="py-1">
-                <h3 className="font-semibold">Investor</h3>
-              </li>
-              {IrLink.map((entry) => {
-                return(
+              {aehlUsLink.map((entry) => {
+                return (
                   <li className="py-0.5">
                     <Link
                       href={entry.link}
@@ -125,14 +115,50 @@ export default function Footer() {
                       {entry.label}
                     </Link>
                   </li>
-                )
+                );
+              })}
+
+              <li className="py-2">
+                <h3 className="font-semibold">AEHL Kylin</h3>
+              </li>
+              {aehlUsLink.map((entry) => {
+                return (
+                  <li className="py-0.5">
+                    <Link
+                      href={entry.link}
+                      className="text-midnight2 hover:underline hover:font-bold"
+                    >
+                      {entry.label}
+                    </Link>
+                  </li>
+                );
               })}
             </ul>
           </div>
+
           <div className="text-start px-5">
+            <ul className="list-none">
+              <li className="py-2">
+                <h3 className="font-semibold">Investor</h3>
+              </li>
+              {IrLink.map((entry) => {
+                return (
+                  <li className="py-0.5">
+                    <Link
+                      href={entry.link}
+                      className="text-midnight2 hover:underline hover:font-bold"
+                    >
+                      {entry.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="text-start py-2">
             <div className="text-start">
-              <p className="p-1">Phone: +1 (838) 500 - 8888</p>
-              <p className="p-1">
+              <p className="p-2">Phone: +1 (838) 500 - 8888</p>
+              <p className="p-2">
                 Office: Suite 7540, The Empire State Building, 350 Fifth Ave,
                 New York, NY, 10118
               </p>

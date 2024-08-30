@@ -39,7 +39,6 @@ const items: MenuItem[] = [
       },
     ],
   },
-  // { key: "/ir", label: <Link href="/ir/overview">Investor Relations</Link> },
   { key: "/ir", label: <Link href="/ir/overview">Investor</Link> },
   { key: "/contact-us", label: <Link href="/contact-us">Contact Us</Link> },
 ];
