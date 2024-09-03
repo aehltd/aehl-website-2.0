@@ -5,13 +5,13 @@ import Link from "next/link";
 type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
+  // {
+  //   key: "/ir/overview",
+  //   label: <Link href="/ir/overview">Overview</Link>,
+  // },
   {
-    key: "/ir/overview",
-    label: <Link href="/ir/overview">Overview</Link>,
-  },
-  {
-    key: "/ir/news",
-    label: "News and Events",
+    key: "/ir/",
+    label: <Link href="/ir/press-releases" className="hover:text-black">Newsroom</Link>,
     children: [
       {
         key: "/ir/press-releases",
@@ -35,7 +35,7 @@ const items: MenuItem[] = [
   },
   {
     key: "/ir/governance",
-    label: "Corporate Governance",
+    label: <Link href="/ir/board" className="hover:text-black">Corporate Governance</Link>,
     children: [
       {
         key: "/ir/board",
@@ -58,7 +58,7 @@ const items: MenuItem[] = [
     ],
   },
   {
-    key: "/ir/faqs", 
+    key: "/ir/faqs",
     label: <Link href="/ir/faqs">FAQs</Link>,
   },
   {
@@ -75,7 +75,7 @@ const itemsInline: MenuItem[] = [
   },
 ];
 
-export default function IRBar({current}: {current: string}) {
+export default function IRBar({ current }: { current: string }) {
   const [openKeys, setOpenKeys] = useState<string[]>([]);
 
   const handleClick = (e: any) => {
@@ -84,16 +84,22 @@ export default function IRBar({current}: {current: string}) {
 
   return (
     <div className="flex justify-center bg-white">
-      <div className="flex row p-0 justify-end">
-        {/* <h2>Investor Relations</h2> */}
+      <div className="flex row p-0 justify-between">
+        <Link
+          href="/ir/overview"
+          className="text-start items-center md:flex hidden"
+        >
+          <h2 className="font-semibold tracking-wider">Investor Relations</h2>
+        </Link>
         <div className="hidden md:flex">
           <Menu
-            className="text-base font-poppins h-full min-w-0 flex-auto bg-white"
+            className="text-base font-poppins h-full min-w-0 flex-auto bg-white "
             onClick={handleClick}
             selectedKeys={[current]}
             mode="horizontal"
             disabledOverflow
             items={items}
+            style={{ borderBottom: "none" }}
           />
         </div>
         <div className="md:hidden flex items-center flex-col w-full">
@@ -110,4 +116,4 @@ export default function IRBar({current}: {current: string}) {
       </div>
     </div>
   );
-};
+}

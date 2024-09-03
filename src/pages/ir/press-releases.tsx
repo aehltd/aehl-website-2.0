@@ -25,9 +25,9 @@ export default function IRNews() {
 
   return (
     <div id="container" className="container">
-      <div className="flex w-full justify-center bg-gray-500">
+      <div className="flex w-full justify-center">
         <div className="row">
-          <h1 className="text-white">Newsroom</h1>
+          <h1 className="font-bold tracking-wider">Press Releases</h1>
         </div>
       </div>
 

@@ -4,26 +4,42 @@ export default function ContactUs() {
   return (
     <div id="container" className="container">
       <div
-        className="bg-local flex w-full h-[40vh] justify-center"
+        className="bg-top flex w-full h-[55vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724430444/img3.0cd01d99_ukqlxc.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1725376615/new-york-view-with-empire-state-building_zzhpya.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-white text-7xl mb-6 drop-shadow-lg">Join AEHL</h1>
+          <h1 className="text-white text-7xl mb-6 tracking-widest font-bold drop-shadow-lg">
+            Join AEHL
+          </h1>
         </div>
       </div>
+
+      <div className="w-full">
+        <p className="text-xxs text-end px-3">
+          Designed by{" "}
+          <a
+            className="text-xxs"
+            href="https://www.freepik.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Freepik
+          </a>
+        </p>
+      </div>
+
       <div className="flex row flex-col">
-        <h1>Contact Us</h1>
+        <h1 className="font-bold tracking-wide">Contact Us</h1>
         <div className="flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row md:space-x-8">
           <div className="flex flex-col">
             <div className="flex flex-col justify-evenly m-4">
               <div>
                 <h2 className="my-2">Phone:</h2>
-                <p >+1 (838) 500 - 8888</p>
+                <p>+1 (838) 500 - 8888</p>
               </div>
               <div>
                 <h2 className="my-2">Office:</h2>
@@ -31,9 +47,8 @@ export default function ContactUs() {
                   Suite 7540, The Empire State Building, 350 Fifth Ave, New
                   York, New York, 10118
                 </p>
-                
               </div>
-              <div >
+              <div>
                 <h2 className="my-2">Hours:</h2>
                 <p>Monday – Friday</p>
                 <p>10am – 5pm</p>

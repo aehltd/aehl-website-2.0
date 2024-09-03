@@ -5,14 +5,14 @@ export default function IROverview() {
         className="bg-local flex w-full h-[40vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1725031477/business-people-shaking-hands-together_mfsubx.jpg')",
+            "url('https://res.cloudinary.com/aehl/image/upload/v1724430444/img3.0cd01d99_ukqlxc.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="flex items-center justify-center">
-          <h1 className="text-white text-7xl mb-6 drop-shadow-lg">
-            Investor Relations
+          <h1 className="text-white text-7xl mb-6 tracking-widest font-bold drop-shadow-lg">
+            Our Values
           </h1>
         </div>
       </div>

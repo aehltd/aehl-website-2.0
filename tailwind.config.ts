@@ -25,6 +25,7 @@ const config: Config = {
     colors: {
       // Configure your color palette here
       'white': '#FFFFFF',
+      'black':"#000000",
       'midnight': '#323643',
       'midnight2': '#606470',
       'green': '#50D890',

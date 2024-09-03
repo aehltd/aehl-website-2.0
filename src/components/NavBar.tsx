@@ -8,8 +8,8 @@ type MenuItem = Required<MenuProps>["items"][number];
 const items: MenuItem[] = [
   { key: "/", label: <Link href="/">Home</Link> },
   {
-    key: "/aehl-us",
-    label: "AEHL US",
+    key: "/aehl-us/",
+    label: <Link href="/aehl-us/overview" className="hover:text-black">AEHL US</Link>,
     children: [
       {
         key: "/aehl-us/overview",
@@ -22,12 +22,13 @@ const items: MenuItem[] = [
       // {
       //   key: "/aehl-us/metrics",
       //   label: <Link href="/aehl-us/metrics">Real Time Metrics</Link>,
+      //   disabled: true,
       // },
     ],
   },
   {
     key: "aehl-kylin",
-    label: "Kylin Cloud",
+    label: <Link href="/aehl-kylin/overview" className="hover:text-black">Kylin Cloud</Link>,
     children: [
       {
         key: "/aehl-kylin/overview",
@@ -83,9 +84,13 @@ export default function NavBar({
             mode="horizontal"
             disabledOverflow
             items={items}
+            style={{
+              borderBottom: "none",
+            }}
           />
         </div>
       </div>
+
       <div className="md:hidden">
         <Drawer
           placement="right"

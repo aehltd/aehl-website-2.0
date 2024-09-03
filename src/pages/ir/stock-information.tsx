@@ -39,7 +39,7 @@ export default function IRStockInfo() {
             <div className="flex flex-col">
               <h1 className="text-white">Stock Information</h1>
               <p className="xsmalltext text-white">
-                AEHL New Energy, Inc. Ordinary Shares (AEHL)
+                Antelope Enterprise Holdings Limited (AEHL)
               </p>
             </div>
             {/* <div className="md:ml-auto">
