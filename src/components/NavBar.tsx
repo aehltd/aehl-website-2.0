@@ -97,12 +97,14 @@ export default function NavBar({
           closable={true}
           onClose={closeDrawer}
           open={visible}
+          width={250}
         >
           <Menu
             className="font-poppins !border-0"
             selectedKeys={[currPage]}
             mode="inline"
             items={items}
+            onClick={closeDrawer}
           />
         </Drawer>
       </div>
