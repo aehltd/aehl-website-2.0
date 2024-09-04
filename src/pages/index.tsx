@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div id="container" className="container">
       <div
-        className="relative flex justify-center items-center text-center w-full h-full bg-cover"
+        className="relative flex justify-center items-center text-center w-full h-[60vh] bg-cover"
         style={{
           backgroundImage:
             "url(https://res.cloudinary.com/aehl/image/upload/v1724428460/3D_dohdwm.jpg)",
@@ -20,12 +20,11 @@ export default function Home() {
         }}
       >
         <h2
-          className="absolute inline-block w-3/4 text-white font-semibold drop-shadow-lg"
+          className="absolute md:text-3xl text-2xl inline-block w-3/4 text-white font-semibold drop-shadow-lg"
           style={{
             top: "80%", // Position the text at 80% from the top
             transform: "translateY(-50%)", // Adjust for vertical alignment
             // fontSize: 'clamp(1rem, 3vw, 2.5rem)',
-            fontSize: "2.7vw",
           }}
         >
           A Beacon of Innovation in an Evolving Energy and Technology Landscape
@@ -184,7 +183,7 @@ export default function Home() {
 
       <div id="ceo-message" className="row">
         <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 ">
-          <div className="flex-1">
+          <div className="flex-1 md:order-first order-last">
             <h1 className="mb-4 tracking-widest font-bold text-midnight">CEO Message</h1>
             <p className="text-midnight2">
               We primarily operate in two exciting business segments,
@@ -206,7 +205,7 @@ export default function Home() {
             <img
               src="https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png"
               alt="ceo"
-              className="w-56 mb-2 object-cover rounded-2xl drop-shadow-md"
+              className="md:w-56 w-25 mb-2 object-cover rounded-2xl drop-shadow-md"
             />
             <h2 className="tracking-wide text-midnight">Weilai &quot;Will&quot; Zhang</h2>
             <p className="text-midnight2">AEHL Chairman and CEO</p>

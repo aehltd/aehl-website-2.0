@@ -11,7 +11,7 @@ export default function IROverview() {
         }}
       >
         <div className="flex items-center justify-center">
-          <h1 className="text-white text-7xl mb-6 tracking-widest font-bold drop-shadow-lg">
+          <h1 className="text-white md:text-7xl sm:text-lg mb-6 tracking-widest font-bold drop-shadow-lg">
             Our Values
           </h1>
         </div>

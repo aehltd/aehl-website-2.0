@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
         <Divider className="my-2" />
 
-        <div className="grid grid-cols-3 gap-6 w-full">
+        <div className="grid md:grid-cols-3 grid-cols-2 gap-5 w-full">
           <div className="text-start px-5">
             <ul className="list-none">
               <li className="py-2">
@@ -133,6 +133,24 @@ export default function Footer() {
                   </li>
                 );
               })}
+              <li>
+                <div className="md:hidden block text-start py-2">
+                  <h3 className="font-semibold tracking-wide">Contact Info</h3>
+                  <div className="text-start">
+                    <div className="py-2">
+                      <p className="inline-block pr-2 text-midnight">Phone: </p>
+                      <p className="inline-block">+1 (838) 500 - 8888</p>
+                    </div>
+                    <div className="py-2 inline-block">
+                      <p className="pr-2 text-midnight">Office: </p>
+                      <p>
+                        Suite 7540, The Empire State Building, 350 Fifth Ave,
+                        New York, NY, 10118
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -155,7 +173,7 @@ export default function Footer() {
               })}
             </ul>
           </div>
-          <div className="text-start py-2">
+          <div className="md:block hidden text-start py-2">
             <h3 className="font-semibold tracking-wide">Contact Info</h3>
             <div className="text-start">
               <div className="py-2">
@@ -164,8 +182,10 @@ export default function Footer() {
               </div>
               <div className="py-2 flex">
                 <p className="pr-2 text-midnight">Office: </p>
-                <p >Suite 7540, The Empire State Building, 350 Fifth Ave,
-                New York, NY, 10118</p>
+                <p>
+                  Suite 7540, The Empire State Building, 350 Fifth Ave, New
+                  York, NY, 10118
+                </p>
               </div>
             </div>
           </div>
@@ -175,7 +195,9 @@ export default function Footer() {
 
         <div className="flex w-full justify-between space-x-16">
           <div className="text-start">
-            <p className="text-xs">Copyright © 2024 AEHL. All rights reserved.</p>
+            <p className="text-xs">
+              Copyright © 2024 AEHL. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
