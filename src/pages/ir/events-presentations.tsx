@@ -4,7 +4,7 @@ export default function IREventsPresentationsPage() {
   return (
     <div className="container" id="container">
       <div className="flex w-full justify-center">
-        <div className="row">
+        <div className="row pb-0">
           <h1 className="font-bold tracking-wider">Events and Presentations</h1>
         </div>
       </div>

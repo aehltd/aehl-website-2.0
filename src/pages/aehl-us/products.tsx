@@ -23,7 +23,7 @@ export default function USProducts() {
           />
         </div>
         <div className="md:w-1/2">
-          <h1 className="mb-2">Our Products</h1>
+          <h1 className="mb-2 tracking-wider font-bold">Our Products</h1>
           <h2>AI Infrastructure Industry Chain</h2>
           <p>
             Our plan is to employ an end-to-end model to convert procured

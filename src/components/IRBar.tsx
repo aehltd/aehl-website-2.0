@@ -63,7 +63,7 @@ const items: MenuItem[] = [
   },
   {
     key: "/ir/contact-ir",
-    label: <Link href="/ir/contact-ir">Contact</Link>,
+    label: <Link href="/ir/contact-ir">IR Contact</Link>,
   },
 ];
 

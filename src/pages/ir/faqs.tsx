@@ -55,9 +55,9 @@ const FAQ: FAQItem[] = [
 export default function IRFAQ() {
   return (
     <div id="container" className="container">
-      <div className="flex w-full justify-center bg-gray-500">
-        <div className="row">
-          <h1 className="text-white">FAQ</h1>
+      <div className="flex w-full justify-center">
+        <div className="row pb-0">
+          <h1 className="font-bold tracking-wider">FAQ</h1>
         </div>
       </div>
       <ul className="flex row flex-col space-y-8">

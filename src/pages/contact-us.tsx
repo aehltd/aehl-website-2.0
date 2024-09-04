@@ -1,13 +1,14 @@
 import ContactForm from "@/components/forms/ContactForm";
+import { url } from "inspector";
 
 export default function ContactUs() {
   return (
     <div id="container" className="container">
       <div
-        className="bg-top flex w-full h-[55vh] justify-center"
+        className="bg-top flex w-full h-[60vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1725376615/new-york-view-with-empire-state-building_zzhpya.jpg')",
+            "url('https://res.cloudinary.com/aehl/image/upload/t_small size/v1725376615/new-york-view-with-empire-state-building_zzhpya.jpg')",
           backgroundSize: "cover",
         }}
       >

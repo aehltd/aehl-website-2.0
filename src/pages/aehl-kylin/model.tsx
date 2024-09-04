@@ -36,7 +36,7 @@ export default function KylinModel() {
         }}
       ></div>
       <div className="flex row flex-col">
-        <h1>Business Model</h1>
+        <h1 className="tracking-wider font-semibold">Business Model</h1>
         <div className="flex flex-col-reverse md:flex-row">
           <p className="flex md:w-1/2 items-center">
             At AEHL, we focus on enabling B-end manufacturers and C-end talents
@@ -79,7 +79,7 @@ export default function KylinModel() {
       </div>
       <div className="flex bg-local w-full justify-center">
         <div className="flex row flex-col">
-          <h1>Our Services</h1>
+          <h1 className="tracking-wider font-semibold">Our Services</h1>
           <div className="flex flex-col md:flex-row items-center justify-center"
                 style={{height:"36vh"}}>
             <div className="flex items-center justify-center my-4 md:mr-8 w-full md:w-1/2">

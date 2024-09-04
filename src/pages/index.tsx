@@ -34,8 +34,8 @@ export default function Home() {
 
       <div className="flex w-full justify-center">
         <div id="mission-statement" className="row text-center">
-          <h1>Mission Statement</h1>
-          <h2>
+          <h1 className="tracking-widest font-bold text-midnight">Mission Statement</h1>
+          <h2 className="text-midnight2">
             “To provide exceptional value to our customers in growing and
             evolving business segments driven by our commitment, passion and
             world-class talent.”
@@ -72,7 +72,7 @@ export default function Home() {
               <div className="col-span-1 flex justify-center">
                 <div className="halfrow pt-32">
                   <div className="flex flex-col p-8 bg-white shadow-2xl rounded-xl">
-                    <h1 className="mb-4">A New Energy Model</h1>
+                    <h1 className="mb-4 text-midnight">A New Energy Model</h1>
                     <p>
                       With data centers based in Texas, we are an emerging
                       energy supply business that aims to provide an innovative,
@@ -81,7 +81,7 @@ export default function Home() {
                     </p>
                     <div className="mr-auto mt-4">
                       <Link href="/aehl-us/overview" passHref>
-                        <Button type="primary" size="middle">
+                        <Button type="primary" size="middle" className="bg-sky text-midnight">
                           Learn More
                         </Button>
                       </Link>
@@ -106,7 +106,7 @@ export default function Home() {
               className="m-16 -mr-24 w-full h-2/3 object-cover rounded-s-xl shadow-lg"
             />
             <div className="absolute bottom-0 flex flex-col p-8 m-8 -ml-16 pl-24 bg-white shadow-lg rounded-xl">
-              <h1 className="mb-4">A New Energy Solution</h1>
+              <h1 className="mb-4 text-midnight">A New Energy Solution</h1>
               <p>
                 We plan to service data centers based in Texas, we are an
                 emerging energy supply business that aims to provide a low-cost
@@ -115,7 +115,7 @@ export default function Home() {
               </p>
               <div className="mr-auto mt-4">
                 <Link href="/aehl-us/overview" passHref>
-                  <Button type="primary" size="middle">
+                  <Button type="primary" size="middle" className="bg-sky text-midnight">
                     Learn More
                   </Button>
                 </Link>
@@ -146,7 +146,7 @@ export default function Home() {
                   </p>
                   <div className="ml-auto mt-4">
                     <Link href="/aehl-kylin/overview" passHref>
-                      <Button type="primary" size="middle">
+                      <Button type="primary" size="middle" className="bg-sky text-midnight">
                         Learn More
                       </Button>
                     </Link>
@@ -172,11 +172,11 @@ export default function Home() {
               </p>
               <div className="ml-auto mt-4">
                 <Link href="/aehl-kylin/overview" passHref>
-                  <Button type="primary" size="middle">
+                  <Button type="primary" size="middle" className="bg-sky text-midnight">
                     Learn More
                   </Button>
                 </Link>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -185,8 +185,8 @@ export default function Home() {
       <div id="ceo-message" className="row">
         <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 ">
           <div className="flex-1">
-            <h1 className="mb-4">CEO Message</h1>
-            <p className="text-slate-600">
+            <h1 className="mb-4 tracking-widest font-bold text-midnight">CEO Message</h1>
+            <p className="text-midnight2">
               We primarily operate in two exciting business segments,
               livestreaming e-commerce and energy solutions. I believe that
               there is a prosperous future ahead for the development of
@@ -208,8 +208,8 @@ export default function Home() {
               alt="ceo"
               className="w-56 mb-2 object-cover rounded-2xl drop-shadow-md"
             />
-            <h2>Weilai &quot;Will&quot; Zhang</h2>
-            <p>AEHL Chairman and CEO</p>
+            <h2 className="tracking-wide text-midnight">Weilai &quot;Will&quot; Zhang</h2>
+            <p className="text-midnight2">AEHL Chairman and CEO</p>
           </div>
         </div>
       </div>

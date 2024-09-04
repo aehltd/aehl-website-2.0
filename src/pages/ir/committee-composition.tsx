@@ -3,9 +3,9 @@ import CommitteeCompositionTable from "@/components/ir/CommitteeCompositionTable
 export default function IRCommitteeComposition() {
   return (
     <div className="container">
-      <div className="flex w-full justify-center bg-gray-500">
+      <div className="flex w-full justify-center">
         <div className="row">
-          <h1 className="text-white">Committee Composition</h1>
+          <h1 className="text-black font-bold tracking-wider">Committee Composition</h1>
         </div>
       </div>
       <div className="row">

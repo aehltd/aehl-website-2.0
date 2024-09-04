@@ -33,12 +33,12 @@ export default function IRStockInfo() {
 
   return (
     <div id="container" className="container">
-      <div className="flex w-full justify-center bg-slate-500">
+      <div className="flex w-full justify-center">
         <div className="row">
           <div className="flex w-full flex-col md:flex-row items-center space-y-4 md:space-y-0">
             <div className="flex flex-col">
-              <h1 className="text-white">Stock Information</h1>
-              <p className="xsmalltext text-white">
+              <h1 className="text-black font-bold tracking-wider">Stock Information</h1>
+              <p className="xsmalltext tracking-wider text-midnight">
                 Antelope Enterprise Holdings Limited (AEHL)
               </p>
             </div>

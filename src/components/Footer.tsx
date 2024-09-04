@@ -39,7 +39,7 @@ const aehlKylinLink: aehlKylinLinks[] = [
 
 const IrLink: IrLinks[] = [
   {
-    label: "Investor Relations",
+    label: "Our Values",
     link: "/ir/overview",
   },
   {
@@ -103,7 +103,7 @@ export default function Footer() {
           <div className="text-start px-5">
             <ul className="list-none">
               <li className="py-2">
-                <h3 className="font-semibold">AEHL US</h3>
+                <h3 className="font-semibold tracking-wide">AEHL US</h3>
               </li>
               {aehlUsLink.map((entry) => {
                 return (
@@ -119,9 +119,9 @@ export default function Footer() {
               })}
 
               <li className="py-2">
-                <h3 className="font-semibold">AEHL Kylin</h3>
+                <h3 className="font-semibold tracking-wide">AEHL Kylin</h3>
               </li>
-              {aehlUsLink.map((entry) => {
+              {aehlKylinLink.map((entry) => {
                 return (
                   <li className="py-0.5">
                     <Link
@@ -139,7 +139,7 @@ export default function Footer() {
           <div className="text-start px-5">
             <ul className="list-none">
               <li className="py-2">
-                <h3 className="font-semibold">Investor</h3>
+                <h3 className="font-semibold tracking-wide">Investor</h3>
               </li>
               {IrLink.map((entry) => {
                 return (
@@ -156,12 +156,17 @@ export default function Footer() {
             </ul>
           </div>
           <div className="text-start py-2">
+            <h3 className="font-semibold tracking-wide">Contact Info</h3>
             <div className="text-start">
-              <p className="p-2">Phone: +1 (838) 500 - 8888</p>
-              <p className="p-2">
-                Office: Suite 7540, The Empire State Building, 350 Fifth Ave,
-                New York, NY, 10118
-              </p>
+              <div className="py-2">
+                <p className="inline-block pr-2 text-midnight">Phone: </p>
+                <p className="inline-block">+1 (838) 500 - 8888</p>
+              </div>
+              <div className="py-2 flex">
+                <p className="pr-2 text-midnight">Office: </p>
+                <p >Suite 7540, The Empire State Building, 350 Fifth Ave,
+                New York, NY, 10118</p>
+              </div>
             </div>
           </div>
         </div>
@@ -170,7 +175,7 @@ export default function Footer() {
 
         <div className="flex w-full justify-between space-x-16">
           <div className="text-start">
-            <p>Copyright ©2024 AEHL</p>
+            <p className="text-xs">Copyright © 2024 AEHL. All rights reserved.</p>
           </div>
         </div>
       </div>

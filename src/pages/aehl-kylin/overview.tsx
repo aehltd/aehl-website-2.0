@@ -53,7 +53,7 @@ export default function KylinOverview() {
       <div className="flex row flex-col md:flex-row">
         <div className="flex w-1/2">
         <div>
-            <h1 className="mb-4">Our Vision</h1>
+            <h1 className="mb-4 tracking-wider font-semibold">Our Vision</h1>
             <p>
               Livestreaming ecommerce is becoming mainstream, revolutionizing
               how businesses reach and engage customers. We seamlessly connect
@@ -85,7 +85,7 @@ export default function KylinOverview() {
           />
         </div>
         <div className="flex flex-col w-full md:w-1/2 md:text-end">
-          <h1 className="mb-4">Our Business</h1>
+          <h1 className="mb-4 tracking-wider font-semibold">Our Business</h1>
           <p>
             Our integrated platform seamlessly connects businesses with a vast
             network of broadcasters and influencers, unlocking new avenues for
