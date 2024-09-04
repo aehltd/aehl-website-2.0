@@ -23,7 +23,7 @@ export default function EventPresentationTable() {
   return (
     <div className="overflow-x-auto">
       <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
-        <thead className="bg-slate-400 text-white">
+        <thead className="bg-midnight2 text-white">
           <tr>
             <th className="px-6 py-3 text-start xsmalltext text-white font-medium uppercase tracking-wider">
               Date
@@ -40,7 +40,7 @@ export default function EventPresentationTable() {
           {presentations.map((presentation, index) => (
             <tr
               key={index}
-              className={index % 2 === 0 ? "bg-white" : "bg-slate-100"}
+              className={index % 2 === 0 ? "bg-white" : "bg-gray-200"}
             >
               <td className="px-6 py-3 whitespace-nowrap text text-black text-start">
                 {presentation.date}
@@ -55,6 +55,7 @@ export default function EventPresentationTable() {
                   href={presentation.url}
                   target="_blank"
                   size="large"
+                  className = "text-midnight"
                 ></Button>
               </td>
             </tr>

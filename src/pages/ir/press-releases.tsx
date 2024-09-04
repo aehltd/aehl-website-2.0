@@ -25,9 +25,9 @@ export default function IRNews() {
 
   return (
     <div id="container" className="container">
-      <div className="flex w-full justify-center bg-slate-400">
+      <div className="flex w-full justify-center">
         <div className="row">
-          <h1 className="text-white">Newsroom</h1>
+          <h1 className="font-bold tracking-wider">Press Releases</h1>
         </div>
       </div>
 
@@ -41,11 +41,6 @@ export default function IRNews() {
 
       <div
         className="bg-local flex flex-col w-full items-center"
-        // style={{
-        //   backgroundImage:
-        //     "url('https://www.aehlus.com/png/img12.f4ed389f.png')",
-        //   backgroundSize: "cover",
-        // }}
       >
         <div className="row">
           <QModFooter />

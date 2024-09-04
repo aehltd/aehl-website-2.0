@@ -28,13 +28,14 @@
   }
 
   a {
-    @apply text-base no-underline;
+    @apply no-underline;
     /* @apply 3xl:text-2xl; */
   }
 
   /* span {
-    @apply text-base;
+    @apply no-underline;
   } */
+
 }
 
 @layer components {

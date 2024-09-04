@@ -55,7 +55,7 @@ export default function ContactForm() {
 
       <div className="flex w-full justify-center">
         <Button className="text" type="primary" htmlType="submit">
-          Send
+          Submit
         </Button>
       </div>
     </Form>

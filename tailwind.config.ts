@@ -22,6 +22,41 @@ const config: Config = {
       "7xl": "5rem",
       "8xl": "6rem",
     },
+    colors: {
+      // Configure your color palette here
+      'white': '#FFFFFF',
+      'black':"#000000",
+      'midnight': '#323643',
+      'midnight2': '#606470',
+      'green': '#50D890',
+      'sky': '#93DEFF',
+      gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280', // This is gray-500
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+          950: '#030712',
+        },
+      slate: {
+          50: '#f8f9fa',
+          100: '#e9ecef',
+          200: '#dee2e6',
+          300: '#ced4da',
+          400: '#adb5bd',
+          500: '#6c757d',
+          600: '#495057',
+          700: '#343a40',
+          800: '#212529',
+          900: '#121416',
+        },
+
+    },
     extend: {
       screens: {
         'lg-half': '512px',
