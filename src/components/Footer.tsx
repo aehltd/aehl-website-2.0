@@ -105,9 +105,9 @@ export default function Footer() {
               <li className="py-2">
                 <h3 className="font-semibold tracking-wide">AEHL US</h3>
               </li>
-              {aehlUsLink.map((entry) => {
+              {aehlUsLink.map((entry, index) => {
                 return (
-                  <li className="py-0.5">
+                  <li key={index} className="py-0.5">
                     <Link
                       href={entry.link}
                       className="text-midnight2 hover:underline hover:font-bold"
@@ -121,9 +121,9 @@ export default function Footer() {
               <li className="py-2">
                 <h3 className="font-semibold tracking-wide">AEHL Kylin</h3>
               </li>
-              {aehlKylinLink.map((entry) => {
+              {aehlKylinLink.map((entry, index) => {
                 return (
-                  <li className="py-0.5">
+                  <li key={index} className="py-0.5">
                     <Link
                       href={entry.link}
                       className="text-midnight2 hover:underline hover:font-bold"
@@ -141,9 +141,9 @@ export default function Footer() {
               <li className="py-2">
                 <h3 className="font-semibold tracking-wide">Investor</h3>
               </li>
-              {IrLink.map((entry) => {
+              {IrLink.map((entry, index) => {
                 return (
-                  <li className="py-0.5">
+                  <li key={index} className="py-0.5">
                     <Link
                       href={entry.link}
                       className="text-midnight2 hover:underline hover:font-bold"
