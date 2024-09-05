@@ -69,7 +69,7 @@ const items: MenuItem[] = [
 
 const itemsInline: MenuItem[] = [
   {
-    label: "View All Sections",
+    label: "Investor Relations",
     key: "/ir-sections",
     children: items,
   },

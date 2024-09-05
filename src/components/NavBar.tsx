@@ -6,7 +6,7 @@ import Link from "next/link";
 type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
-  { key: "/", label: <Link href="/">Home</Link> },
+  { key: "/", label: <Link className="flex md:hidden" href="/">Home</Link> },
   {
     key: "/aehl-us/",
     label: <Link href="/aehl-us/overview" className="hover:text-black">AEHL US</Link>,
@@ -67,11 +67,16 @@ export default function NavBar({
     <div className="flex justify-center bg-white">
       <div className="flex row p-0 h-14 justify-between">
         <div className="flex items-center pl-4 py-2">
+          <Link href="/">
           <img
             src="https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
             alt="logo"
-            className="h-full w-full"
+            className="h-45 w-45"
           />
+          </Link>
+        </div>
+        <div className="md:hidden items-center flex">
+          <h1 className="text-midnight text-sm font-semibold tracking-wider">Antelope Enterprise Holdings Limited</h1>
         </div>
         <div className="md:hidden">
           <MenuOutlined className="h-full pr-4" onClick={openDrawer} />
