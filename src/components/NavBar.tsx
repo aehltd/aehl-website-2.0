@@ -79,7 +79,7 @@ export default function NavBar({
           <h1 className="text-midnight text-sm font-semibold tracking-wider">Antelope Enterprise Holdings Limited</h1>
         </div>
         <div className="md:hidden">
-          <MenuOutlined className="h-full pr-4" onClick={openDrawer} />
+          <MenuOutlined className="h-full pr-4" onClick={openDrawer}/>
         </div>
 
         <div className="hidden md:flex">
@@ -87,11 +87,11 @@ export default function NavBar({
             className="text-base font-poppins h-full pt-2 min-w-0 flex-auto bg-white"
             selectedKeys={[currPage]}
             mode="horizontal"
-            disabledOverflow
             items={items}
             style={{
               borderBottom: "none",
             }}
+
           />
         </div>
       </div>
@@ -103,6 +103,7 @@ export default function NavBar({
           onClose={closeDrawer}
           open={visible}
           width={250}
+          title="AEHL"
         >
           <Menu
             className="font-poppins !border-0"
