@@ -110,6 +110,22 @@ export default function Footer() {
 
         <div className="md:hidden w-full">
           <Collapse items={items} ghost />
+          <div className="text-start py-2">
+            <h3 className="font-semibold tracking-wide">Contact Info</h3>
+            <div className="text-start">
+              <div className="py-2">
+                <p className="inline-block pr-2 text-midnight">Phone: </p>
+                <p className="inline-block">+1 (838) 500 - 8888</p>
+              </div>
+              <div className="py-2 flex">
+                <p className="pr-2 text-midnight">Office: </p>
+                <p>
+                  Suite 7540, The Empire State Building, 350 Fifth Ave, New
+                  York, NY, 10118
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <Divider className="my-2" />
