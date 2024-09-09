@@ -1,21 +1,9 @@
+import AehlInvestorBanner from "../../components/banner/AehlInvestorBanner";
+
 export default function IROverview() {
   return (
     <div id="container" className="container">
-      <div
-        className="bg-local flex w-full h-[40vh] justify-center"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724430444/img3.0cd01d99_ukqlxc.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="flex items-center justify-center">
-          <h1 className="text-white md:text-7xl sm:text-lg mb-6 tracking-widest font-bold drop-shadow-lg">
-            Our Values
-          </h1>
-        </div>
-      </div>
+      <AehlInvestorBanner/>
 
       <div className="w-full">
         <p className="text-xxs text-end px-3">

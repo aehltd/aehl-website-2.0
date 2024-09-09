@@ -2,8 +2,9 @@ import React from "react";
 import { Carousel } from "antd";
 
 import HomePageBanner from "./banner/HomePageBanner";
-import AehlUsBanner from "./banner/AehlUsBanner"
+import AehlUsBanner from "./banner/AehlUsBanner";
 import AehlKylinBanner from "./banner/AehlKylinBanner";
+import AehlInvestorBanner from "./banner/AehlInvestorBanner";
 import Link from "next/link";
 
 const contentStyle: React.CSSProperties = {
@@ -16,19 +17,25 @@ const contentStyle: React.CSSProperties = {
 export default function HomePageCarousel() {
   return (
     <div className="w-full h-[60vh]">
-      <Carousel autoplay arrows draggable adaptiveHeight={true}>
+      <Carousel autoplay arrows adaptiveHeight={true}>
         <div className="h-[60vh]">
           <Link href="/">
             <HomePageBanner />
           </Link>
         </div>
         <div className="h-[60vh]">
-        <Link href="/">
+          <Link href="/aehl-us/corporate-overview">
             <AehlUsBanner />
           </Link>
         </div>
         <div className="h-[60vh]">
-          <AehlKylinBanner/>
+          <AehlKylinBanner />
+        </div>
+        <div className="h-[60vh]">
+          <Link href="/ir/our_values">          
+            <AehlInvestorBanner />
+          </Link>
+
         </div>
       </Carousel>
     </div>

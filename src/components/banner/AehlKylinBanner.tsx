@@ -1,25 +1,25 @@
 export default function AehlKylinBanner() {
   return (
-    <div className="relative flex w-full justify-center overflow-hidden h-[60vh] text-center">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724428455/image4-1_va07bo.jpg')",
-          backgroundSize: "cover",
-        }}
-      ></div>
-      <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
-      <div className="relative z-10 flex flex-col w-full h-full items-center justify-center p-16 space-y-16">
-        <img
-          src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
-          alt="Logo"
-          className="w-full md:w-3/4 drop-shadow-2xl"
-        />
-        <h1 className="text-white font-semibold drop-shadow-2xl">
-          The Future of Livestreaming Ecommerce
-        </h1>
-      </div>
-    </div>
+    <div
+    className="relative flex flex-col justify-center items-center text-center h-[60vh] bg-center bg-cover w-full "
+    style={{
+      backgroundImage:
+        "url(https://res.cloudinary.com/aehl/image/upload/v1724428455/image4-1_va07bo.jpg)",
+    }}
+  >
+    <img
+      className="Static w-2/3"
+      src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+      alt="AEHL US"
+    />
+
+    <h2
+      className="Static w-3/4 text-white md:text-3xl text-2xl font-semibold drop-shadow-lg mt-4 tracking-wider"
+      style={{
+      }}
+    >
+      The <span className="text-sky">Future</span> of Livestreaming Ecommerce
+    </h2>
+  </div>
   );
 }

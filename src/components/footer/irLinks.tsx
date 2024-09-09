@@ -8,7 +8,7 @@ type IrLinks = {
 const IrLink: IrLinks[] = [
   {
     label: "Our Values",
-    link: "/ir/overview",
+    link: "/ir/our_values",
   },
   {
     label: "Press Releases",
