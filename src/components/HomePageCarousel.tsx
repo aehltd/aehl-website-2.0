@@ -29,13 +29,14 @@ export default function HomePageCarousel() {
           </Link>
         </div>
         <div className="h-[60vh]">
-          <AehlKylinBanner />
+          <Link href="/aehl-us/business-overview">
+            <AehlKylinBanner />
+          </Link>
         </div>
         <div className="h-[60vh]">
-          <Link href="/ir/our_values">          
+          <Link href="/ir/our_values">
             <AehlInvestorBanner />
           </Link>
-
         </div>
       </Carousel>
     </div>

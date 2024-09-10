@@ -28,11 +28,11 @@ const items: MenuItem[] = [
   },
   {
     key: "aehl-kylin",
-    label: <Link href="/aehl-kylin/overview" className="hover:text-black">Kylin Cloud</Link>,
+    label: <Link href="/aehl-kylin/business-overview" className="hover:text-black">Kylin Cloud</Link>,
     children: [
       {
         key: "/aehl-kylin/overview",
-        label: <Link href="/aehl-kylin/overview">Overview</Link>,
+        label: <Link href="/aehl-kylin/business-overview">Overview</Link>,
       },
       {
         key: "/aehl-kylin/model",
