@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Avatar, Card } from "antd";
 import Link from "next/link";
-import { LinkedinFilled, MailFilled } from "@ant-design/icons";
+import {
+  LinkedinFilled,
+  MailFilled,
+  UpOutlined,
+  DownOutlined,
+} from "@ant-design/icons";
+import { Switch, Typography } from "antd";
+import { skip } from "node:test";
 
+const { Paragraph, Text } = Typography;
 const { Meta } = Card;
 
 type BoardEntry = {
@@ -98,8 +106,16 @@ const board: BoardEntry[] = [
 ];
 
 export default function BoardRow() {
+  const [ellipsis, setEllipsis] = useState<boolean[]>(
+    Array(board.length).fill(true)
+  );
+  const handleToggle = (index: number) => {
+    const newEllipsis = [...ellipsis];
+    newEllipsis[index] = !newEllipsis[index];
+    setEllipsis(newEllipsis);
+  };
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
       {board.map((entry, index) => {
         return (
           <div key={index}>
@@ -132,7 +148,33 @@ export default function BoardRow() {
                 }
                 description={entry.position}
               />
-              <p className="p-5">{entry.description}</p>
+              <div
+                className={`p-5 overflow-hidden transition-all duration-500 ease-in-out ${
+                  ellipsis[index] ? "max-h-[180px]" : "max-h-[1500px]"
+                }`}
+              >
+                <Paragraph className="transition-all duration-500 ease-in-out">
+                  {entry.description}
+                </Paragraph>
+              </div>
+
+              <div className="flex justify-end px-5 py-1">
+                <Switch
+                  checked={!ellipsis[index]}
+                  className={"transition-all duration-500"}
+                  checkedChildren={
+                    <span>
+                      <UpOutlined /> Show Less
+                    </span>
+                  }
+                  unCheckedChildren={
+                    <span>
+                      <DownOutlined /> Show More
+                    </span>
+                  }
+                  onChange={() => handleToggle(index)}
+                />
+              </div>
             </Card>
           </div>
         );

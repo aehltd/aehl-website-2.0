@@ -76,7 +76,7 @@ export default function NavBar({
           </Link>
         </div>
         <div className="md:hidden items-center flex">
-          <h1 className="text-midnight text-sm font-semibold tracking-wider">Antelope Enterprise Holdings Limited</h1>
+          <h1 className="text-midnight text-sm font-semibold tracking-wide">Antelope Enterprise Holdings Limited</h1>
         </div>
         <div className="md:hidden">
           <MenuOutlined className="h-full pr-4" onClick={openDrawer}/>

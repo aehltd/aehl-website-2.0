@@ -8,10 +8,10 @@ export default function HomePageBanner() {
       }}
     >
       <h2
-        className="absolute inline-block w-3/4 text-white md:text-3xl text-2xl font-semibold drop-shadow-lg"
-        style={{
-          top: "75%",
-        }}
+        className="absolute inline-block w-3/4 text-white md:text-3xl text-xl font-semibold drop-shadow-lg bottom-20"
+        // style={{
+        //   top: "75%",
+        // }}
       >
         A Beacon of Innovation in an Evolving Energy and Technology Landscape
       </h2>

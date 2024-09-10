@@ -33,7 +33,6 @@ export default function KylinOverview() {
       </div>
 
       <div className="row grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center items-center text-start">
-        <div className="">
           <div>
             <h1 className="tracking-wider font-semibold">Our Vision</h1>
             <p>
@@ -46,20 +45,19 @@ export default function KylinOverview() {
               potential in the digital economy.
             </p>
           </div>
-        </div>
         <div className="h-full w-full">
           <iframe
             title="Kylin Tour Video"
             allow="fullscreen"
             allowFullScreen
             src="https://streamable.com/e/19gy9c?"
-            style={{ width: "100%" }}
+            style={{ width: "100%", height:"100%"}}
           ></iframe>
         </div>
       </div>
 
       <div className="flex row flex-col md:flex-row">
-        <div className="flex my-4 md:mr-8 md:mb-0 md:w-1/2 order-last">
+        <div className="flex my-4 md:order-first order-last md:mr-8 md:mb-0 md:w-1/2">
           <img
             src="https://res.cloudinary.com/aehl/image/upload/v1724428454/image2-2_fjgknc.jpg"
             alt="business"

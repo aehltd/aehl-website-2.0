@@ -8,7 +8,7 @@ export default function AehlInvestorBanner() {
     }}
   >
     <h2
-      className="Static w-3/4 text-white md:text-7xl sm:text-lg mb-6 tracking-widest font-bold drop-shadow-lg"
+      className="Static w-3/4 text-white md:text-7xl text-4xl mb-6 tracking-widest font-bold drop-shadow-lg"
       style={{
       }}
     >
