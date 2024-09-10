@@ -86,7 +86,7 @@ export default function IRBar({ current }: { current: string }) {
     <div className="flex justify-center bg-white">
       <div className="flex row p-0 justify-between">
         <Link
-          href="/ir/overview"
+          href="/ir/our_values"
           className="text-start items-center md:flex hidden"
         >
           <h2 className="font-semibold tracking-wider">Investor Relations</h2>

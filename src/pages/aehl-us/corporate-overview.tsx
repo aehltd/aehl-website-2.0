@@ -1,29 +1,9 @@
+import AehlUsBanner from "../../components/banner/AehlUsBanner";
+
 export default function USOverview() {
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full justify-center overflow-hidden text-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://res.cloudinary.com/aehl/image/upload/v1724430440/img1.c6bbf8d2_jabqxm.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-slate-500 opacity-25"></div>
-        <div className="relative z-10 flex flex-col w-full h-full items-center p-16 justify-center">
-          <img
-            src = "https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
-            alt="Logo"
-            className="w-full md:w-3/4 drop-shadow-2xl"
-          />
-          <h1 className="mt-16 text-white font-bold drop-shadow-2xl tracking-wider">
-            Next Generation Infrastructure to Power{" "}
-            <span className="text-green">AI</span>
-          </h1>
-        </div>
-      </div>
+      <AehlUsBanner />
 
       <div className="flex row flex-col">
         <h1 className="mb-4 tracking-wider font-bold">Vision & Mission</h1>
@@ -77,7 +57,7 @@ export default function USOverview() {
           <h1 className="mb-4 tracking-wider font-bold">Our Strengths</h1>
           <div className="flex w-full flex-col md:flex-row space-y-4 md:space-y-0">
             <div className="flex md:mr-2 w-full md:w-1/2 space-x-4">
-              <div className="relative"> 
+              <div className="relative">
                 <img
                   className="object-cover w-full h-full"
                   src="https://res.cloudinary.com/aehl/image/upload/v1724430443/Strengths_1_hwjy8h.png"

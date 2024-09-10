@@ -9,11 +9,11 @@ const items: MenuItem[] = [
   { key: "/", label: <Link className="flex md:hidden" href="/">Home</Link> },
   {
     key: "/aehl-us/",
-    label: <Link href="/aehl-us/overview" className="hover:text-black">AEHL US</Link>,
+    label: <Link href="/aehl-us/corporate-overview" className="hover:text-black">AEHL US</Link>,
     children: [
       {
         key: "/aehl-us/overview",
-        label: <Link href="/aehl-us/overview">Overview</Link>,
+        label: <Link href="/aehl-us/corporate-overview">Overview</Link>,
       },
       {
         key: "/aehl-us/products",
@@ -28,11 +28,11 @@ const items: MenuItem[] = [
   },
   {
     key: "aehl-kylin",
-    label: <Link href="/aehl-kylin/overview" className="hover:text-black">Kylin Cloud</Link>,
+    label: <Link href="/aehl-kylin/business-overview" className="hover:text-black">Kylin Cloud</Link>,
     children: [
       {
         key: "/aehl-kylin/overview",
-        label: <Link href="/aehl-kylin/overview">Overview</Link>,
+        label: <Link href="/aehl-kylin/business-overview">Overview</Link>,
       },
       {
         key: "/aehl-kylin/model",
@@ -40,7 +40,7 @@ const items: MenuItem[] = [
       },
     ],
   },
-  { key: "/ir", label: <Link href="/ir/overview">Investor</Link> },
+  { key: "/ir", label: <Link href="/ir/our_values">Investor</Link> },
   { key: "/contact-us", label: <Link href="/contact-us">Contact Us</Link> },
 ];
 
@@ -76,7 +76,7 @@ export default function NavBar({
           </Link>
         </div>
         <div className="md:hidden items-center flex">
-          <h1 className="text-midnight text-sm font-semibold tracking-wider">Antelope Enterprise Holdings Limited</h1>
+          <h1 className="text-midnight text-sm font-semibold tracking-wide">Antelope Enterprise Holdings Limited</h1>
         </div>
         <div className="md:hidden">
           <MenuOutlined className="h-full pr-4" onClick={openDrawer}/>

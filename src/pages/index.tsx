@@ -3,37 +3,20 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import EnergyGauge from "@/components/EnergyGauge";
 import RevenueGauge from "@/components/RevenueGauge";
+import HomePageCarousel from "@/components/HomePageCarousel";
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <div id="container" className="container">
-      <div
-        className="relative flex justify-center items-center text-center w-full h-[60vh] bg-cover"
-        style={{
-          backgroundImage:
-            "url(https://res.cloudinary.com/aehl/image/upload/v1724428460/3D_dohdwm.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          aspectRatio: "16/9",
-        }}
-      >
-        <h2
-          className="absolute md:text-3xl text-2xl inline-block w-3/4 text-white font-semibold drop-shadow-lg"
-          style={{
-            top: "80%", // Position the text at 80% from the top
-            transform: "translateY(-50%)", // Adjust for vertical alignment
-            // fontSize: 'clamp(1rem, 3vw, 2.5rem)',
-          }}
-        >
-          A Beacon of Innovation in an Evolving Energy and Technology Landscape
-        </h2>
-      </div>
+      <HomePageCarousel />
 
       <div className="flex w-full justify-center">
         <div id="mission-statement" className="row text-center">
-          <h1 className="tracking-widest font-bold text-midnight">Mission Statement</h1>
+          <h1 className="tracking-widest font-bold text-midnight">
+            Mission Statement
+          </h1>
           <h2 className="text-midnight2">
             “To provide exceptional value to our customers in growing and
             evolving business segments driven by our commitment, passion and
@@ -80,7 +63,11 @@ export default function Home() {
                     </p>
                     <div className="mr-auto mt-4">
                       <Link href="/aehl-us/overview" passHref>
-                        <Button type="primary" size="middle" className="bg-sky text-midnight">
+                        <Button
+                          type="primary"
+                          size="middle"
+                          className="bg-sky text-midnight"
+                        >
                           Learn More
                         </Button>
                       </Link>
@@ -114,7 +101,11 @@ export default function Home() {
               </p>
               <div className="mr-auto mt-4">
                 <Link href="/aehl-us/overview" passHref>
-                  <Button type="primary" size="middle" className="bg-sky text-midnight">
+                  <Button
+                    type="primary"
+                    size="middle"
+                    className="bg-sky text-midnight"
+                  >
                     Learn More
                   </Button>
                 </Link>
@@ -145,7 +136,11 @@ export default function Home() {
                   </p>
                   <div className="ml-auto mt-4">
                     <Link href="/aehl-kylin/overview" passHref>
-                      <Button type="primary" size="middle" className="bg-sky text-midnight">
+                      <Button
+                        type="primary"
+                        size="middle"
+                        className="bg-sky text-midnight"
+                      >
                         Learn More
                       </Button>
                     </Link>
@@ -171,11 +166,15 @@ export default function Home() {
               </p>
               <div className="ml-auto mt-4">
                 <Link href="/aehl-kylin/overview" passHref>
-                  <Button type="primary" size="middle" className="bg-sky text-midnight">
+                  <Button
+                    type="primary"
+                    size="middle"
+                    className="bg-sky text-midnight"
+                  >
                     Learn More
                   </Button>
                 </Link>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -184,7 +183,9 @@ export default function Home() {
       <div id="ceo-message" className="row">
         <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 ">
           <div className="flex-1 md:order-first order-last">
-            <h1 className="mb-4 tracking-widest font-bold text-midnight">CEO Message</h1>
+            <h1 className="mb-4 tracking-widest font-bold text-midnight">
+              CEO Message
+            </h1>
             <p className="text-midnight2">
               We primarily operate in two exciting business segments,
               livestreaming e-commerce and energy solutions. I believe that
@@ -207,7 +208,9 @@ export default function Home() {
               alt="ceo"
               className="md:w-56 w-25 mb-2 object-cover rounded-2xl drop-shadow-md"
             />
-            <h2 className="tracking-wide text-midnight">Weilai &quot;Will&quot; Zhang</h2>
+            <h2 className="tracking-wide text-midnight">
+              Weilai &quot;Will&quot; Zhang
+            </h2>
             <p className="text-midnight2">AEHL Chairman and CEO</p>
           </div>
         </div>

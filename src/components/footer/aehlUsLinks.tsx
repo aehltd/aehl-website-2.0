@@ -8,7 +8,7 @@ type aehlUsLinks = {
 const aehlUsLink: aehlUsLinks[] = [
   {
     label: "About AEHL US",
-    link: "/aehl-us/overview",
+    link: "/aehl-us/corporate-overview",
   },
   {
     label: "Products",

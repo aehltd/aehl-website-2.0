@@ -6,7 +6,7 @@ export default function IRContact() {
     <div id="container" className="container">
       <div className="flex w-full justify-center">
         <div className="row">
-          <h1 className="font-bold tracking-wider">Contact</h1>
+          <h1 className="font-bold tracking-wider">IR Contact</h1>
         </div>
       </div>
       <div className="row space-y-4">
