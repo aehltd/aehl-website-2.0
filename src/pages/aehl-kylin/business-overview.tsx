@@ -8,22 +8,22 @@ export default function KylinOverview() {
     <div id="container" className="container">
       <AehlKylinBanner />
 
-      <div className="grid grid-cols-3 gap-4 justify-items-center items-center text-center p-4">
-        <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 w-full h-full">
+      <div className="row grid grid-cols-3 gap-4 justify-center items-center text-center p-4">
+        <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 flex flex-col items-center">
           <span className="material-symbols-outlined md:!text-8xl !text-4xl text-midnight2">
             apartment
           </span>
           <h2 className="md:text-xl text-base">600 Cities</h2>
           <p className="text-sm">Services in 600+ cities</p>
         </div>
-        <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 w-full h-full">
+        <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 flex flex-col items-center">
           <span className="material-symbols-outlined md:!text-8xl !text-4xl text-gray-500">
             currency_yuan
           </span>
           <h2 className="md:text-xl text-base">3 Million RMB</h2>
           <p className="text-sm">Annual transaction volume</p>
         </div>
-        <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 w-full h-full">
+        <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 flex flex-col items-center">
           <span className="material-symbols-outlined md:!text-8xl !text-4xl text-gray-500">
             trending_up
           </span>
@@ -33,25 +33,25 @@ export default function KylinOverview() {
       </div>
 
       <div className="row grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center items-center text-start">
-          <div>
-            <h1 className="tracking-wider font-semibold">Our Vision</h1>
-            <p>
-              Livestreaming ecommerce is becoming mainstream, revolutionizing
-              how businesses reach and engage customers. We seamlessly connect
-              businesses with live streaming talent, and consumers benefit as a
-              wide range of products become available at the fingertips and at
-              highly competitive prices. By leveraging our extensive network, we
-              aim to empower businesses and individuals to achieve their full
-              potential in the digital economy.
-            </p>
-          </div>
-        <div className="h-full w-full">
+        <div>
+          <h1 className="tracking-wider font-semibold">Our Vision</h1>
+          <p>
+            Livestreaming ecommerce is becoming mainstream, revolutionizing how
+            businesses reach and engage customers. We seamlessly connect
+            businesses with live streaming talent, and consumers benefit as a
+            wide range of products become available at the fingertips and at
+            highly competitive prices. By leveraging our extensive network, we
+            aim to empower businesses and individuals to achieve their full
+            potential in the digital economy.
+          </p>
+        </div>
+        <div className="w-full">
           <iframe
             title="Kylin Tour Video"
             allow="fullscreen"
             allowFullScreen
             src="https://streamable.com/e/19gy9c?"
-            style={{ width: "100%", height:"100%"}}
+            style={{ width: "100%", height: "100%" }}
           ></iframe>
         </div>
       </div>
