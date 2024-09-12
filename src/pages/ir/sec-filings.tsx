@@ -15,7 +15,6 @@ export default function IRSECFilings() {
     showVideos: true,
     showSharingButtons: true,
     showThumbnail: false,
-    showStockPrice: false,
     dateHeadings: true,
     yearSelect: false,
     yearSelectNumYears: 2,
