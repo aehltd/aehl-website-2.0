@@ -8,7 +8,7 @@ export default function AehlUsBanner() {
       }}
     >
       <img
-        className="Static w-2/3"
+        className="Static md:h-[25vh] md:w-auto w-3/4 h-auto"
         src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
         alt="AEHL US"
       />

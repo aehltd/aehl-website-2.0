@@ -86,12 +86,12 @@ export default function NavBar({
           <Menu
             className="text-base font-poppins h-full pt-2 min-w-0 flex-auto bg-white"
             selectedKeys={[currPage]}
+            disabledOverflow={true}
             mode="horizontal"
             items={items}
             style={{
               borderBottom: "none",
             }}
-
           />
         </div>
       </div>
