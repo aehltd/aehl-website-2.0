@@ -1,7 +1,7 @@
 export default function AehlKylinBanner() {
   return (
     <div
-    className="relative flex flex-col justify-center items-center text-center h-[60vh] bg-center bg-cover w-full "
+    className="relative flex flex-col justify-center items-center text-center h-[65vh] bg-center bg-cover w-full "
     style={{
       backgroundImage:
         "url(https://res.cloudinary.com/aehl/image/upload/v1724428455/image4-1_va07bo.jpg)",

@@ -41,14 +41,18 @@ const FAQ: FAQItem[] = [
     answer: "ARK Pro CPA & Co is Antelope Enterprise’s independent auditor.",
   },
   {
-    question: "Who is Antelope Enterprise' investor relations firm?",
+    question: "Who is Antelope Enterprise's investor relations firm?",
     answer:
       "Precept Investor Relations LLC is Antelope Enterprise's investor relations firm. To contact, email david.rudnick@preceptir.com or call 646-694-8538.",
   },
   {
-    question: "Who is Antelope Enterprise' transfer agent?",
+    question: "Who is Antelope Enterprise's transfer agent?",
     answer:
-      "Transhare Corporation acts as Antelope Enterprise' transfer agent - 17755 US Highway 19 North, Clearwater, FL 33764; 303-662-1112.",
+      "Equiniti Limited, 1110 Centre Pointe Curve, Mendota Heights, MN 55120. To contact call 800-937—5449 or 718-921-8157.",
+  },
+  {
+    question: "Who is Antelope Enterprise’s legal counsel?",
+    answer: "Carter Ledyard & Milburn LLP, 28 Liberty Street, New York, NY 10005",
   },
 ];
 
