@@ -16,24 +16,24 @@ const contentStyle: React.CSSProperties = {
 
 export default function HomePageCarousel() {
   return (
-    <div className="w-full h-[60vh]">
+    <div className="w-full h-[65vh]">
       <Carousel autoplay arrows adaptiveHeight={true}>
-        <div className="h-[60vh]">
+        <div className="h-[65vh]">
           <Link href="/">
             <HomePageBanner />
           </Link>
         </div>
-        <div className="h-[60vh]">
+        <div className="h-[65vh]">
           <Link href="/aehl-us/corporate-overview">
             <AehlUsBanner />
           </Link>
         </div>
-        <div className="h-[60vh]">
+        <div className="h-[65vh]">
           <Link href="/aehl-us/business-overview">
             <AehlKylinBanner />
           </Link>
         </div>
-        <div className="h-[60vh]">
+        <div className="h-[65vh]">
           <Link href="/ir/our_values">
             <AehlInvestorBanner />
           </Link>

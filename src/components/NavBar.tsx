@@ -40,7 +40,7 @@ const items: MenuItem[] = [
       },
     ],
   },
-  { key: "/ir", label: <Link href="/ir/our_values">Investor</Link> },
+  { key: "/ir", label: <Link href="/ir/our_values">Investors</Link> },
   { key: "/contact-us", label: <Link href="/contact-us">Contact Us</Link> },
 ];
 
