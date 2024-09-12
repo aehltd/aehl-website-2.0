@@ -37,7 +37,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question:
-      "Who is Antelope Enterprise' independent Certified Public Accountant?",
+      "Who is Antelope Enterprise's independent Certified Public Accountant?",
     answer: "ARK Pro CPA & Co is Antelope Enterprise’s independent auditor.",
   },
   {
