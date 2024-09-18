@@ -5,7 +5,7 @@ export default function QModFooter() {
     const script = document.createElement("script");
     script.id = "qmod";
     script.type = "application/javascript";
-    script.src = "https://qmod.quotemedia.com/js/qmodLoader.js";
+    script.src = "http://qmod.quotemedia.com/js/qmodLoader.js";
     script.setAttribute("data-qmod-wmid", "101150");
     document.body.appendChild(script);
 
