@@ -20,7 +20,7 @@ export default function IRSECFilings() {
     yearSelectNumYears: 2,
     yearSelected: 0,
     datePickerFormat: "Y-m-d",
-    symbol: "AEHL",
+    symbol: "GOOGL",
   };
 
   return (

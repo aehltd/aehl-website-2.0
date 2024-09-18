@@ -8,7 +8,7 @@ export default function IRStockInfo() {
   // };
 
   const detailedQuoteTabChartParams = {
-    symbol: "AEHL",
+    symbol: "APPL",
     lang: "en",
     chcon: "off",
     chfrmon: "off",
